@@ -18,6 +18,9 @@ def _load(filename: str) -> list | dict:
 
 
 def get_mountains() -> list[dict]:
+    path = JSON_DIR / "mountains_integrated.json"
+    if path.exists():
+        return _load("mountains_integrated.json")
     return _load("mountain_stats.json")
 
 
@@ -37,8 +40,15 @@ def get_region_clusters() -> list[dict]:
     return _load("region_clusters.json")
 
 
-def get_mountain_by_id(mountain_id: int) -> dict | None:
+def get_forecast_map() -> dict:
+    path = JSON_DIR / "mountain_forecast_map.json"
+    if not path.exists():
+        return {}
+    return _load("mountain_forecast_map.json")
+
+
+def get_mountain_by_code(mountain_code: str) -> dict | None:
     for m in get_mountains():
-        if m["id"] == mountain_id:
+        if m.get("mountain_code") == mountain_code or str(m.get("id")) == mountain_code:
             return m
     return None

@@ -1,0 +1,242 @@
+{
+  "461700101": {
+    "mountain_num": "13",
+    "forecast_station_name": "가야산",
+    "match_method": "name_exact",
+    "match_confidence": "high"
+  },
+  "478400101": {
+    "mountain_num": "13",
+    "forecast_station_name": "가야산",
+    "match_method": "name_exact",
+    "match_confidence": "high"
+  },
+  "462300101": {
+    "mountain_num": "13",
+    "forecast_station_name": "가야산",
+    "match_method": "name_exact",
+    "match_confidence": "high"
+  },
+  "116200201": {
+    "mountain_num": "2",
+    "forecast_station_name": "관악산",
+    "match_method": "name_exact",
+    "match_confidence": "high"
+  },
+  "412900101": {
+    "mountain_num": "2",
+    "forecast_station_name": "관악산",
+    "match_method": "name_exact",
+    "match_confidence": "high"
+  },
+  "264100101": {
+    "mountain_num": "20",
+    "forecast_station_name": "금정산",
+    "match_method": "name_exact",
+    "match_confidence": "high"
+  },
+  "488200701": {
+    "mountain_num": "20",
+    "forecast_station_name": "금정산",
+    "match_method": "name_exact",
+    "match_confidence": "high"
+  },
+  "282601001": {
+    "mountain_num": "20",
+    "forecast_station_name": "금정산",
+    "match_method": "name_exact",
+    "match_confidence": "high"
+  },
+  "451800501": {
+    "mountain_num": "16",
+    "forecast_station_name": "내장산",
+    "match_method": "name_exact",
+    "match_confidence": "high"
+  },
+  "437500201": {
+    "mountain_num": "8",
+    "forecast_station_name": "덕유산",
+    "match_method": "name_exact",
+    "match_confidence": "high"
+  },
+  "457300702": {
+    "mountain_num": "8",
+    "forecast_station_name": "덕유산",
+    "match_method": "name_exact",
+    "match_confidence": "high"
+  },
+  "416300601": {
+    "mountain_num": "3",
+    "forecast_station_name": "도봉산",
+    "match_method": "name_exact",
+    "match_confidence": "high"
+  },
+  "482501001": {
+    "mountain_num": "3",
+    "forecast_station_name": "도봉산",
+    "match_method": "name_exact",
+    "match_confidence": "high"
+  },
+  "113200102": {
+    "mountain_num": "3",
+    "forecast_station_name": "도봉산",
+    "match_method": "name_exact",
+    "match_confidence": "high"
+  },
+  "431502001": {
+    "mountain_num": "19",
+    "forecast_station_name": "무등산",
+    "match_method": "name_exact",
+    "match_confidence": "high"
+  },
+  "291700501": {
+    "mountain_num": "19",
+    "forecast_station_name": "무등산",
+    "match_method": "name_exact",
+    "match_confidence": "high"
+  },
+  "114100801": {
+    "mountain_num": "1",
+    "forecast_station_name": "북한산",
+    "match_method": "name_exact",
+    "match_confidence": "high"
+  },
+  "113050202": {
+    "mountain_num": "1",
+    "forecast_station_name": "북한산",
+    "match_method": "name_exact",
+    "match_confidence": "high"
+  },
+  "428302602": {
+    "mountain_num": "6",
+    "forecast_station_name": "설악산",
+    "match_method": "name_exact",
+    "match_confidence": "high"
+  },
+  "438001301": {
+    "mountain_num": "12",
+    "forecast_station_name": "소백산",
+    "match_method": "name_exact",
+    "match_confidence": "high"
+  },
+  "437201201": {
+    "mountain_num": "15",
+    "forecast_station_name": "속리산",
+    "match_method": "name_exact",
+    "match_confidence": "high"
+  },
+  "113500201": {
+    "mountain_num": "4",
+    "forecast_station_name": "수락산",
+    "match_method": "name_exact",
+    "match_confidence": "high"
+  },
+  "413601001": {
+    "mountain_num": "4",
+    "forecast_station_name": "수락산",
+    "match_method": "name_exact",
+    "match_confidence": "high"
+  },
+  "437601801": {
+    "mountain_num": "11",
+    "forecast_station_name": "오대산",
+    "match_method": "name_exact",
+    "match_confidence": "high"
+  },
+  "447102201": {
+    "mountain_num": "11",
+    "forecast_station_name": "오대산",
+    "match_method": "name_exact",
+    "match_confidence": "high"
+  },
+  "421504602": {
+    "mountain_num": "11",
+    "forecast_station_name": "오대산",
+    "match_method": "name_exact",
+    "match_confidence": "high"
+  },
+  "467702001": {
+    "mountain_num": "14",
+    "forecast_station_name": "월악산",
+    "match_method": "name_exact",
+    "match_confidence": "high"
+  },
+  "431503501": {
+    "mountain_num": "14",
+    "forecast_station_name": "월악산",
+    "match_method": "name_exact",
+    "match_confidence": "high"
+  },
+  "437602401": {
+    "mountain_num": "17",
+    "forecast_station_name": "주왕산",
+    "match_method": "name_exact",
+    "match_confidence": "high"
+  },
+  "477502301": {
+    "mountain_num": "17",
+    "forecast_station_name": "주왕산",
+    "match_method": "name_exact",
+    "match_confidence": "high"
+  },
+  "471704501": {
+    "mountain_num": "5",
+    "forecast_station_name": "지리산",
+    "match_method": "name_exact",
+    "match_confidence": "high"
+  },
+  "482202301": {
+    "mountain_num": "5",
+    "forecast_station_name": "지리산",
+    "match_method": "name_exact",
+    "match_confidence": "high"
+  },
+  "488605302": {
+    "mountain_num": "5",
+    "forecast_station_name": "지리산",
+    "match_method": "name_exact",
+    "match_confidence": "high"
+  },
+  "421302401": {
+    "mountain_num": "9",
+    "forecast_station_name": "치악산",
+    "match_method": "name_exact",
+    "match_confidence": "high"
+  },
+  "487403601": {
+    "mountain_num": "10",
+    "forecast_station_name": "태백산",
+    "match_method": "name_exact",
+    "match_confidence": "high"
+  },
+  "488905801": {
+    "mountain_num": "10",
+    "forecast_station_name": "태백산",
+    "match_method": "name_exact",
+    "match_confidence": "high"
+  },
+  "421902201": {
+    "mountain_num": "10",
+    "forecast_station_name": "태백산",
+    "match_method": "name_exact",
+    "match_confidence": "high"
+  },
+  "457403001": {
+    "mountain_num": "18",
+    "forecast_station_name": "팔공산",
+    "match_method": "name_exact",
+    "match_confidence": "high"
+  },
+  "271401201": {
+    "mountain_num": "18",
+    "forecast_station_name": "팔공산",
+    "match_method": "name_exact",
+    "match_confidence": "high"
+  },
+  "491102401": {
+    "mountain_num": "7",
+    "forecast_station_name": "한라산",
+    "match_method": "name_exact",
+    "match_confidence": "high"
+  }
+}

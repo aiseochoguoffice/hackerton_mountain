@@ -2,7 +2,7 @@
 
 from __future__ import annotations
 
-from backend.services.data_loader import get_checklist_items, get_mountain_by_id
+from backend.services.data_loader import get_checklist_items, get_mountain_by_code
 
 ADVICE_BY_CATEGORY: dict[str, str] = {
     "EQUIPMENT": "등산 장비(등산화, 손전등, 우비)를 반드시 준비하세요.",
@@ -30,7 +30,7 @@ def _score_to_level(score: int) -> str:
 
 def evaluate_checklist(
     answers: dict[str, bool],
-    mountain_id: int | None = None,
+    mountain_code: str | None = None,
 ) -> dict:
     items = get_checklist_items()
     max_score = sum(i["weight"] for i in items)
@@ -62,8 +62,8 @@ def evaluate_checklist(
     mountain_risk_score: int | None = None
     combined_level = prep_level
 
-    if mountain_id:
-        mountain = get_mountain_by_id(mountain_id)
+    if mountain_code:
+        mountain = get_mountain_by_code(mountain_code)
         if mountain:
             mountain_risk_score = mountain["risk_score"]
             stats = mountain.get("stats", {})

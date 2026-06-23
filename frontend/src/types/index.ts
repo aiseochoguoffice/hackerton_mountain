@@ -5,25 +5,40 @@ export interface MountainStats {
   type_breakdown: Record<string, number>;
   hour_breakdown: Record<string, number>;
   season_breakdown: Record<string, number>;
+  year_breakdown: Record<string, number>;
+  source_breakdown: Record<string, number>;
   rescued_total: number;
   air_rescue_count: number;
   air_rescue_ratio: number;
 }
 
+export interface ForecastMatch {
+  mountain_num: string;
+  forecast_station_name: string;
+  match_method: string;
+  match_confidence: string;
+}
+
 export interface Mountain {
-  id: number;
+  mountain_code: string;
   name: string;
+  base_name?: string;
   region_city: string;
   region_district: string;
+  location_raw: string;
   latitude: number;
   longitude: number;
   elevation_m: number;
+  manager_org: string;
+  manager_phone: string;
+  description?: string;
   difficulty: string;
   risk_score: number;
   risk_level: RiskLevel;
   stats: MountainStats;
-  aliases?: string[];
   caution_notes?: string;
+  forecast_match?: ForecastMatch | null;
+  geocode_quality?: string;
   risk_updated_at?: string;
 }
 
@@ -50,11 +65,12 @@ export interface ChecklistItem {
 
 export interface Overview {
   total_accidents: number;
-  status_count: number;
-  rescue_count: number;
+  source_breakdown: Record<string, number>;
   type_breakdown: Record<string, number>;
   mapped_mountains: number;
-  unmapped_regions: number;
+  total_mountains: number;
+  unmapped_accident_count: number;
+  match_rate_pct: number;
   generated_at: string;
 }
 
@@ -67,13 +83,32 @@ export interface ChecklistResult {
 }
 
 export interface RiskMapPoint {
-  id: number | string;
+  mountain_code: string;
   name: string;
   latitude: number;
   longitude: number;
+  elevation_m: number;
+  manager_org: string;
+  manager_phone: string;
+  location_raw: string;
   risk_score: number;
   risk_level: RiskLevel;
   accident_count: number;
+}
+
+export interface WeatherItem {
+  category: string;
+  fcst_date: string;
+  fcst_time: string;
+  value: string;
+}
+
+export interface MountainWeather {
+  available: boolean;
+  mountain_code?: string;
+  forecast_station_name?: string;
+  items: WeatherItem[];
+  message?: string | null;
 }
 
 export const RISK_LABELS: Record<RiskLevel, string> = {
@@ -110,4 +145,13 @@ export const CATEGORY_LABELS: Record<string, string> = {
   WEATHER: '날씨',
   COMPANION: '동행',
   ROUTE: '코스',
+};
+
+export const WEATHER_CATEGORY_LABELS: Record<string, string> = {
+  TMP: '기온(℃)',
+  POP: '강수확률(%)',
+  WSD: '풍속(m/s)',
+  REH: '습도(%)',
+  SKY: '하늘상태',
+  PTY: '강수형태',
 };

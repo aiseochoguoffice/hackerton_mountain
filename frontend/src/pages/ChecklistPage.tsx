@@ -8,15 +8,18 @@ export function ChecklistPage() {
   const [mountains, setMountains] = useState<Mountain[]>([]);
   const [answers, setAnswers] = useState<Record<string, boolean>>({});
   const [step, setStep] = useState(0);
-  const [mountainId, setMountainId] = useState<number | undefined>();
+  const [mountainCode, setMountainCode] = useState<string | undefined>();
   const [submitting, setSubmitting] = useState(false);
   const navigate = useNavigate();
   const [searchParams] = useSearchParams();
 
   useEffect(() => {
-    const mid = searchParams.get('mountain');
-    if (mid) setMountainId(Number(mid));
-    Promise.all([getChecklistItems(), getMountains()]).then(([checkItems, mts]) => {
+    const code = searchParams.get('mountain');
+    if (code) setMountainCode(code);
+    Promise.all([
+      getChecklistItems(),
+      getMountains({ size: 200 }),
+    ]).then(([checkItems, mts]) => {
       setItems(checkItems);
       setMountains(mts.filter((m) => m.stats.accident_count > 0));
     });
@@ -31,9 +34,9 @@ export function ChecklistPage() {
   const handleSubmit = async () => {
     setSubmitting(true);
     try {
-      const result = await evaluateChecklist(answers, mountainId);
+      const result = await evaluateChecklist(answers, mountainCode);
       sessionStorage.setItem('checklist_result', JSON.stringify(result));
-      sessionStorage.setItem('checklist_mountain_id', String(mountainId ?? ''));
+      sessionStorage.setItem('checklist_mountain_code', mountainCode ?? '');
       navigate('/checklist/result');
     } finally {
       setSubmitting(false);
@@ -54,13 +57,15 @@ export function ChecklistPage() {
       <div className="rounded-xl border bg-white p-4 shadow-sm">
         <label className="text-sm font-medium text-slate-600">등산할 산 (선택)</label>
         <select
-          value={mountainId ?? ''}
-          onChange={(e) => setMountainId(e.target.value ? Number(e.target.value) : undefined)}
-          className="mt-1 w-full rounded-lg border px-3 py-2"
+          value={mountainCode ?? ''}
+          onChange={(e) => setMountainCode(e.target.value || undefined)}
+          className="mt-1 w-full rounded-lg border px-3 py-2 text-sm"
         >
           <option value="">선택 안 함</option>
           {mountains.map((m) => (
-            <option key={m.id} value={m.id}>{m.name} (위험 {m.risk_score})</option>
+            <option key={m.mountain_code} value={m.mountain_code}>
+              {m.name} ({m.location_raw}) · 위험 {m.risk_score}
+            </option>
           ))}
         </select>
       </div>
@@ -114,10 +119,7 @@ export function ChecklistPage() {
             {submitting ? '평가 중...' : '결과 보기'}
           </button>
         ) : (
-          <button
-            onClick={() => setStep(step + 1)}
-            className="rounded-lg px-4 py-2 text-sm text-emerald-600"
-          >
+          <button onClick={() => setStep(step + 1)} className="rounded-lg px-4 py-2 text-sm text-emerald-600">
             다음
           </button>
         )}

@@ -1,0 +1,302 @@
+[
+  {
+    "id": "region_1",
+    "name": "경기도 고양시 덕양구",
+    "region_city": "경기도",
+    "region_district": "고양시 덕양구",
+    "risk_score": 59,
+    "risk_level": "MEDIUM",
+    "accident_count": 1148,
+    "type_breakdown": {
+      "OTHER": 421,
+      "LOST": 184,
+      "ILLNESS": 110,
+      "SLIP_FALL": 433
+    }
+  },
+  {
+    "id": "region_2",
+    "name": "경기도 군포시",
+    "region_city": "경기도",
+    "region_district": "군포시",
+    "risk_score": 33,
+    "risk_level": "MEDIUM",
+    "accident_count": 513,
+    "type_breakdown": {
+      "OTHER": 263,
+      "SLIP_FALL": 133,
+      "LOST": 67,
+      "ILLNESS": 50
+    }
+  },
+  {
+    "id": "region_3",
+    "name": "경기도 성남시 수정구",
+    "region_city": "경기도",
+    "region_district": "성남시 수정구",
+    "risk_score": 31,
+    "risk_level": "MEDIUM",
+    "accident_count": 414,
+    "type_breakdown": {
+      "OTHER": 181,
+      "SLIP_FALL": 106,
+      "LOST": 88,
+      "ILLNESS": 39
+    }
+  },
+  {
+    "id": "region_4",
+    "name": "경상북도 포항시 북구",
+    "region_city": "경상북도",
+    "region_district": "포항시 북구",
+    "risk_score": 29,
+    "risk_level": "LOW",
+    "accident_count": 342,
+    "type_breakdown": {
+      "OTHER": 154,
+      "SLIP_FALL": 57,
+      "ILLNESS": 28,
+      "LOST": 103
+    }
+  },
+  {
+    "id": "region_5",
+    "name": "경기도 용인시 수지구",
+    "region_city": "경기도",
+    "region_district": "용인시 수지구",
+    "risk_score": 27,
+    "risk_level": "LOW",
+    "accident_count": 310,
+    "type_breakdown": {
+      "OTHER": 139,
+      "LOST": 95,
+      "SLIP_FALL": 42,
+      "ILLNESS": 34
+    }
+  },
+  {
+    "id": "region_6",
+    "name": "경기도 성남시 분당구",
+    "region_city": "경기도",
+    "region_district": "성남시 분당구",
+    "risk_score": 26,
+    "risk_level": "LOW",
+    "accident_count": 296,
+    "type_breakdown": {
+      "OTHER": 156,
+      "LOST": 39,
+      "SLIP_FALL": 65,
+      "ILLNESS": 36
+    }
+  },
+  {
+    "id": "region_7",
+    "name": "경상남도 창원시 의창구",
+    "region_city": "경상남도",
+    "region_district": "창원시 의창구",
+    "risk_score": 24,
+    "risk_level": "LOW",
+    "accident_count": 245,
+    "type_breakdown": {
+      "OTHER": 131,
+      "ILLNESS": 22,
+      "SLIP_FALL": 65,
+      "LOST": 27
+    }
+  },
+  {
+    "id": "region_8",
+    "name": "경상남도 창원시 진해구",
+    "region_city": "경상남도",
+    "region_district": "창원시 진해구",
+    "risk_score": 23,
+    "risk_level": "LOW",
+    "accident_count": 233,
+    "type_breakdown": {
+      "OTHER": 122,
+      "ILLNESS": 34,
+      "LOST": 46,
+      "SLIP_FALL": 31
+    }
+  },
+  {
+    "id": "region_9",
+    "name": "경기도 성남시 중원구",
+    "region_city": "경기도",
+    "region_district": "성남시 중원구",
+    "risk_score": 21,
+    "risk_level": "LOW",
+    "accident_count": 183,
+    "type_breakdown": {
+      "OTHER": 76,
+      "ILLNESS": 19,
+      "SLIP_FALL": 66,
+      "LOST": 22
+    }
+  },
+  {
+    "id": "region_10",
+    "name": "충청북도 청주시 상당구",
+    "region_city": "충청북도",
+    "region_district": "청주시 상당구",
+    "risk_score": 22,
+    "risk_level": "LOW",
+    "accident_count": 181,
+    "type_breakdown": {
+      "OTHER": 102,
+      "LOST": 38,
+      "SLIP_FALL": 21,
+      "ILLNESS": 20
+    }
+  },
+  {
+    "id": "region_11",
+    "name": "인천광역시 남구",
+    "region_city": "인천광역시",
+    "region_district": "남구",
+    "risk_score": 29,
+    "risk_level": "LOW",
+    "accident_count": 181,
+    "type_breakdown": {
+      "OTHER": 171,
+      "LOST": 5,
+      "ILLNESS": 2,
+      "SLIP_FALL": 3
+    }
+  },
+  {
+    "id": "region_12",
+    "name": "충청남도 천안시 동남구",
+    "region_city": "충청남도",
+    "region_district": "천안시 동남구",
+    "risk_score": 22,
+    "risk_level": "LOW",
+    "accident_count": 176,
+    "type_breakdown": {
+      "OTHER": 100,
+      "LOST": 27,
+      "ILLNESS": 20,
+      "SLIP_FALL": 29
+    }
+  },
+  {
+    "id": "region_13",
+    "name": "경기도 용인시 기흥구",
+    "region_city": "경기도",
+    "region_district": "용인시 기흥구",
+    "risk_score": 21,
+    "risk_level": "LOW",
+    "accident_count": 169,
+    "type_breakdown": {
+      "OTHER": 103,
+      "LOST": 31,
+      "SLIP_FALL": 24,
+      "ILLNESS": 11
+    }
+  },
+  {
+    "id": "region_14",
+    "name": "경기도 용인시 처인구",
+    "region_city": "경기도",
+    "region_district": "용인시 처인구",
+    "risk_score": 20,
+    "risk_level": "LOW",
+    "accident_count": 144,
+    "type_breakdown": {
+      "OTHER": 67,
+      "LOST": 46,
+      "SLIP_FALL": 20,
+      "ILLNESS": 11
+    }
+  },
+  {
+    "id": "region_15",
+    "name": "경상북도 포항시 남구",
+    "region_city": "경상북도",
+    "region_district": "포항시 남구",
+    "risk_score": 22,
+    "risk_level": "LOW",
+    "accident_count": 135,
+    "type_breakdown": {
+      "OTHER": 85,
+      "LOST": 29,
+      "ILLNESS": 11,
+      "SLIP_FALL": 10
+    }
+  },
+  {
+    "id": "region_16",
+    "name": "세종특별자치시 세종특별자치시",
+    "region_city": "세종특별자치시",
+    "region_district": "세종특별자치시",
+    "risk_score": 22,
+    "risk_level": "LOW",
+    "accident_count": 116,
+    "type_breakdown": {
+      "OTHER": 65,
+      "SLIP_FALL": 23,
+      "ILLNESS": 10,
+      "LOST": 18
+    }
+  },
+  {
+    "id": "region_17",
+    "name": "서울특별시 동작구",
+    "region_city": "서울특별시",
+    "region_district": "동작구",
+    "risk_score": 22,
+    "risk_level": "LOW",
+    "accident_count": 114,
+    "type_breakdown": {
+      "OTHER": 46,
+      "LOST": 6,
+      "ILLNESS": 15,
+      "SLIP_FALL": 47
+    }
+  },
+  {
+    "id": "region_18",
+    "name": "경기도 안양시 동안구",
+    "region_city": "경기도",
+    "region_district": "안양시 동안구",
+    "risk_score": 22,
+    "risk_level": "LOW",
+    "accident_count": 110,
+    "type_breakdown": {
+      "OTHER": 63,
+      "SLIP_FALL": 26,
+      "LOST": 10,
+      "ILLNESS": 11
+    }
+  },
+  {
+    "id": "region_19",
+    "name": "경기도 수원시 장안구",
+    "region_city": "경기도",
+    "region_district": "수원시 장안구",
+    "risk_score": 20,
+    "risk_level": "LOW",
+    "accident_count": 109,
+    "type_breakdown": {
+      "OTHER": 57,
+      "SLIP_FALL": 21,
+      "LOST": 13,
+      "ILLNESS": 18
+    }
+  },
+  {
+    "id": "region_20",
+    "name": "전라북도 전주시덕진구",
+    "region_city": "전라북도",
+    "region_district": "전주시덕진구",
+    "risk_score": 17,
+    "risk_level": "LOW",
+    "accident_count": 77,
+    "type_breakdown": {
+      "OTHER": 58,
+      "ILLNESS": 9,
+      "SLIP_FALL": 5,
+      "LOST": 5
+    }
+  }
+]

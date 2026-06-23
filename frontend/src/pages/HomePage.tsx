@@ -11,18 +11,20 @@ export function HomePage() {
   const [types, setTypes] = useState<AccidentType[]>([]);
 
   useEffect(() => {
-    Promise.all([getOverview(), getMountains(), getAccidentTypes()]).then(
-      ([ov, mountains, accidentTypes]) => {
-        setOverview(ov);
-        setTopMountains(
-          [...mountains]
-            .filter((m) => m.stats.accident_count > 0)
-            .sort((a, b) => b.risk_score - a.risk_score)
-            .slice(0, 5),
-        );
-        setTypes(accidentTypes);
-      },
-    );
+    Promise.all([
+      getOverview(),
+      getMountains({ size: 5000 }),
+      getAccidentTypes(),
+    ]).then(([ov, mountains, accidentTypes]) => {
+      setOverview(ov);
+      setTopMountains(
+        [...mountains]
+          .filter((m) => m.stats.accident_count > 0)
+          .sort((a, b) => b.risk_score - a.risk_score)
+          .slice(0, 5),
+      );
+      setTypes(accidentTypes);
+    });
   }, []);
 
   return (
@@ -53,9 +55,9 @@ export function HomePage() {
         <section className="grid grid-cols-2 gap-3 md:grid-cols-4">
           {[
             { label: '전국 사고', value: overview.total_accidents.toLocaleString() },
-            { label: '분석 산', value: `${overview.mapped_mountains}개` },
-            { label: '현황 데이터', value: overview.status_count.toLocaleString() },
-            { label: '구조활동', value: overview.rescue_count.toLocaleString() },
+            { label: '등록 산', value: `${overview.total_mountains.toLocaleString()}개` },
+            { label: '사고 매핑 산', value: `${overview.mapped_mountains}개` },
+            { label: '매칭률', value: `${overview.match_rate_pct}%` },
           ].map((item) => (
             <div key={item.label} className="rounded-xl border bg-white p-4 text-center shadow-sm">
               <div className="text-2xl font-bold text-emerald-700">{item.value}</div>
@@ -74,7 +76,7 @@ export function HomePage() {
         </div>
         <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
           {topMountains.map((m) => (
-            <MountainCard key={m.id} mountain={m} />
+            <MountainCard key={m.mountain_code} mountain={m} />
           ))}
         </div>
       </section>

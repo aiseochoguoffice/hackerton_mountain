@@ -16,7 +16,7 @@ export default function App() {
         <Route element={<Layout />}>
           <Route path="/" element={<HomePage />} />
           <Route path="/mountains" element={<MountainsPage />} />
-          <Route path="/mountains/:id" element={<MountainDetailPage />} />
+          <Route path="/mountains/:code" element={<MountainDetailPage />} />
           <Route path="/checklist" element={<ChecklistPage />} />
           <Route path="/checklist/result" element={<ChecklistResultPage />} />
           <Route path="/risk-map" element={<RiskMapPage />} />

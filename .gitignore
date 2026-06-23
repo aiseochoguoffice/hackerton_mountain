@@ -8,9 +8,17 @@ __pycache__/
 .venv/
 venv/
 .pytest_cache/
+# pip --target 로컬 설치 산출물 (프로젝트 scripts/ 와 구분)
+Lib/
+/Lib/
+/Scripts/
+*.exe
+!scripts/
+!scripts/**
 
-# 데이터 (원본 CSV, API 키)
+# 데이터 (원본)
 data/*.csv
+data/*.tsv
 data/*api*.txt
 
 # Node
