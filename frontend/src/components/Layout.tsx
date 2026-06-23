@@ -1,4 +1,5 @@
 import { NavLink, Outlet } from 'react-router-dom';
+import { SiteFooter } from './SiteFooter';
 
 const navItems = [
   { to: '/', label: '홈', icon: '🏠' },
@@ -55,29 +56,36 @@ export function Layout() {
         </div>
       </header>
 
-      <main className="mx-auto w-full max-w-6xl flex-1 px-4 py-6 pb-24 md:pb-6">
+      <main className="mx-auto w-full max-w-6xl flex-1 px-4 py-6 pb-32 md:pb-6">
         <Outlet />
       </main>
 
-      <nav className="fixed bottom-0 left-0 right-0 z-50 border-t border-slate-200 bg-white md:hidden">
-        <div className="flex justify-around py-2">
-          {navItems.map((item) => (
-            <NavLink
-              key={item.to}
-              to={item.to}
-              end={item.to === '/'}
-              className={({ isActive }) =>
-                `flex flex-col items-center px-3 py-1 text-xs ${
-                  isActive ? 'text-emerald-700' : 'text-slate-500'
-                }`
-              }
-            >
-              <span className="text-xl">{item.icon}</span>
-              <span>{item.label}</span>
-            </NavLink>
-          ))}
-        </div>
-      </nav>
+      <div className="hidden md:block">
+        <SiteFooter />
+      </div>
+
+      <div className="fixed bottom-0 left-0 right-0 z-50 border-t border-slate-200 bg-white md:hidden">
+        <nav>
+          <div className="flex justify-around py-2">
+            {navItems.map((item) => (
+              <NavLink
+                key={item.to}
+                to={item.to}
+                end={item.to === '/'}
+                className={({ isActive }) =>
+                  `flex flex-col items-center px-3 py-1 text-xs ${
+                    isActive ? 'text-emerald-700' : 'text-slate-500'
+                  }`
+                }
+              >
+                <span className="text-xl">{item.icon}</span>
+                <span>{item.label}</span>
+              </NavLink>
+            ))}
+          </div>
+        </nav>
+        <SiteFooter />
+      </div>
     </div>
   );
 }
