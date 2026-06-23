@@ -1,7 +1,6 @@
 import { useEffect, useState } from 'react';
 import { BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer, Cell } from 'recharts';
 import { getMountains, getOverview } from '../api/client';
-import { fmtNum } from '../utils/format';
 import { TYPE_COLORS, TYPE_LABELS, type Mountain, type Overview } from '../types';
 
 export function StatsPage() {
@@ -37,23 +36,21 @@ export function StatsPage() {
   return (
     <div className="space-y-8">
       <div>
-        <h1 className="text-2xl font-bold">전국 사고 통계</h1>
+        <h1 className="text-2xl font-bold">구조활동 사고 통계</h1>
         <p className="text-slate-600">
-          소방청 데이터 {overview.generated_at.slice(0, 10)} 기준
+          소방청 구조활동현황 (2020.12) · {overview.generated_at.slice(0, 10)} 집계
         </p>
       </div>
 
       <div className="grid grid-cols-2 gap-3 md:grid-cols-4">
         {[
-          { label: '총 사고', value: overview.total_accidents },
-          { label: '분석 산', value: overview.total_mountains ?? overview.mapped_mountains },
-          { label: '매칭률', value: overview.match_rate_pct, suffix: '%' },
-          { label: '미매칭 사고', value: overview.unmapped_accident_count },
+          { label: '구조활동 사고', value: overview.rescue_count },
+          { label: '분석 산', value: overview.mapped_mountains },
+          { label: '미매핑 지역', value: overview.unmapped_regions },
+          { label: '실족추락', value: overview.type_breakdown.SLIP_FALL ?? 0 },
         ].map((item) => (
           <div key={item.label} className="rounded-xl border bg-white p-4 text-center shadow-sm">
-            <div className="text-2xl font-bold text-emerald-700">
-              {item.suffix && item.value != null ? `${item.value}${item.suffix}` : fmtNum(item.value as number)}
-            </div>
+            <div className="text-2xl font-bold text-emerald-700">{item.value.toLocaleString()}</div>
             <div className="text-sm text-slate-500">{item.label}</div>
           </div>
         ))}
@@ -65,7 +62,7 @@ export function StatsPage() {
           <BarChart data={typeData}>
             <XAxis dataKey="name" tick={{ fontSize: 12 }} />
             <YAxis />
-            <Tooltip formatter={(v: number | undefined) => [`${fmtNum(v, '0')}건`, '사고']} />
+            <Tooltip formatter={(v: number) => [`${v.toLocaleString()}건`, '사고']} />
             <Bar dataKey="value" radius={[6, 6, 0, 0]}>
               {typeData.map((entry) => (
                 <Cell key={entry.code} fill={TYPE_COLORS[entry.code] || '#94a3b8'} />

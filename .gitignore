@@ -9,7 +9,7 @@ __pycache__/
 venv/
 .pytest_cache/
 Lib/
-Scripts/
+/Scripts/
 *.exe
 geocode_log.txt
 
@@ -17,6 +17,8 @@ geocode_log.txt
 data/*.csv
 data/*.tsv
 data/*api*.txt
+data/*.pdf
+data/*.csv.txt
 
 # Node
 node_modules/

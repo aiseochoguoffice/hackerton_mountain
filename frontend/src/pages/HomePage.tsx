@@ -2,7 +2,6 @@ import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { getAccidentTypes, getMountains, getOverview } from '../api/client';
 import { MountainCard } from '../components/MountainCard';
-import { fmtNum } from '../utils/format';
 import type { AccidentType, Mountain, Overview } from '../types';
 import { TYPE_LABELS } from '../types';
 
@@ -31,7 +30,8 @@ export function HomePage() {
       <section className="rounded-2xl bg-gradient-to-br from-emerald-600 to-teal-700 p-6 text-white md:p-10">
         <h1 className="text-2xl font-bold md:text-4xl">산행 전, 데이터로 위험을 확인하세요</h1>
         <p className="mt-3 max-w-2xl text-emerald-50 md:text-lg">
-          소방청 전국 산악사고 {fmtNum(overview?.total_accidents)}건 분석 기반 산별 위험지수·사고 유형·맞춤 체크리스트를 제공합니다.
+          소방청 구조활동 {overview?.total_accidents?.toLocaleString() ?? '—'}건 분석 기반
+          산별 위험지수·사고 유형·맞춤 체크리스트를 제공합니다.
         </p>
         <div className="mt-6 flex flex-wrap gap-3">
           <Link
@@ -52,10 +52,10 @@ export function HomePage() {
       {overview && (
         <section className="grid grid-cols-2 gap-3 md:grid-cols-4">
           {[
-            { label: '전국 사고', value: fmtNum(overview.total_accidents) },
-            { label: '분석 산', value: `${overview.mapped_mountains ?? overview.total_mountains ?? 0}개` },
-            { label: '매칭률', value: overview.match_rate_pct != null ? `${overview.match_rate_pct}%` : '—' },
-            { label: '미매칭 사고', value: fmtNum(overview.unmapped_accident_count) },
+            { label: '구조활동 사고', value: overview.rescue_count.toLocaleString() },
+            { label: '분석 산', value: `${overview.mapped_mountains}개` },
+            { label: '미매핑 지역', value: `${overview.unmapped_regions}개` },
+            { label: '데이터 기준', value: '2020.12' },
           ].map((item) => (
             <div key={item.label} className="rounded-xl border bg-white p-4 text-center shadow-sm">
               <div className="text-2xl font-bold text-emerald-700">{item.value}</div>
@@ -102,7 +102,7 @@ export function HomePage() {
           <div className="flex flex-wrap gap-2">
             {Object.entries(overview.type_breakdown).map(([code, count]) => (
               <span key={code} className="rounded-full bg-slate-100 px-3 py-1 text-sm">
-                {TYPE_LABELS[code] || code}: {fmtNum(count)}건
+                {TYPE_LABELS[code] || code}: {count.toLocaleString()}건
               </span>
             ))}
           </div>

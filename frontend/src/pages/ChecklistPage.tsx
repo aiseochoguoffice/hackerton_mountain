@@ -8,14 +8,14 @@ export function ChecklistPage() {
   const [mountains, setMountains] = useState<Mountain[]>([]);
   const [answers, setAnswers] = useState<Record<string, boolean>>({});
   const [step, setStep] = useState(0);
-  const [mountainId, setMountainId] = useState<string | undefined>();
+  const [mountainId, setMountainId] = useState<number | undefined>();
   const [submitting, setSubmitting] = useState(false);
   const navigate = useNavigate();
   const [searchParams] = useSearchParams();
 
   useEffect(() => {
     const mid = searchParams.get('mountain');
-    if (mid) setMountainId(mid);
+    if (mid) setMountainId(Number(mid));
     Promise.all([getChecklistItems(), getMountains()]).then(([checkItems, mts]) => {
       setItems(checkItems);
       setMountains(mts.filter((m) => m.stats.accident_count > 0));
@@ -55,7 +55,7 @@ export function ChecklistPage() {
         <label className="text-sm font-medium text-slate-600">등산할 산 (선택)</label>
         <select
           value={mountainId ?? ''}
-          onChange={(e) => setMountainId(e.target.value || undefined)}
+          onChange={(e) => setMountainId(e.target.value ? Number(e.target.value) : undefined)}
           className="mt-1 w-full rounded-lg border px-3 py-2"
         >
           <option value="">선택 안 함</option>

@@ -37,9 +37,8 @@ def get_region_clusters() -> list[dict]:
     return _load("region_clusters.json")
 
 
-def get_mountain_by_id(mountain_id: int | str) -> dict | None:
-    key = str(mountain_id)
+def get_mountain_by_id(mountain_id: int) -> dict | None:
     for m in get_mountains():
-        if str(m["id"]) == key:
+        if m["id"] == mountain_id:
             return m
     return None

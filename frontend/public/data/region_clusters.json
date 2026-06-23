@@ -1,17 +1,17 @@
 [
   {
     "id": "region_1",
-    "name": "강원도 속초시",
-    "region_city": "강원도",
-    "region_district": "속초시",
+    "name": "경기도 고양시 덕양구",
+    "region_city": "경기도",
+    "region_district": "고양시 덕양구",
     "risk_score": 60,
     "risk_level": "MEDIUM",
-    "accident_count": 152,
+    "accident_count": 123,
     "type_breakdown": {
-      "ILLNESS": 54,
-      "SLIP_FALL": 51,
-      "OTHER": 29,
-      "LOST": 18
+      "SLIP_FALL": 54,
+      "OTHER": 27,
+      "ILLNESS": 18,
+      "LOST": 24
     }
   },
   {
@@ -21,50 +21,35 @@
     "region_district": "종로구",
     "risk_score": 56,
     "risk_level": "MEDIUM",
-    "accident_count": 143,
+    "accident_count": 116,
     "type_breakdown": {
-      "SLIP_FALL": 54,
-      "OTHER": 56,
-      "LOST": 17,
-      "ILLNESS": 16
+      "OTHER": 46,
+      "LOST": 13,
+      "SLIP_FALL": 46,
+      "ILLNESS": 11
     }
   },
   {
     "id": "region_3",
-    "name": "경기도 고양시 덕양구",
-    "region_city": "경기도",
-    "region_district": "고양시 덕양구",
-    "risk_score": 56,
+    "name": "강원도 속초시",
+    "region_city": "강원도",
+    "region_district": "속초시",
+    "risk_score": 57,
     "risk_level": "MEDIUM",
-    "accident_count": 138,
+    "accident_count": 116,
     "type_breakdown": {
-      "SLIP_FALL": 60,
-      "OTHER": 31,
-      "ILLNESS": 19,
-      "LOST": 28
+      "SLIP_FALL": 39,
+      "OTHER": 15,
+      "LOST": 17,
+      "ILLNESS": 45
     }
   },
   {
     "id": "region_4",
-    "name": "서울특별시 노원구",
-    "region_city": "서울특별시",
-    "region_district": "노원구",
-    "risk_score": 47,
-    "risk_level": "MEDIUM",
-    "accident_count": 107,
-    "type_breakdown": {
-      "SLIP_FALL": 27,
-      "OTHER": 53,
-      "ILLNESS": 13,
-      "LOST": 14
-    }
-  },
-  {
-    "id": "region_5",
     "name": "경기도 군포시",
     "region_city": "경기도",
     "region_district": "군포시",
-    "risk_score": 41,
+    "risk_score": 46,
     "risk_level": "MEDIUM",
     "accident_count": 82,
     "type_breakdown": {
@@ -75,33 +60,48 @@
     }
   },
   {
+    "id": "region_5",
+    "name": "경기도 안양시 만안구",
+    "region_city": "경기도",
+    "region_district": "안양시 만안구",
+    "risk_score": 46,
+    "risk_level": "MEDIUM",
+    "accident_count": 81,
+    "type_breakdown": {
+      "OTHER": 24,
+      "SLIP_FALL": 26,
+      "LOST": 22,
+      "ILLNESS": 9
+    }
+  },
+  {
     "id": "region_6",
     "name": "경상북도 포항시 북구",
     "region_city": "경상북도",
     "region_district": "포항시 북구",
-    "risk_score": 36,
+    "risk_score": 41,
     "risk_level": "MEDIUM",
-    "accident_count": 72,
+    "accident_count": 75,
     "type_breakdown": {
-      "OTHER": 30,
+      "OTHER": 32,
       "LOST": 27,
       "SLIP_FALL": 10,
-      "ILLNESS": 5
+      "ILLNESS": 6
     }
   },
   {
     "id": "region_7",
-    "name": "경기도 안양시 만안구",
-    "region_city": "경기도",
-    "region_district": "안양시 만안구",
-    "risk_score": 37,
+    "name": "서울특별시 노원구",
+    "region_city": "서울특별시",
+    "region_district": "노원구",
+    "risk_score": 43,
     "risk_level": "MEDIUM",
-    "accident_count": 66,
+    "accident_count": 73,
     "type_breakdown": {
-      "ILLNESS": 6,
-      "SLIP_FALL": 28,
-      "OTHER": 18,
-      "LOST": 14
+      "OTHER": 35,
+      "SLIP_FALL": 18,
+      "LOST": 11,
+      "ILLNESS": 9
     }
   },
   {
@@ -109,14 +109,14 @@
     "name": "경기도 성남시 수정구",
     "region_city": "경기도",
     "region_district": "성남시 수정구",
-    "risk_score": 35,
+    "risk_score": 40,
     "risk_level": "MEDIUM",
-    "accident_count": 62,
+    "accident_count": 63,
     "type_breakdown": {
       "OTHER": 18,
       "SLIP_FALL": 12,
       "ILLNESS": 8,
-      "LOST": 24
+      "LOST": 25
     }
   },
   {
@@ -124,59 +124,59 @@
     "name": "경기도 용인시 수지구",
     "region_city": "경기도",
     "region_district": "용인시 수지구",
-    "risk_score": 33,
+    "risk_score": 37,
     "risk_level": "MEDIUM",
-    "accident_count": 54,
+    "accident_count": 55,
     "type_breakdown": {
       "ILLNESS": 7,
-      "SLIP_FALL": 5,
+      "SLIP_FALL": 6,
       "OTHER": 24,
       "LOST": 18
     }
   },
   {
     "id": "region_10",
-    "name": "서울특별시 은평구",
-    "region_city": "서울특별시",
-    "region_district": "은평구",
-    "risk_score": 35,
+    "name": "광주광역시 북구",
+    "region_city": "광주광역시",
+    "region_district": "북구",
+    "risk_score": 39,
     "risk_level": "MEDIUM",
     "accident_count": 51,
     "type_breakdown": {
-      "OTHER": 20,
-      "SLIP_FALL": 22,
-      "LOST": 5,
-      "ILLNESS": 4
+      "SLIP_FALL": 20,
+      "ILLNESS": 14,
+      "OTHER": 12,
+      "LOST": 5
     }
   },
   {
     "id": "region_11",
-    "name": "서울특별시 광진구",
-    "region_city": "서울특별시",
-    "region_district": "광진구",
-    "risk_score": 28,
-    "risk_level": "LOW",
-    "accident_count": 43,
+    "name": "대구광역시 동구",
+    "region_city": "대구광역시",
+    "region_district": "동구",
+    "risk_score": 35,
+    "risk_level": "MEDIUM",
+    "accident_count": 51,
     "type_breakdown": {
-      "LOST": 4,
-      "OTHER": 30,
-      "SLIP_FALL": 6,
-      "ILLNESS": 3
+      "SLIP_FALL": 12,
+      "OTHER": 16,
+      "LOST": 17,
+      "ILLNESS": 6
     }
   },
   {
     "id": "region_12",
-    "name": "경기도 의정부시",
-    "region_city": "경기도",
-    "region_district": "의정부시",
-    "risk_score": 29,
+    "name": "경상남도 창원시 진해구",
+    "region_city": "경상남도",
+    "region_district": "창원시 진해구",
+    "risk_score": 30,
     "risk_level": "LOW",
-    "accident_count": 41,
+    "accident_count": 46,
     "type_breakdown": {
-      "SLIP_FALL": 28,
-      "OTHER": 10,
-      "LOST": 2,
-      "ILLNESS": 1
+      "OTHER": 15,
+      "SLIP_FALL": 6,
+      "LOST": 18,
+      "ILLNESS": 7
     }
   },
   {
@@ -184,11 +184,11 @@
     "name": "경기도 성남시 분당구",
     "region_city": "경기도",
     "region_district": "성남시 분당구",
-    "risk_score": 28,
-    "risk_level": "LOW",
-    "accident_count": 40,
+    "risk_score": 31,
+    "risk_level": "MEDIUM",
+    "accident_count": 43,
     "type_breakdown": {
-      "LOST": 5,
+      "LOST": 8,
       "OTHER": 12,
       "SLIP_FALL": 15,
       "ILLNESS": 8
@@ -196,115 +196,175 @@
   },
   {
     "id": "region_14",
-    "name": "서울특별시 강북구",
-    "region_city": "서울특별시",
-    "region_district": "강북구",
-    "risk_score": 26,
-    "risk_level": "LOW",
-    "accident_count": 35,
+    "name": "경기도 의정부시",
+    "region_city": "경기도",
+    "region_district": "의정부시",
+    "risk_score": 32,
+    "risk_level": "MEDIUM",
+    "accident_count": 42,
     "type_breakdown": {
-      "LOST": 9,
-      "OTHER": 10,
-      "ILLNESS": 7,
-      "SLIP_FALL": 9
+      "SLIP_FALL": 20,
+      "OTHER": 14,
+      "LOST": 7,
+      "ILLNESS": 1
     }
   },
   {
     "id": "region_15",
-    "name": "경상남도 창원시 진해구",
-    "region_city": "경상남도",
-    "region_district": "창원시 진해구",
-    "risk_score": 23,
-    "risk_level": "LOW",
-    "accident_count": 35,
+    "name": "경기도 용인시 기흥구",
+    "region_city": "경기도",
+    "region_district": "용인시 기흥구",
+    "risk_score": 35,
+    "risk_level": "MEDIUM",
+    "accident_count": 40,
     "type_breakdown": {
-      "OTHER": 14,
-      "SLIP_FALL": 5,
-      "LOST": 12,
-      "ILLNESS": 4
-    }
-  },
-  {
-    "id": "region_16",
-    "name": "서울특별시 관악구",
-    "region_city": "서울특별시",
-    "region_district": "관악구",
-    "risk_score": 28,
-    "risk_level": "LOW",
-    "accident_count": 33,
-    "type_breakdown": {
-      "OTHER": 6,
-      "SLIP_FALL": 9,
-      "ILLNESS": 2,
-      "LOST": 16
-    }
-  },
-  {
-    "id": "region_17",
-    "name": "경상남도 창원시 의창구",
-    "region_city": "경상남도",
-    "region_district": "창원시 의창구",
-    "risk_score": 27,
-    "risk_level": "LOW",
-    "accident_count": 33,
-    "type_breakdown": {
-      "SLIP_FALL": 9,
-      "OTHER": 18,
-      "LOST": 5,
-      "ILLNESS": 1
-    }
-  },
-  {
-    "id": "region_18",
-    "name": "서울특별시 성북구",
-    "region_city": "서울특별시",
-    "region_district": "성북구",
-    "risk_score": 27,
-    "risk_level": "LOW",
-    "accident_count": 31,
-    "type_breakdown": {
-      "OTHER": 11,
-      "ILLNESS": 5,
-      "SLIP_FALL": 7,
+      "OTHER": 23,
+      "SLIP_FALL": 6,
+      "ILLNESS": 3,
       "LOST": 8
     }
   },
   {
-    "id": "region_19",
-    "name": "경기도 하남시",
-    "region_city": "경기도",
-    "region_district": "하남시",
-    "risk_score": 29,
-    "risk_level": "LOW",
-    "accident_count": 29,
+    "id": "region_16",
+    "name": "경상남도 창원시 의창구",
+    "region_city": "경상남도",
+    "region_district": "창원시 의창구",
+    "risk_score": 31,
+    "risk_level": "MEDIUM",
+    "accident_count": 39,
     "type_breakdown": {
       "SLIP_FALL": 11,
-      "OTHER": 14,
+      "OTHER": 21,
+      "LOST": 5,
+      "ILLNESS": 2
+    }
+  },
+  {
+    "id": "region_17",
+    "name": "서울특별시 은평구",
+    "region_city": "서울특별시",
+    "region_district": "은평구",
+    "risk_score": 34,
+    "risk_level": "MEDIUM",
+    "accident_count": 38,
+    "type_breakdown": {
+      "OTHER": 11,
+      "SLIP_FALL": 21,
       "LOST": 3,
-      "ILLNESS": 1
+      "ILLNESS": 3
+    }
+  },
+  {
+    "id": "region_18",
+    "name": "경상북도 포항시 남구",
+    "region_city": "경상북도",
+    "region_district": "포항시 남구",
+    "risk_score": 31,
+    "risk_level": "MEDIUM",
+    "accident_count": 38,
+    "type_breakdown": {
+      "OTHER": 18,
+      "ILLNESS": 6,
+      "LOST": 11,
+      "SLIP_FALL": 3
+    }
+  },
+  {
+    "id": "region_19",
+    "name": "경기도 수원시 장안구",
+    "region_city": "경기도",
+    "region_district": "수원시 장안구",
+    "risk_score": 28,
+    "risk_level": "LOW",
+    "accident_count": 36,
+    "type_breakdown": {
+      "LOST": 6,
+      "OTHER": 14,
+      "ILLNESS": 9,
+      "SLIP_FALL": 7
     }
   },
   {
     "id": "region_20",
-    "name": "경기도 용인시 기흥구",
+    "name": "경기도 하남시",
     "region_city": "경기도",
-    "region_district": "용인시 기흥구",
-    "risk_score": 32,
-    "risk_level": "MEDIUM",
-    "accident_count": 29,
+    "region_district": "하남시",
+    "risk_score": 30,
+    "risk_level": "LOW",
+    "accident_count": 35,
     "type_breakdown": {
-      "OTHER": 19,
-      "SLIP_FALL": 3,
-      "ILLNESS": 3,
-      "LOST": 4
+      "SLIP_FALL": 12,
+      "LOST": 8,
+      "OTHER": 13,
+      "ILLNESS": 2
     }
   },
   {
     "id": "region_21",
+    "name": "경기도 시흥시",
+    "region_city": "경기도",
+    "region_district": "시흥시",
+    "risk_score": 32,
+    "risk_level": "MEDIUM",
+    "accident_count": 34,
+    "type_breakdown": {
+      "OTHER": 10,
+      "SLIP_FALL": 15,
+      "LOST": 6,
+      "ILLNESS": 3
+    }
+  },
+  {
+    "id": "region_22",
+    "name": "경상남도 양산시",
+    "region_city": "경상남도",
+    "region_district": "양산시",
+    "risk_score": 33,
+    "risk_level": "MEDIUM",
+    "accident_count": 32,
+    "type_breakdown": {
+      "LOST": 16,
+      "OTHER": 11,
+      "ILLNESS": 3,
+      "SLIP_FALL": 2
+    }
+  },
+  {
+    "id": "region_23",
+    "name": "경기도 용인시 처인구",
+    "region_city": "경기도",
+    "region_district": "용인시 처인구",
+    "risk_score": 27,
+    "risk_level": "LOW",
+    "accident_count": 31,
+    "type_breakdown": {
+      "OTHER": 14,
+      "SLIP_FALL": 4,
+      "LOST": 9,
+      "ILLNESS": 4
+    }
+  },
+  {
+    "id": "region_24",
+    "name": "충청남도 천안시 동남구",
+    "region_city": "충청남도",
+    "region_district": "천안시 동남구",
+    "risk_score": 27,
+    "risk_level": "LOW",
+    "accident_count": 29,
+    "type_breakdown": {
+      "LOST": 7,
+      "OTHER": 10,
+      "ILLNESS": 6,
+      "SLIP_FALL": 6
+    }
+  },
+  {
+    "id": "region_25",
     "name": "서울특별시 동작구",
     "region_city": "서울특별시",
     "region_district": "동작구",
-    "risk_score": 27,
+    "risk_score": 29,
     "risk_level": "LOW",
     "accident_count": 28,
     "type_breakdown": {
@@ -315,159 +375,235 @@
     }
   },
   {
-    "id": "region_22",
-    "name": "경기도 용인시 처인구",
+    "id": "region_26",
+    "name": "경기도 남양주시",
     "region_city": "경기도",
-    "region_district": "용인시 처인구",
+    "region_district": "남양주시",
+    "risk_score": 28,
+    "risk_level": "LOW",
+    "accident_count": 28,
+    "type_breakdown": {
+      "ILLNESS": 2,
+      "OTHER": 14,
+      "LOST": 7,
+      "SLIP_FALL": 5
+    }
+  },
+  {
+    "id": "region_27",
+    "name": "경상북도 경산시",
+    "region_city": "경상북도",
+    "region_district": "경산시",
+    "risk_score": 27,
+    "risk_level": "LOW",
+    "accident_count": 27,
+    "type_breakdown": {
+      "OTHER": 8,
+      "LOST": 6,
+      "SLIP_FALL": 7,
+      "ILLNESS": 6
+    }
+  },
+  {
+    "id": "region_28",
+    "name": "서울특별시 성북구",
+    "region_city": "서울특별시",
+    "region_district": "성북구",
+    "risk_score": 27,
+    "risk_level": "LOW",
+    "accident_count": 26,
+    "type_breakdown": {
+      "OTHER": 8,
+      "ILLNESS": 5,
+      "SLIP_FALL": 6,
+      "LOST": 7
+    }
+  },
+  {
+    "id": "region_29",
+    "name": "서울특별시 광진구",
+    "region_city": "서울특별시",
+    "region_district": "광진구",
     "risk_score": 24,
     "risk_level": "LOW",
-    "accident_count": 25,
+    "accident_count": 24,
     "type_breakdown": {
-      "OTHER": 12,
-      "SLIP_FALL": 4,
-      "LOST": 6,
+      "OTHER": 18,
+      "ILLNESS": 2,
+      "SLIP_FALL": 3,
+      "LOST": 1
+    }
+  },
+  {
+    "id": "region_30",
+    "name": "경기도 부천시",
+    "region_city": "경기도",
+    "region_district": "부천시",
+    "risk_score": 30,
+    "risk_level": "LOW",
+    "accident_count": 24,
+    "type_breakdown": {
+      "OTHER": 7,
+      "ILLNESS": 6,
+      "SLIP_FALL": 9,
+      "LOST": 2
+    }
+  },
+  {
+    "id": "region_31",
+    "name": "부산광역시 해운대구",
+    "region_city": "부산광역시",
+    "region_district": "해운대구",
+    "risk_score": 26,
+    "risk_level": "LOW",
+    "accident_count": 24,
+    "type_breakdown": {
+      "LOST": 15,
+      "SLIP_FALL": 5,
+      "OTHER": 3,
+      "ILLNESS": 1
+    }
+  },
+  {
+    "id": "region_32",
+    "name": "서울특별시 강북구",
+    "region_city": "서울특별시",
+    "region_district": "강북구",
+    "risk_score": 25,
+    "risk_level": "LOW",
+    "accident_count": 22,
+    "type_breakdown": {
+      "OTHER": 7,
+      "LOST": 5,
+      "SLIP_FALL": 7,
       "ILLNESS": 3
     }
   },
   {
-    "id": "region_23",
-    "name": "서울특별시 강남구",
-    "region_city": "서울특별시",
-    "region_district": "강남구",
-    "risk_score": 25,
-    "risk_level": "LOW",
-    "accident_count": 24,
-    "type_breakdown": {
-      "OTHER": 16,
-      "LOST": 2,
-      "SLIP_FALL": 4,
-      "ILLNESS": 2
-    }
-  },
-  {
-    "id": "region_24",
-    "name": "경기도 수원시 장안구",
-    "region_city": "경기도",
-    "region_district": "수원시 장안구",
-    "risk_score": 22,
-    "risk_level": "LOW",
-    "accident_count": 23,
-    "type_breakdown": {
-      "ILLNESS": 7,
-      "SLIP_FALL": 5,
-      "LOST": 2,
-      "OTHER": 9
-    }
-  },
-  {
-    "id": "region_25",
-    "name": "강원도 태백시",
-    "region_city": "강원도",
-    "region_district": "태백시",
-    "risk_score": 28,
-    "risk_level": "LOW",
-    "accident_count": 21,
-    "type_breakdown": {
-      "ILLNESS": 5,
-      "OTHER": 9,
-      "SLIP_FALL": 7
-    }
-  },
-  {
-    "id": "region_26",
+    "id": "region_33",
     "name": "경기도 성남시 중원구",
     "region_city": "경기도",
     "region_district": "성남시 중원구",
-    "risk_score": 22,
+    "risk_score": 23,
     "risk_level": "LOW",
-    "accident_count": 21,
+    "accident_count": 22,
     "type_breakdown": {
-      "OTHER": 7,
+      "OTHER": 8,
       "LOST": 5,
       "SLIP_FALL": 7,
       "ILLNESS": 2
     }
   },
   {
-    "id": "region_27",
-    "name": "경기도 남양주시",
-    "region_city": "경기도",
-    "region_district": "남양주시",
-    "risk_score": 27,
+    "id": "region_34",
+    "name": "서울특별시 관악구",
+    "region_city": "서울특별시",
+    "region_district": "관악구",
+    "risk_score": 26,
     "risk_level": "LOW",
     "accident_count": 20,
     "type_breakdown": {
       "SLIP_FALL": 5,
-      "ILLNESS": 3,
-      "OTHER": 9,
-      "LOST": 3
-    }
-  },
-  {
-    "id": "region_28",
-    "name": "경기도 과천시",
-    "region_city": "경기도",
-    "region_district": "과천시",
-    "risk_score": 26,
-    "risk_level": "LOW",
-    "accident_count": 19,
-    "type_breakdown": {
-      "OTHER": 4,
-      "SLIP_FALL": 6,
-      "LOST": 8,
+      "LOST": 12,
+      "OTHER": 2,
       "ILLNESS": 1
     }
   },
   {
-    "id": "region_29",
-    "name": "경기도 광주시",
-    "region_city": "경기도",
-    "region_district": "광주시",
-    "risk_score": 27,
-    "risk_level": "LOW",
-    "accident_count": 19,
-    "type_breakdown": {
-      "OTHER": 11,
-      "SLIP_FALL": 3,
-      "LOST": 4,
-      "ILLNESS": 1
-    }
-  },
-  {
-    "id": "region_30",
-    "name": "경상북도 포항시 남구",
-    "region_city": "경상북도",
-    "region_district": "포항시 남구",
+    "id": "region_35",
+    "name": "전라북도 전주시완산구",
+    "region_city": "전라북도",
+    "region_district": "전주시완산구",
     "risk_score": 24,
     "risk_level": "LOW",
     "accident_count": 19,
     "type_breakdown": {
-      "OTHER": 9,
-      "ILLNESS": 5,
-      "LOST": 5
+      "SLIP_FALL": 1,
+      "LOST": 5,
+      "OTHER": 12,
+      "ILLNESS": 1
     }
   },
   {
-    "id": "region_31",
-    "name": "충청남도 천안시 동남구",
-    "region_city": "충청남도",
-    "region_district": "천안시 동남구",
+    "id": "region_36",
+    "name": "경상남도 김해시",
+    "region_city": "경상남도",
+    "region_district": "김해시",
+    "risk_score": 22,
+    "risk_level": "LOW",
+    "accident_count": 18,
+    "type_breakdown": {
+      "ILLNESS": 2,
+      "SLIP_FALL": 3,
+      "OTHER": 7,
+      "LOST": 6
+    }
+  },
+  {
+    "id": "region_37",
+    "name": "경기도 구리시",
+    "region_city": "경기도",
+    "region_district": "구리시",
+    "risk_score": 24,
+    "risk_level": "LOW",
+    "accident_count": 17,
+    "type_breakdown": {
+      "ILLNESS": 2,
+      "SLIP_FALL": 4,
+      "LOST": 8,
+      "OTHER": 3
+    }
+  },
+  {
+    "id": "region_38",
+    "name": "경기도 동두천시",
+    "region_city": "경기도",
+    "region_district": "동두천시",
+    "risk_score": 27,
+    "risk_level": "LOW",
+    "accident_count": 17,
+    "type_breakdown": {
+      "OTHER": 7,
+      "SLIP_FALL": 8,
+      "LOST": 2
+    }
+  },
+  {
+    "id": "region_39",
+    "name": "충청북도 청주시 상당구",
+    "region_city": "충청북도",
+    "region_district": "청주시 상당구",
+    "risk_score": 24,
+    "risk_level": "LOW",
+    "accident_count": 17,
+    "type_breakdown": {
+      "ILLNESS": 4,
+      "OTHER": 8,
+      "LOST": 3,
+      "SLIP_FALL": 2
+    }
+  },
+  {
+    "id": "region_40",
+    "name": "세종특별자치시 세종특별자치시",
+    "region_city": "세종특별자치시",
+    "region_district": "세종특별자치시",
     "risk_score": 23,
     "risk_level": "LOW",
     "accident_count": 16,
     "type_breakdown": {
+      "SLIP_FALL": 2,
       "LOST": 6,
-      "OTHER": 4,
-      "ILLNESS": 3,
-      "SLIP_FALL": 3
+      "OTHER": 7,
+      "ILLNESS": 1
     }
   },
   {
-    "id": "region_32",
+    "id": "region_41",
     "name": "경기도 안양시 동안구",
     "region_city": "경기도",
     "region_district": "안양시 동안구",
-    "risk_score": 28,
+    "risk_score": 29,
     "risk_level": "LOW",
     "accident_count": 15,
     "type_breakdown": {
@@ -478,264 +614,134 @@
     }
   },
   {
-    "id": "region_33",
-    "name": "경기도 광명시",
-    "region_city": "경기도",
-    "region_district": "광명시",
-    "risk_score": 22,
+    "id": "region_42",
+    "name": "대전광역시 유성구",
+    "region_city": "대전광역시",
+    "region_district": "유성구",
+    "risk_score": 21,
     "risk_level": "LOW",
     "accident_count": 15,
     "type_breakdown": {
-      "LOST": 1,
       "SLIP_FALL": 4,
-      "OTHER": 5,
-      "ILLNESS": 5
-    }
-  },
-  {
-    "id": "region_34",
-    "name": "세종특별자치시 세종특별자치시",
-    "region_city": "세종특별자치시",
-    "region_district": "세종특별자치시",
-    "risk_score": 22,
-    "risk_level": "LOW",
-    "accident_count": 15,
-    "type_breakdown": {
-      "SLIP_FALL": 2,
-      "LOST": 5,
       "OTHER": 7,
-      "ILLNESS": 1
-    }
-  },
-  {
-    "id": "region_35",
-    "name": "경기도 의왕시",
-    "region_city": "경기도",
-    "region_district": "의왕시",
-    "risk_score": 24,
-    "risk_level": "LOW",
-    "accident_count": 14,
-    "type_breakdown": {
-      "ILLNESS": 4,
-      "SLIP_FALL": 6,
-      "OTHER": 4
-    }
-  },
-  {
-    "id": "region_36",
-    "name": "서울특별시 서초구",
-    "region_city": "서울특별시",
-    "region_district": "서초구",
-    "risk_score": 24,
-    "risk_level": "LOW",
-    "accident_count": 13,
-    "type_breakdown": {
-      "OTHER": 7,
-      "ILLNESS": 3,
+      "ILLNESS": 1,
       "LOST": 3
     }
   },
   {
-    "id": "region_37",
-    "name": "경기도 동두천시",
-    "region_city": "경기도",
-    "region_district": "동두천시",
-    "risk_score": 24,
-    "risk_level": "LOW",
-    "accident_count": 13,
-    "type_breakdown": {
-      "SLIP_FALL": 9,
-      "OTHER": 3,
-      "LOST": 1
-    }
-  },
-  {
-    "id": "region_38",
+    "id": "region_43",
     "name": "경기도 수원시 권선구",
     "region_city": "경기도",
     "region_district": "수원시 권선구",
-    "risk_score": 24,
+    "risk_score": 25,
     "risk_level": "LOW",
-    "accident_count": 13,
+    "accident_count": 14,
     "type_breakdown": {
-      "OTHER": 5,
+      "OTHER": 6,
       "SLIP_FALL": 5,
       "ILLNESS": 1,
       "LOST": 2
     }
   },
   {
-    "id": "region_39",
-    "name": "충청북도 청주시 상당구",
-    "region_city": "충청북도",
-    "region_district": "청주시 상당구",
-    "risk_score": 22,
-    "risk_level": "LOW",
-    "accident_count": 13,
-    "type_breakdown": {
-      "ILLNESS": 3,
-      "OTHER": 7,
-      "LOST": 2,
-      "SLIP_FALL": 1
-    }
-  },
-  {
-    "id": "region_40",
-    "name": "서울특별시 양천구",
-    "region_city": "서울특별시",
-    "region_district": "양천구",
-    "risk_score": 19,
-    "risk_level": "LOW",
-    "accident_count": 11,
-    "type_breakdown": {
-      "ILLNESS": 2,
-      "SLIP_FALL": 3,
-      "OTHER": 5,
-      "LOST": 1
-    }
-  },
-  {
-    "id": "region_41",
-    "name": "서울특별시 서대문구",
-    "region_city": "서울특별시",
-    "region_district": "서대문구",
-    "risk_score": 19,
-    "risk_level": "LOW",
-    "accident_count": 10,
-    "type_breakdown": {
-      "OTHER": 7,
-      "ILLNESS": 2,
-      "LOST": 1
-    }
-  },
-  {
-    "id": "region_42",
-    "name": "강원도 동해시",
-    "region_city": "강원도",
-    "region_district": "동해시",
-    "risk_score": 28,
-    "risk_level": "LOW",
-    "accident_count": 10,
-    "type_breakdown": {
-      "OTHER": 2,
-      "ILLNESS": 3,
-      "LOST": 4,
-      "SLIP_FALL": 1
-    }
-  },
-  {
-    "id": "region_43",
-    "name": "강원도 원주시",
-    "region_city": "강원도",
-    "region_district": "원주시",
-    "risk_score": 27,
-    "risk_level": "LOW",
-    "accident_count": 10,
-    "type_breakdown": {
-      "ILLNESS": 4,
-      "OTHER": 2,
-      "LOST": 3,
-      "SLIP_FALL": 1
-    }
-  },
-  {
     "id": "region_44",
-    "name": "경기도 수원시 영통구",
-    "region_city": "경기도",
-    "region_district": "수원시 영통구",
+    "name": "대전광역시 서구",
+    "region_city": "대전광역시",
+    "region_district": "서구",
     "risk_score": 25,
     "risk_level": "LOW",
-    "accident_count": 10,
+    "accident_count": 14,
     "type_breakdown": {
-      "ILLNESS": 3,
-      "LOST": 4,
-      "SLIP_FALL": 1,
-      "OTHER": 2
+      "OTHER": 10,
+      "SLIP_FALL": 3,
+      "LOST": 1
     }
   },
   {
     "id": "region_45",
-    "name": "전라북도 전주시완산구",
-    "region_city": "전라북도",
-    "region_district": "전주시완산구",
-    "risk_score": 22,
+    "name": "부산광역시 금정구",
+    "region_city": "부산광역시",
+    "region_district": "금정구",
+    "risk_score": 26,
     "risk_level": "LOW",
-    "accident_count": 10,
+    "accident_count": 14,
     "type_breakdown": {
-      "LOST": 3,
-      "OTHER": 6,
-      "ILLNESS": 1
+      "SLIP_FALL": 4,
+      "LOST": 5,
+      "OTHER": 5
     }
   },
   {
     "id": "region_46",
-    "name": "충청남도 천안시 서북구",
-    "region_city": "충청남도",
-    "region_district": "천안시 서북구",
-    "risk_score": 21,
+    "name": "경기도 과천시",
+    "region_city": "경기도",
+    "region_district": "과천시",
+    "risk_score": 26,
     "risk_level": "LOW",
-    "accident_count": 10,
+    "accident_count": 13,
     "type_breakdown": {
-      "OTHER": 6,
-      "SLIP_FALL": 2,
+      "SLIP_FALL": 5,
+      "OTHER": 2,
       "ILLNESS": 1,
-      "LOST": 1
+      "LOST": 5
     }
   },
   {
     "id": "region_47",
-    "name": "서울특별시 구로구",
-    "region_city": "서울특별시",
-    "region_district": "구로구",
-    "risk_score": 25,
+    "name": "경기도 의왕시",
+    "region_city": "경기도",
+    "region_district": "의왕시",
+    "risk_score": 22,
     "risk_level": "LOW",
-    "accident_count": 9,
+    "accident_count": 13,
     "type_breakdown": {
-      "OTHER": 8,
-      "SLIP_FALL": 1
+      "SLIP_FALL": 5,
+      "OTHER": 6,
+      "ILLNESS": 2
     }
   },
   {
     "id": "region_48",
-    "name": "강원도 춘천시",
-    "region_city": "강원도",
-    "region_district": "춘천시",
-    "risk_score": 15,
+    "name": "경상북도 구미시",
+    "region_city": "경상북도",
+    "region_district": "구미시",
+    "risk_score": 19,
     "risk_level": "LOW",
-    "accident_count": 8,
+    "accident_count": 13,
     "type_breakdown": {
-      "SLIP_FALL": 5,
-      "OTHER": 2,
-      "LOST": 1
+      "ILLNESS": 2,
+      "OTHER": 4,
+      "LOST": 4,
+      "SLIP_FALL": 3
     }
   },
   {
     "id": "region_49",
-    "name": "전라북도 전주시덕진구",
-    "region_city": "전라북도",
-    "region_district": "전주시덕진구",
-    "risk_score": 22,
+    "name": "서울특별시 강남구",
+    "region_city": "서울특별시",
+    "region_district": "강남구",
+    "risk_score": 23,
     "risk_level": "LOW",
-    "accident_count": 8,
+    "accident_count": 11,
     "type_breakdown": {
-      "OTHER": 4,
-      "LOST": 2,
-      "ILLNESS": 1,
+      "OTHER": 7,
+      "LOST": 1,
+      "ILLNESS": 2,
       "SLIP_FALL": 1
     }
   },
   {
     "id": "region_50",
-    "name": "서울특별시 동대문구",
-    "region_city": "서울특별시",
-    "region_district": "동대문구",
-    "risk_score": 24,
+    "name": "강원도 태백시",
+    "region_city": "강원도",
+    "region_district": "태백시",
+    "risk_score": 23,
     "risk_level": "LOW",
-    "accident_count": 7,
+    "accident_count": 11,
     "type_breakdown": {
-      "OTHER": 4,
-      "SLIP_FALL": 1,
-      "ILLNESS": 2
+      "SLIP_FALL": 2,
+      "ILLNESS": 4,
+      "OTHER": 5
     }
   }
 ]

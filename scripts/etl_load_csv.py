@@ -14,8 +14,9 @@ ROOT = Path(__file__).resolve().parent.parent
 DATA_DIR = ROOT / "data"
 JSON_DIR = ROOT / "json"
 
-STATUS_CSV = DATA_DIR / "소방청_전국 산악사고 현황_20241231.csv"
+STATUS_CSV = DATA_DIR / "소방청_전국 산악사고 현황_20241231.csv"  # 미사용 (구조활동 CSV만 사용)
 RESCUE_CSV = DATA_DIR / "소방청_전국 산악사고 구조활동현황_20201231.csv"
+USE_RESCUE_ONLY = True
 
 CAUSE_MAP: dict[str, str] = {
     "실족추락": "SLIP_FALL",
@@ -273,10 +274,17 @@ def main() -> None:
     accident_types: list[dict] = load_json(JSON_DIR / "accident_types.json")
     type_names = {t["code"]: t["name_ko"] for t in accident_types}
 
-    status_rows = read_csv(STATUS_CSV)
+    status_rows: list[dict[str, str]] = []
     rescue_rows = read_csv(RESCUE_CSV)
 
-    m_stats1, r_stats1, _ = process_rows(status_rows, mountains, "사고원인코드명_사고종별", True)
+    if not USE_RESCUE_ONLY and STATUS_CSV.exists():
+        status_rows = read_csv(STATUS_CSV)
+
+    m_stats1, r_stats1, _ = (
+        process_rows(status_rows, mountains, "사고원인코드명_사고종별", True)
+        if status_rows
+        else ({}, {}, Counter())
+    )
     m_stats2, r_stats2, unmapped = process_rows(rescue_rows, mountains, "사고원인", False)
 
     merged: dict[int, dict] = defaultdict(lambda: {
@@ -290,6 +298,8 @@ def main() -> None:
     })
 
     for src in (m_stats1, m_stats2):
+        if not src:
+            continue
         for mid, s in src.items():
             m = merged[mid]
             m["accident_count"] += s["accident_count"]
@@ -351,6 +361,8 @@ def main() -> None:
         "region_district": "",
     })
     for src in (r_stats1, r_stats2):
+        if not src:
+            continue
         for key, s in src.items():
             all_region[key]["accident_count"] += s["accident_count"]
             all_region[key]["type_breakdown"].update(s["type_breakdown"])
@@ -376,16 +388,19 @@ def main() -> None:
             "type_breakdown": counter_to_dict(stats["type_breakdown"]),
         })
 
-    national_total = len(status_rows) + len(rescue_rows)
+    national_total = len(rescue_rows) + len(status_rows)
     national_types: Counter = Counter()
-    for rows, field in [(status_rows, "사고원인코드명_사고종별"), (rescue_rows, "사고원인")]:
-        for row in rows:
-            national_types[normalize_cause(row.get(field, ""))] += 1
+    if status_rows:
+        for row in status_rows:
+            national_types[normalize_cause(row.get("사고원인코드명_사고종별", ""))] += 1
+    for row in rescue_rows:
+        national_types[normalize_cause(row.get("사고원인", ""))] += 1
 
     overview = {
         "total_accidents": national_total,
         "status_count": len(status_rows),
         "rescue_count": len(rescue_rows),
+        "data_source": "소방청_전국 산악사고 구조활동현황_20201231.csv",
         "type_breakdown": counter_to_dict(national_types),
         "mapped_mountains": sum(1 for m in output_mountains if m["stats"]["accident_count"] > 0),
         "unmapped_regions": len(unmapped),

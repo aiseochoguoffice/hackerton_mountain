@@ -30,7 +30,7 @@ def _score_to_level(score: int) -> str:
 
 def evaluate_checklist(
     answers: dict[str, bool],
-    mountain_id: int | str | None = None,
+    mountain_id: int | None = None,
 ) -> dict:
     items = get_checklist_items()
     max_score = sum(i["weight"] for i in items)

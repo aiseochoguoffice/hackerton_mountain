@@ -13,7 +13,7 @@ export function ChecklistResultPage() {
     const raw = sessionStorage.getItem('checklist_result');
     const mid = sessionStorage.getItem('checklist_mountain_id');
     if (raw) setResult(JSON.parse(raw));
-    if (mid) getMountain(mid).then((m) => setMountain(m ?? null));
+    if (mid) getMountain(Number(mid)).then((m) => setMountain(m ?? null));
   }, []);
 
   if (!result) {

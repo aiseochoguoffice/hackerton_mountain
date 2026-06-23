@@ -4,7 +4,7 @@ from __future__ import annotations
 
 from typing import Any
 
-from pydantic import BaseModel, ConfigDict, Field
+from pydantic import BaseModel, Field
 
 
 class MountainStats(BaseModel):
@@ -18,15 +18,13 @@ class MountainStats(BaseModel):
 
 
 class MountainSummary(BaseModel):
-    model_config = ConfigDict(extra="ignore")
-
-    id: int | str
+    id: int
     name: str
     region_city: str
     region_district: str
     latitude: float
     longitude: float
-    elevation_m: float
+    elevation_m: int
     difficulty: str
     risk_score: int
     risk_level: str
@@ -61,7 +59,7 @@ class ChecklistItem(BaseModel):
 
 
 class ChecklistEvaluateRequest(BaseModel):
-    mountain_id: int | str | None = None
+    mountain_id: int | None = None
     answers: dict[str, bool] = Field(default_factory=dict)
 
 
@@ -75,18 +73,13 @@ class ChecklistEvaluateResponse(BaseModel):
 
 class OverviewStats(BaseModel):
     total_accidents: int
+    status_count: int = 0
+    rescue_count: int
     type_breakdown: dict[str, int]
     mapped_mountains: int
+    unmapped_regions: int
     generated_at: str
-    total_mountains: int | None = None
-    unmapped_accident_count: int | None = None
-    match_rate_pct: float | None = None
     data_source: str | None = None
-    source_breakdown: dict[str, int] | None = None
-    match_methods: dict[str, int] | None = None
-    status_count: int | None = None
-    rescue_count: int | None = None
-    unmapped_regions: int | None = None
 
 
 class RiskMapPoint(BaseModel):

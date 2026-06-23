@@ -66,20 +66,19 @@ export async function getMountains(params?: {
   return data;
 }
 
-export async function getMountain(id: string | number): Promise<Mountain | undefined> {
-  const key = String(id);
+export async function getMountain(id: number): Promise<Mountain | undefined> {
   if (USE_STATIC) {
     const all = await fetchStatic<Mountain[]>('/data/mountain_stats.json');
-    return all.find((m) => String(m.id) === key);
+    return all.find((m) => m.id === id);
   }
   try {
-    const res = await fetch(`${API_BASE}/api/mountains/${encodeURIComponent(key)}`);
+    const res = await fetch(`${API_BASE}/api/mountains/${id}`);
     if (res.ok) return res.json();
   } catch {
-    /* fallback below */
+    /* fallback */
   }
   const all = await fetchStatic<Mountain[]>('/data/mountain_stats.json');
-  return all.find((m) => String(m.id) === key);
+  return all.find((m) => m.id === id);
 }
 
 export async function getAccidentTypes(): Promise<AccidentType[]> {
@@ -115,7 +114,7 @@ export async function getRiskMap(): Promise<RiskMapPoint[]> {
 
 export async function evaluateChecklist(
   answers: Record<string, boolean>,
-  mountainId?: string | number,
+  mountainId?: number,
 ): Promise<ChecklistResult> {
   if (USE_STATIC) {
     return evaluateChecklistLocal(answers, mountainId);
@@ -135,10 +134,10 @@ export async function evaluateChecklist(
 
 async function evaluateChecklistLocal(
   answers: Record<string, boolean>,
-  mountainId?: string | number,
+  mountainId?: number,
 ): Promise<ChecklistResult> {
   const items = await getChecklistItems();
-  const mountains = mountainId != null ? await getMountain(mountainId) : undefined;
+  const mountains = mountainId ? await getMountain(mountainId) : undefined;
   const maxScore = items.reduce((s, i) => s + i.weight, 0);
   let earned = 0;
   const advice: string[] = [];

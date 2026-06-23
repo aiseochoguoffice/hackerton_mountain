@@ -10,15 +10,15 @@
     "OTHER": 5358,
     "LOST": 3355
   },
-  "mapped_mountains": 1476,
-  "total_mountains": 1476,
-  "unmapped_accident_count": 1809,
-  "match_rate_pct": 86.3,
+  "mapped_mountains": 1498,
+  "total_mountains": 1498,
+  "unmapped_accident_count": 2246,
+  "match_rate_pct": 83.0,
   "match_methods": {
-    "heuristic": 11293,
-    "none": 1809,
-    "cache": 79,
-    "kakao_name": 8
+    "heuristic": 10799,
+    "none": 2246,
+    "kakao_name": 44,
+    "cache": 100
   },
-  "generated_at": "2026-06-23T12:38:01.657564"
+  "generated_at": "2026-06-23T12:47:46.085663"
 }
