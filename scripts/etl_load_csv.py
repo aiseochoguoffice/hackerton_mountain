@@ -117,13 +117,26 @@ def match_mountain(
     candidates: list[tuple[int, int]] = []
     for m in mountains:
         score = 0
-        if m["region_city"] == city:
+        region_match = m["region_city"] == city
+        if region_match:
             score += 2
-        if district in m.get("match_districts", []) or m["region_district"] == district:
+        district_match = (
+            district in m.get("match_districts", [])
+            or m["region_district"] == district
+        )
+        if district_match:
             score += 3
-        for d in m.get("match_dong", []):
-            if d in dong or d in ri:
-                score += 5
+
+        dong_match = False
+        if region_match or district_match:
+            for d in m.get("match_dong", []):
+                if d == dong or d in ri:
+                    score += 5
+                    dong_match = True
+                    break
+
+        if m.get("require_dong_match") and not dong_match:
+            continue
         if score >= 5:
             candidates.append((score, m["id"]))
 
