@@ -1,19 +1,21 @@
 import { useEffect, useState } from 'react';
 import { BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer, Cell } from 'recharts';
 import { getMountains, getOverview } from '../api/client';
+import { OverviewStatsCards } from '../components/OverviewStatsCards';
 import { fmtNum } from '../utils/format';
-import { getMappedCount, getRescueCount, getUnmappedLabel } from '../utils/overview';
 import { TYPE_COLORS, TYPE_LABELS, type Mountain, type Overview } from '../types';
 
 export function StatsPage() {
   const [overview, setOverview] = useState<Overview | null>(null);
+  const [mountains, setMountains] = useState<Mountain[]>([]);
   const [topMountains, setTopMountains] = useState<Mountain[]>([]);
 
   useEffect(() => {
-    Promise.all([getOverview(), getMountains()]).then(([ov, mountains]) => {
+    Promise.all([getOverview(), getMountains()]).then(([ov, allMountains]) => {
       setOverview(ov);
+      setMountains(allMountains);
       setTopMountains(
-        [...mountains]
+        [...allMountains]
           .filter((m) => m.stats.accident_count > 0)
           .sort((a, b) => b.stats.accident_count - a.stats.accident_count)
           .slice(0, 10),
@@ -44,19 +46,7 @@ export function StatsPage() {
         </p>
       </div>
 
-      <div className="grid grid-cols-2 gap-3 md:grid-cols-4">
-        {[
-          { label: '구조활동 사고', value: fmtNum(getRescueCount(overview)) },
-          { label: '분석 산', value: `${getMappedCount(overview)}개` },
-          { label: '미매핑', value: getUnmappedLabel(overview) },
-          { label: '실족추락', value: fmtNum(overview.type_breakdown?.SLIP_FALL) },
-        ].map((item) => (
-          <div key={item.label} className="rounded-xl border bg-white p-4 text-center shadow-sm">
-            <div className="text-2xl font-bold text-emerald-700">{item.value}</div>
-            <div className="text-sm text-slate-500">{item.label}</div>
-          </div>
-        ))}
-      </div>
+      <OverviewStatsCards overview={overview} mountains={mountains} />
 
       <section className="rounded-xl border bg-white p-5 shadow-sm">
         <h2 className="mb-4 font-bold">사고 유형별 분포</h2>
