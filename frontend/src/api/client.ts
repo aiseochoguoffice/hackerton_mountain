@@ -24,12 +24,21 @@ async function fetchJson<T>(apiPath: string, staticPath: string): Promise<T> {
 
 let mountainsCache: Mountain[] | null = null;
 
+function dedupeMountains(data: Mountain[]): Mountain[] {
+  const byCode = new Map<string, Mountain>();
+  for (const m of data) {
+    if (!byCode.has(m.mountain_code)) byCode.set(m.mountain_code, m);
+  }
+  return Array.from(byCode.values());
+}
+
 async function loadAllMountains(): Promise<Mountain[]> {
   if (!mountainsCache) {
-    mountainsCache = await fetchJson<Mountain[]>(
+    const raw = await fetchJson<Mountain[]>(
       '/api/mountains',
       '/data/mountains_integrated.json',
     );
+    mountainsCache = dedupeMountains(raw);
   }
   return mountainsCache;
 }

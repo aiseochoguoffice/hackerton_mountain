@@ -46,6 +46,53 @@ SIDO_COORDS: dict[str, tuple[float, float]] = {
     "제주특별자치도": (33.4890, 126.4983),
 }
 
+# 시도별 대략적 경계 (산 좌표 분산용 — 실제 위치 아님)
+SIDO_BBOX: dict[str, tuple[float, float, float, float]] = {
+    "서울특별시": (37.42, 37.70, 126.76, 127.18),
+    "부산광역시": (35.05, 35.40, 128.90, 129.30),
+    "대구광역시": (35.68, 36.00, 128.40, 128.78),
+    "인천광역시": (37.26, 37.75, 126.30, 126.82),
+    "광주광역시": (35.05, 35.25, 126.72, 127.00),
+    "대전광역시": (36.22, 36.48, 127.28, 127.52),
+    "울산광역시": (35.30, 35.70, 129.02, 129.45),
+    "세종특별자치시": (36.42, 36.60, 127.18, 127.36),
+    "경기도": (36.90, 38.30, 126.40, 127.90),
+    "강원특별자치도": (37.00, 38.60, 127.50, 129.40),
+    "충청북도": (36.30, 37.20, 127.40, 128.60),
+    "충청남도": (35.90, 37.00, 126.10, 127.60),
+    "전북특별자치도": (35.20, 36.20, 126.40, 127.80),
+    "전라남도": (34.20, 35.50, 125.90, 127.80),
+    "경상북도": (35.50, 37.50, 128.00, 129.60),
+    "경상남도": (34.70, 35.90, 127.50, 129.20),
+    "제주특별자치도": (33.10, 33.60, 126.15, 126.95),
+}
+
+
+def _coord_hash(*parts: str) -> int:
+    """결정적 해시 — 산코드·소재지 기반 좌표 분산."""
+    text = "|".join(parts)
+    h = 2166136261
+    for ch in text:
+        h ^= ord(ch)
+        h = (h * 16777619) & 0xFFFFFFFF
+    return h
+
+
+def _approx_coords(city: str, code: str, location_key_str: str = "") -> tuple[float, float]:
+    """시도 경계 내 pseudo-random 분산 (mountains2에 위경도 없을 때)."""
+    city = normalize_city(city)
+    lat_min, lat_max, lng_min, lng_max = SIDO_BBOX.get(
+        city,
+        (36.0, 38.0, 126.0, 129.0),
+    )
+    h = _coord_hash(code, location_key_str, city)
+    lat_span = lat_max - lat_min
+    lng_span = lng_max - lng_min
+    # 0~9999 격자로 시도 내 균등 분산
+    lat = lat_min + (h % 10000) / 10000 * lat_span
+    lng = lng_min + ((h // 10000) % 10000) / 10000 * lng_span
+    return round(lat, 6), round(lng, 6)
+
 
 def normalize_city(name: str) -> str:
     name = re.sub(r"\s+", "", (name or "").strip())
@@ -108,27 +155,27 @@ def read_mountains_tsv(path: Path = TSV_PATH) -> list[dict[str, Any]]:
     raise ValueError(f"TSV 인코딩을 읽을 수 없습니다: {path}")
 
 
-def _approx_coords(city: str, code: str) -> tuple[float, float]:
-    base = SIDO_COORDS.get(normalize_city(city), (36.5, 127.5))
-    offset = (int(code[-4:]) % 100) / 500.0
-    return round(base[0] + offset, 6), round(base[1] + offset, 6)
-
-
 def load_mountains_master() -> list[dict[str, Any]]:
     rows = read_mountains_tsv()
     mountains: list[dict[str, Any]] = []
+    seen_codes: set[str] = set()
     for row in rows:
         code = str(row.get("산코드", "")).strip()
-        if not code:
+        if not code or code in seen_codes:
             continue
+        seen_codes.add(code)
         loc = parse_location_raw(row.get("소재지", ""))
+        loc_key = location_key(
+            loc["region_city"], loc["region_district"],
+            loc["region_emd"], loc["region_ri"],
+        )
         elev_raw = row.get("높이(m)", "0") or "0"
         try:
             elevation = float(elev_raw)
         except ValueError:
             elevation = 0.0
         base_name, peak = normalize_mountain_name(row.get("산명", ""))
-        lat, lng = _approx_coords(loc["region_city"], code)
+        lat, lng = _approx_coords(loc["region_city"], code, loc_key)
         mountains.append({
             "mountain_code": code,
             "name": row.get("산명", "").strip(),
@@ -140,10 +187,7 @@ def load_mountains_master() -> list[dict[str, Any]]:
             "region_district": loc["region_district"],
             "region_emd": loc["region_emd"],
             "region_ri": loc["region_ri"],
-            "location_key": location_key(
-                loc["region_city"], loc["region_district"],
-                loc["region_emd"], loc["region_ri"],
-            ),
+            "location_key": loc_key,
             "elevation_m": elevation,
             "manager_org": (row.get("관리주체명") or "").strip(),
             "manager_phone": (row.get("관리자전화번호") or "").strip(),

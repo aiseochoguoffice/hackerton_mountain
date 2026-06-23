@@ -13,9 +13,9 @@
     "SLIP_FALL": 20526,
     "ILLNESS": 11616
   },
-  "mapped_mountains": 3027,
-  "total_mountains": 4705,
+  "mapped_mountains": 2986,
+  "total_mountains": 4650,
   "unmapped_accident_count": 6054,
   "match_rate_pct": 94.6,
-  "generated_at": "2026-06-23T12:02:10.783426"
+  "generated_at": "2026-06-23T12:19:23.206788"
 }
