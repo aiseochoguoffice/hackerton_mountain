@@ -73,12 +73,18 @@ class ChecklistEvaluateResponse(BaseModel):
 
 class OverviewStats(BaseModel):
     total_accidents: int
-    status_count: int
-    rescue_count: int
     type_breakdown: dict[str, int]
     mapped_mountains: int
-    unmapped_regions: int
     generated_at: str
+    total_mountains: int | None = None
+    unmapped_accident_count: int | None = None
+    match_rate_pct: float | None = None
+    data_source: str | None = None
+    source_breakdown: dict[str, int] | None = None
+    match_methods: dict[str, int] | None = None
+    status_count: int | None = None
+    rescue_count: int | None = None
+    unmapped_regions: int | None = None
 
 
 class RiskMapPoint(BaseModel):
