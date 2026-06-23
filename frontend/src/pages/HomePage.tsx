@@ -61,11 +61,14 @@ export function HomePage() {
             { label: '사고 발생 건수', value: fmtNum(getRescueCount(overview)) },
             { label: '산악사고 발생 산', value: `${getMappedCount(overview)}개` },
             { label: '평균 위험지수', value: avgRiskScore != null ? `${avgRiskScore}점` : '—' },
-            { label: '데이터 출처 : 소방청(공공데이터 포털)', textOnly: true },
+            { source: true, value: '출처 : 소방청', subValue: '(공공데이터 포털)' },
           ].map((item) => (
-            <div key={item.label} className="rounded-xl border bg-white p-4 text-center shadow-sm">
-              {item.textOnly ? (
-                <p className="text-sm font-semibold leading-snug text-emerald-700">{item.label}</p>
+            <div key={item.label ?? item.value} className="rounded-xl border bg-white p-4 text-center shadow-sm">
+              {'source' in item && item.source ? (
+                <>
+                  <div className="text-2xl font-bold text-emerald-700">{item.value}</div>
+                  <div className="mt-1 text-sm font-semibold text-slate-900">{item.subValue}</div>
+                </>
               ) : (
                 <>
                   <div className="text-2xl font-bold text-emerald-700">{item.value}</div>
