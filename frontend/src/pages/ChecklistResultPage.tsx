@@ -11,9 +11,9 @@ export function ChecklistResultPage() {
 
   useEffect(() => {
     const raw = sessionStorage.getItem('checklist_result');
-    const code = sessionStorage.getItem('checklist_mountain_code');
+    const mid = sessionStorage.getItem('checklist_mountain_id');
     if (raw) setResult(JSON.parse(raw));
-    if (code) getMountain(code).then((m) => setMountain(m ?? null));
+    if (mid) getMountain(Number(mid)).then((m) => setMountain(m ?? null));
   }, []);
 
   if (!result) {
@@ -58,12 +58,15 @@ export function ChecklistResultPage() {
       </section>
 
       <div className="flex flex-wrap gap-3">
-        <Link to="/checklist" className="flex-1 rounded-xl border py-3 text-center font-medium hover:bg-slate-50">
+        <Link
+          to="/checklist"
+          className="flex-1 rounded-xl border py-3 text-center font-medium hover:bg-slate-50"
+        >
           다시 체크
         </Link>
         {mountain && (
           <Link
-            to={`/mountains/${mountain.mountain_code}`}
+            to={`/mountains/${mountain.id}`}
             className="flex-1 rounded-xl bg-emerald-600 py-3 text-center font-medium text-white hover:bg-emerald-700"
           >
             {mountain.name} 상세 보기

@@ -8,7 +8,7 @@ export function StatsPage() {
   const [topMountains, setTopMountains] = useState<Mountain[]>([]);
 
   useEffect(() => {
-    Promise.all([getOverview(), getMountains({ size: 5000 })]).then(([ov, mountains]) => {
+    Promise.all([getOverview(), getMountains()]).then(([ov, mountains]) => {
       setOverview(ov);
       setTopMountains(
         [...mountains]
@@ -28,7 +28,7 @@ export function StatsPage() {
   }));
 
   const mountainData = topMountains.map((m) => ({
-    name: m.name.length > 8 ? `${m.name.slice(0, 8)}…` : m.name,
+    name: m.name,
     accidents: m.stats.accident_count,
     risk: m.risk_score,
   }));
@@ -38,36 +38,23 @@ export function StatsPage() {
       <div>
         <h1 className="text-2xl font-bold">전국 사고 통계</h1>
         <p className="text-slate-600">
-          통합 CSV {overview.total_accidents.toLocaleString()}건 · 매칭률 {overview.match_rate_pct}%
+          소방청 데이터 {overview.generated_at.slice(0, 10)} 기준
         </p>
       </div>
 
       <div className="grid grid-cols-2 gap-3 md:grid-cols-4">
         {[
           { label: '총 사고', value: overview.total_accidents },
-          { label: '등록 산', value: overview.total_mountains },
-          { label: '사고 매핑 산', value: overview.mapped_mountains },
-          { label: '미매핑 사고', value: overview.unmapped_accident_count },
+          { label: '2024 현황', value: overview.status_count },
+          { label: '2020 구조활동', value: overview.rescue_count },
+          { label: '분석 산', value: overview.mapped_mountains },
         ].map((item) => (
           <div key={item.label} className="rounded-xl border bg-white p-4 text-center shadow-sm">
-            <div className="text-2xl font-bold text-emerald-700">
-              {item.value.toLocaleString()}
-            </div>
+            <div className="text-2xl font-bold text-emerald-700">{item.value.toLocaleString()}</div>
             <div className="text-sm text-slate-500">{item.label}</div>
           </div>
         ))}
       </div>
-
-      <section className="rounded-xl border bg-white p-5 shadow-sm">
-        <h2 className="mb-4 font-bold">데이터 출처별 건수</h2>
-        <div className="flex flex-wrap gap-2">
-          {Object.entries(overview.source_breakdown).map(([src, cnt]) => (
-            <span key={src} className="rounded-full bg-slate-100 px-3 py-1 text-sm">
-              {src}: {cnt.toLocaleString()}
-            </span>
-          ))}
-        </div>
-      </section>
 
       <section className="rounded-xl border bg-white p-5 shadow-sm">
         <h2 className="mb-4 font-bold">사고 유형별 분포</h2>
