@@ -27,7 +27,7 @@ export function AccidentTypesPage() {
               <span className="text-3xl">{t.icon_emoji}</span>
               <div className="flex-1">
                 <div className="font-bold">{t.name_ko}</div>
-                <div className="text-sm text-slate-500">전국 약 {t.share_pct}% · {t.description.slice(0, 40)}...</div>
+                <div className="text-sm text-slate-500">전체 약 {t.share_pct}% · {t.description.slice(0, 40)}...</div>
               </div>
               <span className="text-slate-400">{open === t.code ? '▲' : '▼'}</span>
             </button>
