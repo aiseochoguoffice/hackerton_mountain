@@ -47,7 +47,7 @@ def list_mountains(
 
 
 @router.get("/mountains/{mountain_id}", response_model=MountainDetail)
-def get_mountain(mountain_id: int) -> MountainDetail:
+def get_mountain(mountain_id: str) -> MountainDetail:
     mountain = get_mountain_by_id(mountain_id)
     if not mountain:
         raise HTTPException(status_code=404, detail="산을 찾을 수 없습니다.")

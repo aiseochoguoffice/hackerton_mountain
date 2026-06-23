@@ -11,7 +11,7 @@ export interface MountainStats {
 }
 
 export interface Mountain {
-  id: number;
+  id: string | number;
   name: string;
   region_city: string;
   region_district: string;
@@ -74,7 +74,7 @@ export interface ChecklistResult {
 }
 
 export interface RiskMapPoint {
-  id: number | string;
+  id: string | number;
   name: string;
   latitude: number;
   longitude: number;

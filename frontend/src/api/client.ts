@@ -10,15 +10,24 @@ import type {
 const API_BASE = import.meta.env.VITE_API_BASE_URL || '';
 const USE_STATIC = !API_BASE;
 
+async function fetchStatic<T>(staticPath: string): Promise<T> {
+  const res = await fetch(staticPath);
+  if (!res.ok) throw new Error(`데이터 로드 실패: ${staticPath}`);
+  return res.json();
+}
+
 async function fetchJson<T>(apiPath: string, staticPath: string): Promise<T> {
   if (USE_STATIC) {
-    const res = await fetch(staticPath);
-    if (!res.ok) throw new Error(`데이터 로드 실패: ${staticPath}`);
-    return res.json();
+    return fetchStatic<T>(staticPath);
   }
-  const res = await fetch(`${API_BASE}${apiPath}`);
-  if (!res.ok) throw new Error(`API 오류: ${apiPath}`);
-  return res.json();
+  try {
+    const res = await fetch(`${API_BASE}${apiPath}`);
+    if (!res.ok) throw new Error(`API 오류: ${apiPath} (${res.status})`);
+    return res.json();
+  } catch {
+    console.warn(`API 실패, 정적 JSON fallback: ${staticPath}`);
+    return fetchStatic<T>(staticPath);
+  }
 }
 
 export async function getMountains(params?: {
@@ -26,40 +35,51 @@ export async function getMountains(params?: {
   region?: string;
   risk_level?: string;
 }): Promise<Mountain[]> {
+  let data: Mountain[];
   if (USE_STATIC) {
-    let data = await fetchJson<Mountain[]>('/api/mountains', '/data/mountain_stats.json');
-    if (params?.q) {
-      const q = params.q.toLowerCase();
-      data = data.filter(
-        (m) =>
-          m.name.toLowerCase().includes(q) ||
-          m.aliases?.some((a) => a.toLowerCase().includes(q)),
-      );
-    }
-    if (params?.region) {
-      data = data.filter((m) => m.region_city.includes(params.region!));
-    }
-    if (params?.risk_level) {
-      data = data.filter((m) => m.risk_level === params.risk_level!.toUpperCase());
-    }
-    return data;
+    data = await fetchStatic<Mountain[]>('/data/mountain_stats.json');
+  } else {
+    const search = new URLSearchParams();
+    if (params?.q) search.set('q', params.q);
+    if (params?.region) search.set('region', params.region);
+    if (params?.risk_level) search.set('risk_level', params.risk_level);
+    const qs = search.toString();
+    data = await fetchJson<Mountain[]>(
+      `/api/mountains${qs ? `?${qs}` : ''}`,
+      '/data/mountain_stats.json',
+    );
   }
-  const search = new URLSearchParams();
-  if (params?.q) search.set('q', params.q);
-  if (params?.region) search.set('region', params.region);
-  if (params?.risk_level) search.set('risk_level', params.risk_level);
-  const qs = search.toString();
-  return fetchJson(`/api/mountains${qs ? `?${qs}` : ''}`, '/data/mountain_stats.json');
+  if (params?.q) {
+    const q = params.q.toLowerCase();
+    data = data.filter(
+      (m) =>
+        m.name.toLowerCase().includes(q) ||
+        m.aliases?.some((a) => a.toLowerCase().includes(q)),
+    );
+  }
+  if (params?.region) {
+    data = data.filter((m) => m.region_city.includes(params.region!));
+  }
+  if (params?.risk_level) {
+    data = data.filter((m) => m.risk_level === params.risk_level!.toUpperCase());
+  }
+  return data;
 }
 
-export async function getMountain(id: number): Promise<Mountain | undefined> {
+export async function getMountain(id: string | number): Promise<Mountain | undefined> {
+  const key = String(id);
   if (USE_STATIC) {
-    const all = await fetchJson<Mountain[]>('/api/mountains', '/data/mountain_stats.json');
-    return all.find((m) => m.id === id);
+    const all = await fetchStatic<Mountain[]>('/data/mountain_stats.json');
+    return all.find((m) => String(m.id) === key);
   }
-  const res = await fetch(`${API_BASE}/api/mountains/${id}`);
-  if (!res.ok) return undefined;
-  return res.json();
+  try {
+    const res = await fetch(`${API_BASE}/api/mountains/${encodeURIComponent(key)}`);
+    if (res.ok) return res.json();
+  } catch {
+    /* fallback below */
+  }
+  const all = await fetchStatic<Mountain[]>('/data/mountain_stats.json');
+  return all.find((m) => String(m.id) === key);
 }
 
 export async function getAccidentTypes(): Promise<AccidentType[]> {
@@ -77,7 +97,7 @@ export async function getOverview(): Promise<Overview> {
 
 export async function getRiskMap(): Promise<RiskMapPoint[]> {
   if (USE_STATIC) {
-    const mountains = await fetchJson<Mountain[]>('/api/mountains', '/data/mountain_stats.json');
+    const mountains = await fetchStatic<Mountain[]>('/data/mountain_stats.json');
     return mountains
       .filter((m) => m.stats.accident_count > 0)
       .map((m) => ({
@@ -95,26 +115,30 @@ export async function getRiskMap(): Promise<RiskMapPoint[]> {
 
 export async function evaluateChecklist(
   answers: Record<string, boolean>,
-  mountainId?: number,
+  mountainId?: string | number,
 ): Promise<ChecklistResult> {
   if (USE_STATIC) {
     return evaluateChecklistLocal(answers, mountainId);
   }
-  const res = await fetch(`${API_BASE}/api/checklist/evaluate`, {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({ answers, mountain_id: mountainId ?? null }),
-  });
-  if (!res.ok) throw new Error('체크리스트 평가 실패');
-  return res.json();
+  try {
+    const res = await fetch(`${API_BASE}/api/checklist/evaluate`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ answers, mountain_id: mountainId ?? null }),
+    });
+    if (res.ok) return res.json();
+  } catch {
+    /* fallback */
+  }
+  return evaluateChecklistLocal(answers, mountainId);
 }
 
 async function evaluateChecklistLocal(
   answers: Record<string, boolean>,
-  mountainId?: number,
+  mountainId?: string | number,
 ): Promise<ChecklistResult> {
   const items = await getChecklistItems();
-  const mountains = mountainId ? await getMountain(mountainId) : undefined;
+  const mountains = mountainId != null ? await getMountain(mountainId) : undefined;
   const maxScore = items.reduce((s, i) => s + i.weight, 0);
   let earned = 0;
   const advice: string[] = [];

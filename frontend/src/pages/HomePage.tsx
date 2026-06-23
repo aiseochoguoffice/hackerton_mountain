@@ -31,8 +31,7 @@ export function HomePage() {
       <section className="rounded-2xl bg-gradient-to-br from-emerald-600 to-teal-700 p-6 text-white md:p-10">
         <h1 className="text-2xl font-bold md:text-4xl">산행 전, 데이터로 위험을 확인하세요</h1>
         <p className="mt-3 max-w-2xl text-emerald-50 md:text-lg">
-          소방청 전국 산악사고 {fmtNum(overview?.total_accidents)}건 분석 기반
-          산별 위험지수·사고 유형·맞춤 체크리스트를 제공합니다.
+          소방청 전국 산악사고 {fmtNum(overview?.total_accidents)}건 분석 기반 산별 위험지수·사고 유형·맞춤 체크리스트를 제공합니다.
         </p>
         <div className="mt-6 flex flex-wrap gap-3">
           <Link

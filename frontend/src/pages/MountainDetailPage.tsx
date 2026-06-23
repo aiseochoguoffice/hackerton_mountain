@@ -15,7 +15,7 @@ export function MountainDetailPage() {
 
   useEffect(() => {
     if (!id) return;
-    Promise.all([getMountain(Number(id)), getAccidentTypes()]).then(([m, t]) => {
+    Promise.all([getMountain(id), getAccidentTypes()]).then(([m, t]) => {
       setMountain(m ?? null);
       setTypes(t);
     });

@@ -4,7 +4,7 @@ from __future__ import annotations
 
 from typing import Any
 
-from pydantic import BaseModel, Field
+from pydantic import BaseModel, ConfigDict, Field
 
 
 class MountainStats(BaseModel):
@@ -18,13 +18,15 @@ class MountainStats(BaseModel):
 
 
 class MountainSummary(BaseModel):
-    id: int
+    model_config = ConfigDict(extra="ignore")
+
+    id: int | str
     name: str
     region_city: str
     region_district: str
     latitude: float
     longitude: float
-    elevation_m: int
+    elevation_m: float
     difficulty: str
     risk_score: int
     risk_level: str
@@ -59,7 +61,7 @@ class ChecklistItem(BaseModel):
 
 
 class ChecklistEvaluateRequest(BaseModel):
-    mountain_id: int | None = None
+    mountain_id: int | str | None = None
     answers: dict[str, bool] = Field(default_factory=dict)
 
 
