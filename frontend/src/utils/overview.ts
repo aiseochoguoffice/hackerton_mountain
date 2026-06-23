@@ -19,3 +19,11 @@ export function getUnmappedLabel(overview: Partial<Overview>): string {
 export function getMappedCount(overview: Partial<Overview>): number {
   return overview.mapped_mountains ?? overview.total_mountains ?? 0;
 }
+
+/** 사고가 있는 산들의 위험지수 평균 */
+export function getAverageRiskScore(mountains: { risk_score: number; stats: { accident_count: number } }[]): number | null {
+  const active = mountains.filter((m) => m.stats.accident_count > 0);
+  if (active.length === 0) return null;
+  const sum = active.reduce((acc, m) => acc + m.risk_score, 0);
+  return Math.round((sum / active.length) * 10) / 10;
+}

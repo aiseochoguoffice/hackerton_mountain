@@ -3,19 +3,21 @@ import { Link } from 'react-router-dom';
 import { getAccidentTypes, getMountains, getOverview } from '../api/client';
 import { MountainCard } from '../components/MountainCard';
 import { fmtNum } from '../utils/format';
-import { getMappedCount, getRescueCount, getUnmappedLabel } from '../utils/overview';
+import { getAverageRiskScore, getMappedCount, getRescueCount } from '../utils/overview';
 import type { AccidentType, Mountain, Overview } from '../types';
 import { TYPE_LABELS } from '../types';
 
 export function HomePage() {
   const [overview, setOverview] = useState<Overview | null>(null);
   const [topMountains, setTopMountains] = useState<Mountain[]>([]);
+  const [allMountains, setAllMountains] = useState<Mountain[]>([]);
   const [types, setTypes] = useState<AccidentType[]>([]);
 
   useEffect(() => {
     Promise.all([getOverview(), getMountains(), getAccidentTypes()]).then(
       ([ov, mountains, accidentTypes]) => {
         setOverview(ov);
+        setAllMountains(mountains);
         setTopMountains(
           [...mountains]
             .filter((m) => m.stats.accident_count > 0)
@@ -26,6 +28,8 @@ export function HomePage() {
       },
     );
   }, []);
+
+  const avgRiskScore = getAverageRiskScore(allMountains);
 
   return (
     <div className="space-y-8">
@@ -54,14 +58,20 @@ export function HomePage() {
       {overview && (
         <section className="grid grid-cols-2 gap-3 md:grid-cols-4">
           {[
-            { label: '구조활동 사고', value: fmtNum(getRescueCount(overview)) },
-            { label: '분석 산', value: `${getMappedCount(overview)}개` },
-            { label: '미매핑', value: getUnmappedLabel(overview) },
-            { label: '데이터 기준', value: '2020.12' },
+            { label: '사고 발생 건수', value: fmtNum(getRescueCount(overview)) },
+            { label: '산악사고 발생 산', value: `${getMappedCount(overview)}개` },
+            { label: '평균 위험지수', value: avgRiskScore != null ? `${avgRiskScore}점` : '—' },
+            { label: '데이터 출처 : 소방청(공공데이터 포털)', textOnly: true },
           ].map((item) => (
             <div key={item.label} className="rounded-xl border bg-white p-4 text-center shadow-sm">
-              <div className="text-2xl font-bold text-emerald-700">{item.value}</div>
-              <div className="text-sm text-slate-500">{item.label}</div>
+              {item.textOnly ? (
+                <p className="text-sm font-semibold leading-snug text-emerald-700">{item.label}</p>
+              ) : (
+                <>
+                  <div className="text-2xl font-bold text-emerald-700">{item.value}</div>
+                  <div className="text-sm text-slate-500">{item.label}</div>
+                </>
+              )}
             </div>
           ))}
         </section>
@@ -100,7 +110,7 @@ export function HomePage() {
 
       {overview?.type_breakdown && (
         <section className="rounded-xl border bg-white p-5 shadow-sm">
-          <h2 className="mb-3 text-lg font-bold">전국 사고 유형 (실측)</h2>
+          <h2 className="mb-3 text-lg font-bold">전국 사고 유형</h2>
           <div className="flex flex-wrap gap-2">
             {Object.entries(overview.type_breakdown).map(([code, count]) => (
               <span key={code} className="rounded-full bg-slate-100 px-3 py-1 text-sm">
