@@ -57,11 +57,29 @@ npm run dev
 
 ## Vercel 배포
 
-1. [Vercel](https://vercel.com)에서 GitHub 저장소 연결
-2. **Root Directory**: `frontend`
-3. Build Command: `npm run build`
-4. Output Directory: `dist`
-5. (선택) Environment Variable: `VITE_API_BASE_URL` = 백엔드 URL
+### 방법 A — Root Directory 미설정 (권장, 자동)
+
+저장소 루트의 `vercel.json`이 빌드·출력 경로를 자동 설정합니다.
+
+1. [Vercel](https://vercel.com) → GitHub `hackerton_mountain` Import
+2. **Root Directory**: *(비워두기 — 저장소 루트)*
+3. Framework Preset: **Other** (또는 Vite 자동 감지)
+4. Deploy
+
+### 방법 B — Root Directory = `frontend`
+
+1. Root Directory: `frontend`
+2. Build Command: `npm run build`
+3. Output Directory: `dist`
+4. `frontend/vercel.json`의 SPA rewrite 적용됨
+
+### 환경변수 (Render API 연동 시)
+
+| Key | Value |
+|-----|-------|
+| `VITE_API_BASE_URL` | `https://your-app.onrender.com` |
+
+> 미설정 시 `frontend/public/data/*.json` 정적 파일 사용
 
 ## 주요 기능
 

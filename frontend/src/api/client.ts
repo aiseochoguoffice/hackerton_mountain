@@ -8,7 +8,7 @@ import type {
 } from '../types';
 
 const API_BASE = import.meta.env.VITE_API_BASE_URL || '';
-const USE_STATIC = !API_BASE || import.meta.env.PROD;
+const USE_STATIC = !API_BASE;
 
 async function fetchJson<T>(apiPath: string, staticPath: string): Promise<T> {
   if (USE_STATIC) {
