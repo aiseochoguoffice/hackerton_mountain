@@ -409,6 +409,11 @@ def main() -> None:
     for row in rescue_rows:
         national_types[normalize_cause(row.get("사고원인", ""))] += 1
 
+    type_total = sum(national_types.values()) or 1
+    for t in accident_types:
+        cnt = national_types.get(t["code"], 0)
+        t["share_pct"] = round(cnt / type_total * 100)
+
     overview = {
         "total_accidents": national_total,
         "status_count": len(status_rows),
@@ -423,6 +428,7 @@ def main() -> None:
     save_json(JSON_DIR / "mountain_stats.json", output_mountains)
     save_json(JSON_DIR / "region_clusters.json", region_clusters)
     save_json(JSON_DIR / "overview.json", overview)
+    save_json(JSON_DIR / "accident_types.json", accident_types)
 
     frontend_public = ROOT / "frontend" / "public" / "data"
     save_json(frontend_public / "mountain_stats.json", output_mountains)

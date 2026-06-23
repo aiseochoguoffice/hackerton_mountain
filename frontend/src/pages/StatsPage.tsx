@@ -42,7 +42,7 @@ export function StatsPage() {
       <div>
         <h1 className="text-2xl font-bold">구조활동 사고 통계</h1>
         <p className="text-slate-600">
-          소방청 구조활동현황 (2020.12) · {overview.generated_at?.slice(0, 10) ?? '—'} 집계
+          소방청 구조활동현황 · {overview.generated_at?.slice(0, 10) ?? '—'} 집계
         </p>
       </div>
 
