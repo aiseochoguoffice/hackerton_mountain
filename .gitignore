@@ -1,0 +1,28 @@
+# 환경변수
+.env
+.env.local
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+.pytest_cache/
+
+# 데이터 (원본 CSV, API 키)
+data/*.csv
+data/*api*.txt
+
+# Node
+node_modules/
+frontend/dist/
+frontend/.vercel/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db

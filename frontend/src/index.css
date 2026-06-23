@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+:root {
+  --color-low: #22c55e;
+  --color-medium: #eab308;
+  --color-high: #f97316;
+  --color-very-high: #ef4444;
+}
+
+body {
+  @apply bg-slate-50 text-slate-900 antialiased;
+  font-family: "Pretendard", "Apple SD Gothic Neo", "Noto Sans KR", sans-serif;
+}
+
+.leaflet-container {
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}

@@ -1,0 +1,3119 @@
+[
+  {
+    "id": 32,
+    "name": "민둥산",
+    "region_city": "경기도",
+    "region_district": "가평군",
+    "latitude": 37.8833,
+    "longitude": 127.5167,
+    "elevation_m": 1031,
+    "difficulty": "MODERATE",
+    "aliases": [],
+    "match_dong": [
+      "청평면",
+      "북면"
+    ],
+    "match_districts": [
+      "가평군",
+      "춘천시"
+    ],
+    "risk_score": 60,
+    "risk_level": "MEDIUM",
+    "stats": {
+      "accident_count": 1057,
+      "type_breakdown": {
+        "SLIP_FALL": 247,
+        "OTHER": 281,
+        "ILLNESS": 163,
+        "LOST": 366
+      },
+      "hour_breakdown": {
+        "9": 49,
+        "15": 106,
+        "12": 82,
+        "17": 104,
+        "19": 54,
+        "10": 45,
+        "11": 59,
+        "7": 35,
+        "13": 96,
+        "16": 97,
+        "14": 127,
+        "8": 18,
+        "6": 7,
+        "18": 89,
+        "5": 1,
+        "21": 18,
+        "2": 2,
+        "4": 3,
+        "23": 7,
+        "0": 7,
+        "22": 8,
+        "20": 38,
+        "1": 4,
+        "3": 1
+      },
+      "season_breakdown": {
+        "겨울": 154,
+        "가을": 408,
+        "여름": 297,
+        "봄": 198
+      },
+      "rescued_total": 755,
+      "air_rescue_count": 49,
+      "air_rescue_ratio": 0.046
+    },
+    "caution_notes": "주요 사고 유형: 일반조난 (35%) | 사고 집중 시간: 14시대 (12%) | 사고 집중 계절: 가을 (39%) | 등산로·일몰 시간 확인, GPS·지도 필수",
+    "risk_updated_at": "2026-06-23T11:03:40.622174"
+  },
+  {
+    "id": 48,
+    "name": "민둥산(강원)",
+    "region_city": "강원특별자치도",
+    "region_district": "홍천군",
+    "latitude": 37.6833,
+    "longitude": 127.8833,
+    "elevation_m": 1118,
+    "difficulty": "MODERATE",
+    "aliases": [],
+    "match_dong": [
+      "내면",
+      "서면"
+    ],
+    "match_districts": [
+      "홍천군",
+      "춘천시"
+    ],
+    "risk_score": 48,
+    "risk_level": "MEDIUM",
+    "stats": {
+      "accident_count": 757,
+      "type_breakdown": {
+        "SLIP_FALL": 185,
+        "OTHER": 240,
+        "ILLNESS": 104,
+        "LOST": 228
+      },
+      "hour_breakdown": {
+        "12": 48,
+        "18": 63,
+        "10": 40,
+        "9": 40,
+        "16": 67,
+        "14": 90,
+        "13": 69,
+        "11": 56,
+        "17": 84,
+        "8": 26,
+        "2": 2,
+        "19": 35,
+        "20": 26,
+        "15": 66,
+        "6": 2,
+        "5": 8,
+        "22": 4,
+        "7": 9,
+        "21": 16,
+        "3": 3,
+        "0": 1,
+        "4": 1,
+        "23": 1
+      },
+      "season_breakdown": {
+        "가을": 291,
+        "겨울": 126,
+        "여름": 205,
+        "봄": 135
+      },
+      "rescued_total": 514,
+      "air_rescue_count": 16,
+      "air_rescue_ratio": 0.021
+    },
+    "caution_notes": "주요 사고 유형: 기타산악 (32%) | 사고 집중 시간: 14시대 (12%) | 사고 집중 계절: 가을 (38%) | 보호장비 착용, 낙석·벌 출몰 구간 주의",
+    "risk_updated_at": "2026-06-23T11:03:40.622322"
+  },
+  {
+    "id": 47,
+    "name": "용추산",
+    "region_city": "강원특별자치도",
+    "region_district": "춘천시",
+    "latitude": 37.9167,
+    "longitude": 127.7333,
+    "elevation_m": 1058,
+    "difficulty": "MODERATE",
+    "aliases": [],
+    "match_dong": [
+      "동면",
+      "남면"
+    ],
+    "match_districts": [
+      "춘천시",
+      "홍천군"
+    ],
+    "risk_score": 46,
+    "risk_level": "MEDIUM",
+    "stats": {
+      "accident_count": 678,
+      "type_breakdown": {
+        "SLIP_FALL": 172,
+        "OTHER": 209,
+        "ILLNESS": 46,
+        "LOST": 251
+      },
+      "hour_breakdown": {
+        "8": 15,
+        "14": 73,
+        "15": 78,
+        "16": 67,
+        "13": 73,
+        "10": 40,
+        "6": 8,
+        "12": 47,
+        "11": 69,
+        "20": 7,
+        "17": 50,
+        "18": 44,
+        "23": 5,
+        "9": 23,
+        "7": 18,
+        "19": 39,
+        "22": 6,
+        "2": 2,
+        "21": 8,
+        "5": 3,
+        "3": 2,
+        "1": 1
+      },
+      "season_breakdown": {
+        "겨울": 102,
+        "가을": 271,
+        "여름": 141,
+        "봄": 164
+      },
+      "rescued_total": 400,
+      "air_rescue_count": 13,
+      "air_rescue_ratio": 0.019
+    },
+    "caution_notes": "주요 사고 유형: 일반조난 (37%) | 사고 집중 시간: 15시대 (12%) | 사고 집중 계절: 가을 (40%) | 등산로·일몰 시간 확인, GPS·지도 필수",
+    "risk_updated_at": "2026-06-23T11:03:40.622310"
+  },
+  {
+    "id": 3,
+    "name": "관악산",
+    "region_city": "서울특별시",
+    "region_district": "관악구",
+    "latitude": 37.4447,
+    "longitude": 126.9639,
+    "elevation_m": 632,
+    "difficulty": "EASY",
+    "aliases": [],
+    "match_dong": [
+      "신림동",
+      "봉천동",
+      "낙성대동"
+    ],
+    "match_districts": [
+      "관악구",
+      "금천구",
+      "동작구"
+    ],
+    "risk_score": 43,
+    "risk_level": "MEDIUM",
+    "stats": {
+      "accident_count": 657,
+      "type_breakdown": {
+        "SLIP_FALL": 217,
+        "OTHER": 133,
+        "ILLNESS": 68,
+        "LOST": 239
+      },
+      "hour_breakdown": {
+        "11": 54,
+        "8": 16,
+        "9": 25,
+        "15": 88,
+        "16": 59,
+        "17": 47,
+        "12": 52,
+        "14": 67,
+        "13": 84,
+        "6": 4,
+        "10": 28,
+        "18": 44,
+        "19": 34,
+        "7": 6,
+        "0": 3,
+        "21": 12,
+        "20": 20,
+        "2": 2,
+        "23": 5,
+        "22": 3,
+        "5": 2,
+        "3": 1,
+        "1": 1
+      },
+      "season_breakdown": {
+        "겨울": 135,
+        "가을": 179,
+        "여름": 160,
+        "봄": 183
+      },
+      "rescued_total": 571,
+      "air_rescue_count": 26,
+      "air_rescue_ratio": 0.04
+    },
+    "caution_notes": "주요 사고 유형: 일반조난 (36%) | 사고 집중 시간: 15시대 (13%) | 사고 집중 계절: 봄 (28%) | 등산로·일몰 시간 확인, GPS·지도 필수",
+    "risk_updated_at": "2026-06-23T11:03:40.621889"
+  },
+  {
+    "id": 2,
+    "name": "도봉산",
+    "region_city": "서울특별시",
+    "region_district": "도봉구",
+    "latitude": 37.7012,
+    "longitude": 127.0156,
+    "elevation_m": 740,
+    "difficulty": "MODERATE",
+    "aliases": [],
+    "match_dong": [
+      "도봉동",
+      "방학동",
+      "쌍문동"
+    ],
+    "match_districts": [
+      "도봉구",
+      "노원구"
+    ],
+    "risk_score": 41,
+    "risk_level": "MEDIUM",
+    "stats": {
+      "accident_count": 464,
+      "type_breakdown": {
+        "SLIP_FALL": 241,
+        "OTHER": 125,
+        "ILLNESS": 55,
+        "LOST": 43
+      },
+      "hour_breakdown": {
+        "16": 48,
+        "10": 16,
+        "15": 64,
+        "14": 85,
+        "13": 56,
+        "22": 4,
+        "17": 23,
+        "12": 73,
+        "18": 15,
+        "11": 19,
+        "7": 8,
+        "0": 1,
+        "20": 6,
+        "8": 7,
+        "19": 19,
+        "9": 13,
+        "6": 1,
+        "21": 2,
+        "23": 2,
+        "3": 1,
+        "1": 1
+      },
+      "season_breakdown": {
+        "겨울": 61,
+        "가을": 191,
+        "여름": 101,
+        "봄": 111
+      },
+      "rescued_total": 340,
+      "air_rescue_count": 35,
+      "air_rescue_ratio": 0.075
+    },
+    "caution_notes": "주요 사고 유형: 실족추락 (52%) | 사고 집중 시간: 14시대 (18%) | 사고 집중 계절: 가을 (41%) | 미끄럼 방지 등산화 착용, 우천·결빙 시 등산 자제",
+    "risk_updated_at": "2026-06-23T11:03:40.621872"
+  },
+  {
+    "id": 8,
+    "name": "안산",
+    "region_city": "서울특별시",
+    "region_district": "서대문구",
+    "latitude": 37.5722,
+    "longitude": 126.9456,
+    "elevation_m": 295,
+    "difficulty": "EASY",
+    "aliases": [
+      "안산자연공원"
+    ],
+    "match_dong": [
+      "봉원동",
+      "홍은동"
+    ],
+    "match_districts": [
+      "서대문구",
+      "은평구"
+    ],
+    "risk_score": 40,
+    "risk_level": "MEDIUM",
+    "stats": {
+      "accident_count": 555,
+      "type_breakdown": {
+        "SLIP_FALL": 211,
+        "OTHER": 193,
+        "ILLNESS": 53,
+        "LOST": 98
+      },
+      "hour_breakdown": {
+        "11": 52,
+        "15": 51,
+        "13": 55,
+        "17": 39,
+        "18": 42,
+        "19": 24,
+        "9": 26,
+        "10": 51,
+        "16": 49,
+        "12": 51,
+        "14": 62,
+        "8": 20,
+        "21": 4,
+        "7": 6,
+        "0": 1,
+        "20": 14,
+        "22": 3,
+        "6": 2,
+        "2": 1,
+        "23": 1,
+        "5": 1
+      },
+      "season_breakdown": {
+        "겨울": 119,
+        "가을": 169,
+        "여름": 107,
+        "봄": 160
+      },
+      "rescued_total": 401,
+      "air_rescue_count": 27,
+      "air_rescue_ratio": 0.049
+    },
+    "caution_notes": "주요 사고 유형: 실족추락 (38%) | 사고 집중 시간: 14시대 (11%) | 사고 집중 계절: 가을 (30%) | 미끄럼 방지 등산화 착용, 우천·결빙 시 등산 자제",
+    "risk_updated_at": "2026-06-23T11:03:40.621943"
+  },
+  {
+    "id": 25,
+    "name": "무등산",
+    "region_city": "광주광역시",
+    "region_district": "동구",
+    "latitude": 35.1344,
+    "longitude": 126.9889,
+    "elevation_m": 1187,
+    "difficulty": "MODERATE",
+    "aliases": [
+      "무등산국립공원"
+    ],
+    "match_dong": [
+      "지산동",
+      "학운동"
+    ],
+    "match_districts": [
+      "동구",
+      "남구",
+      "북구"
+    ],
+    "risk_score": 37,
+    "risk_level": "MEDIUM",
+    "stats": {
+      "accident_count": 469,
+      "type_breakdown": {
+        "SLIP_FALL": 157,
+        "OTHER": 98,
+        "ILLNESS": 150,
+        "LOST": 64
+      },
+      "hour_breakdown": {
+        "12": 41,
+        "14": 57,
+        "15": 70,
+        "9": 24,
+        "17": 33,
+        "13": 51,
+        "18": 25,
+        "16": 64,
+        "10": 29,
+        "11": 20,
+        "7": 5,
+        "8": 15,
+        "6": 2,
+        "19": 20,
+        "21": 3,
+        "0": 3,
+        "20": 5,
+        "23": 2
+      },
+      "season_breakdown": {
+        "겨울": 123,
+        "가을": 116,
+        "여름": 120,
+        "봄": 110
+      },
+      "rescued_total": 449,
+      "air_rescue_count": 10,
+      "air_rescue_ratio": 0.021
+    },
+    "caution_notes": "주요 사고 유형: 실족추락 (33%) | 사고 집중 시간: 15시대 (15%) | 사고 집중 계절: 겨울 (26%) | 미끄럼 방지 등산화 착용, 우천·결빙 시 등산 자제",
+    "risk_updated_at": "2026-06-23T11:03:40.622107"
+  },
+  {
+    "id": 1,
+    "name": "북한산",
+    "region_city": "서울특별시",
+    "region_district": "강북구",
+    "latitude": 37.6588,
+    "longitude": 126.9778,
+    "elevation_m": 836,
+    "difficulty": "MODERATE",
+    "aliases": [
+      "북한산국립공원"
+    ],
+    "match_dong": [
+      "수유동",
+      "미아동",
+      "번동",
+      "우이동",
+      "삼각산"
+    ],
+    "match_districts": [
+      "강북구",
+      "은평구",
+      "종로구",
+      "성북구"
+    ],
+    "risk_score": 36,
+    "risk_level": "MEDIUM",
+    "stats": {
+      "accident_count": 426,
+      "type_breakdown": {
+        "SLIP_FALL": 160,
+        "OTHER": 111,
+        "ILLNESS": 61,
+        "LOST": 94
+      },
+      "hour_breakdown": {
+        "13": 72,
+        "14": 57,
+        "7": 6,
+        "15": 38,
+        "11": 25,
+        "16": 31,
+        "10": 20,
+        "8": 4,
+        "18": 27,
+        "17": 35,
+        "9": 16,
+        "12": 41,
+        "20": 11,
+        "5": 2,
+        "6": 6,
+        "19": 16,
+        "23": 3,
+        "22": 4,
+        "21": 3,
+        "0": 2,
+        "2": 4,
+        "3": 1,
+        "1": 2
+      },
+      "season_breakdown": {
+        "겨울": 67,
+        "가을": 131,
+        "여름": 84,
+        "봄": 144
+      },
+      "rescued_total": 290,
+      "air_rescue_count": 34,
+      "air_rescue_ratio": 0.08
+    },
+    "caution_notes": "주요 사고 유형: 실족추락 (38%) | 사고 집중 시간: 13시대 (17%) | 사고 집중 계절: 봄 (34%) | 미끄럼 방지 등산화 착용, 우천·결빙 시 등산 자제",
+    "risk_updated_at": "2026-06-23T11:03:40.621826"
+  },
+  {
+    "id": 46,
+    "name": "북악산(경기)",
+    "region_city": "경기도",
+    "region_district": "남양주시",
+    "latitude": 37.6167,
+    "longitude": 127.15,
+    "elevation_m": 836,
+    "difficulty": "MODERATE",
+    "aliases": [],
+    "match_dong": [
+      "화도읍",
+      "진접읍"
+    ],
+    "match_districts": [
+      "남양주시",
+      "구리시"
+    ],
+    "risk_score": 36,
+    "risk_level": "MEDIUM",
+    "stats": {
+      "accident_count": 441,
+      "type_breakdown": {
+        "SLIP_FALL": 103,
+        "OTHER": 139,
+        "ILLNESS": 38,
+        "LOST": 161
+      },
+      "hour_breakdown": {
+        "11": 37,
+        "13": 57,
+        "15": 34,
+        "12": 34,
+        "9": 16,
+        "18": 38,
+        "16": 37,
+        "14": 49,
+        "8": 17,
+        "10": 31,
+        "17": 45,
+        "19": 21,
+        "6": 1,
+        "21": 7,
+        "23": 2,
+        "20": 8,
+        "5": 1,
+        "22": 2,
+        "7": 3,
+        "2": 1
+      },
+      "season_breakdown": {
+        "겨울": 71,
+        "가을": 167,
+        "여름": 84,
+        "봄": 119
+      },
+      "rescued_total": 309,
+      "air_rescue_count": 20,
+      "air_rescue_ratio": 0.045
+    },
+    "caution_notes": "주요 사고 유형: 일반조난 (37%) | 사고 집중 시간: 13시대 (13%) | 사고 집중 계절: 가을 (38%) | 등산로·일몰 시간 확인, GPS·지도 필수",
+    "risk_updated_at": "2026-06-23T11:03:40.622301"
+  },
+  {
+    "id": 13,
+    "name": "설악산",
+    "region_city": "강원특별자치도",
+    "region_district": "속초시",
+    "latitude": 38.1195,
+    "longitude": 128.4653,
+    "elevation_m": 1708,
+    "difficulty": "HARD",
+    "aliases": [
+      "설악산국립공원"
+    ],
+    "match_dong": [
+      "설악동",
+      "조양동"
+    ],
+    "match_districts": [
+      "속초시",
+      "인제군",
+      "양양군",
+      "고성군"
+    ],
+    "risk_score": 33,
+    "risk_level": "MEDIUM",
+    "stats": {
+      "accident_count": 340,
+      "type_breakdown": {
+        "SLIP_FALL": 115,
+        "OTHER": 74,
+        "ILLNESS": 87,
+        "LOST": 64
+      },
+      "hour_breakdown": {
+        "12": 26,
+        "8": 11,
+        "15": 40,
+        "10": 19,
+        "11": 23,
+        "9": 13,
+        "14": 32,
+        "16": 26,
+        "17": 23,
+        "13": 28,
+        "7": 2,
+        "5": 1,
+        "18": 30,
+        "4": 7,
+        "19": 19,
+        "6": 2,
+        "21": 9,
+        "20": 17,
+        "3": 1,
+        "22": 2,
+        "1": 4,
+        "23": 5
+      },
+      "season_breakdown": {
+        "가을": 148,
+        "여름": 117,
+        "봄": 43,
+        "겨울": 32
+      },
+      "rescued_total": 334,
+      "air_rescue_count": 11,
+      "air_rescue_ratio": 0.032
+    },
+    "caution_notes": "주요 사고 유형: 실족추락 (34%) | 사고 집중 시간: 15시대 (12%) | 사고 집중 계절: 가을 (44%) | 미끄럼 방지 등산화 착용, 우천·결빙 시 등산 자제",
+    "risk_updated_at": "2026-06-23T11:03:40.621995"
+  },
+  {
+    "id": 30,
+    "name": "북한산(경기)",
+    "region_city": "경기도",
+    "region_district": "고양시",
+    "latitude": 37.665,
+    "longitude": 126.99,
+    "elevation_m": 836,
+    "difficulty": "MODERATE",
+    "aliases": [],
+    "match_dong": [
+      "덕양구",
+      "행신동",
+      "화정동"
+    ],
+    "match_districts": [
+      "고양시",
+      "파주시",
+      "양주시"
+    ],
+    "risk_score": 33,
+    "risk_level": "MEDIUM",
+    "stats": {
+      "accident_count": 334,
+      "type_breakdown": {
+        "SLIP_FALL": 91,
+        "OTHER": 112,
+        "ILLNESS": 34,
+        "LOST": 97
+      },
+      "hour_breakdown": {
+        "12": 34,
+        "16": 38,
+        "14": 55,
+        "11": 34,
+        "13": 38,
+        "15": 29,
+        "23": 2,
+        "10": 21,
+        "9": 9,
+        "20": 8,
+        "7": 2,
+        "8": 6,
+        "21": 6,
+        "17": 18,
+        "18": 19,
+        "6": 3,
+        "19": 7,
+        "2": 2,
+        "22": 1,
+        "5": 2
+      },
+      "season_breakdown": {
+        "겨울": 66,
+        "가을": 100,
+        "여름": 62,
+        "봄": 106
+      },
+      "rescued_total": 177,
+      "air_rescue_count": 10,
+      "air_rescue_ratio": 0.03
+    },
+    "caution_notes": "주요 사고 유형: 기타산악 (34%) | 사고 집중 시간: 14시대 (16%) | 사고 집중 계절: 봄 (32%) | 보호장비 착용, 낙석·벌 출몰 구간 주의",
+    "risk_updated_at": "2026-06-23T11:03:40.622154"
+  },
+  {
+    "id": 4,
+    "name": "수락산",
+    "region_city": "서울특별시",
+    "region_district": "노원구",
+    "latitude": 37.6769,
+    "longitude": 127.0553,
+    "elevation_m": 637,
+    "difficulty": "EASY",
+    "aliases": [],
+    "match_dong": [
+      "상계동",
+      "월계동",
+      "공릉동"
+    ],
+    "match_districts": [
+      "노원구",
+      "도봉구"
+    ],
+    "risk_score": 32,
+    "risk_level": "MEDIUM",
+    "stats": {
+      "accident_count": 351,
+      "type_breakdown": {
+        "SLIP_FALL": 98,
+        "OTHER": 115,
+        "ILLNESS": 40,
+        "LOST": 98
+      },
+      "hour_breakdown": {
+        "10": 14,
+        "12": 26,
+        "15": 36,
+        "13": 35,
+        "14": 32,
+        "16": 39,
+        "9": 17,
+        "17": 31,
+        "20": 15,
+        "11": 34,
+        "7": 7,
+        "23": 1,
+        "18": 25,
+        "19": 25,
+        "0": 3,
+        "22": 2,
+        "21": 4,
+        "6": 3,
+        "8": 1,
+        "3": 1
+      },
+      "season_breakdown": {
+        "겨울": 48,
+        "가을": 117,
+        "여름": 77,
+        "봄": 109
+      },
+      "rescued_total": 229,
+      "air_rescue_count": 10,
+      "air_rescue_ratio": 0.028
+    },
+    "caution_notes": "주요 사고 유형: 기타산악 (33%) | 사고 집중 시간: 16시대 (11%) | 사고 집중 계절: 가을 (33%) | 보호장비 착용, 낙석·벌 출몰 구간 주의",
+    "risk_updated_at": "2026-06-23T11:03:40.621901"
+  },
+  {
+    "id": 34,
+    "name": "운악산",
+    "region_city": "경기도",
+    "region_district": "포천시",
+    "latitude": 37.8833,
+    "longitude": 127.3167,
+    "elevation_m": 936,
+    "difficulty": "HARD",
+    "aliases": [],
+    "match_dong": [
+      "신북면",
+      "영북면"
+    ],
+    "match_districts": [
+      "포천시",
+      "가평군"
+    ],
+    "risk_score": 31,
+    "risk_level": "MEDIUM",
+    "stats": {
+      "accident_count": 255,
+      "type_breakdown": {
+        "SLIP_FALL": 76,
+        "OTHER": 82,
+        "ILLNESS": 22,
+        "LOST": 75
+      },
+      "hour_breakdown": {
+        "10": 4,
+        "12": 44,
+        "14": 40,
+        "11": 20,
+        "9": 15,
+        "17": 19,
+        "8": 5,
+        "13": 22,
+        "22": 2,
+        "15": 20,
+        "16": 27,
+        "7": 4,
+        "18": 15,
+        "21": 2,
+        "19": 9,
+        "20": 6,
+        "23": 1
+      },
+      "season_breakdown": {
+        "겨울": 38,
+        "가을": 111,
+        "여름": 52,
+        "봄": 54
+      },
+      "rescued_total": 162,
+      "air_rescue_count": 10,
+      "air_rescue_ratio": 0.039
+    },
+    "caution_notes": "주요 사고 유형: 기타산악 (32%) | 사고 집중 시간: 12시대 (17%) | 사고 집중 계절: 가을 (44%) | 보호장비 착용, 낙석·벌 출몰 구간 주의",
+    "risk_updated_at": "2026-06-23T11:03:40.622191"
+  },
+  {
+    "id": 6,
+    "name": "인왕산",
+    "region_city": "서울특별시",
+    "region_district": "종로구",
+    "latitude": 37.5847,
+    "longitude": 126.9592,
+    "elevation_m": 338,
+    "difficulty": "EASY",
+    "aliases": [],
+    "match_dong": [
+      "홍제동",
+      "무악동",
+      "구기동"
+    ],
+    "match_districts": [
+      "종로구",
+      "서대문구"
+    ],
+    "risk_score": 30,
+    "risk_level": "LOW",
+    "stats": {
+      "accident_count": 233,
+      "type_breakdown": {
+        "SLIP_FALL": 107,
+        "OTHER": 71,
+        "ILLNESS": 28,
+        "LOST": 27
+      },
+      "hour_breakdown": {
+        "12": 30,
+        "17": 5,
+        "14": 37,
+        "9": 10,
+        "15": 34,
+        "11": 19,
+        "20": 6,
+        "10": 9,
+        "13": 42,
+        "16": 20,
+        "18": 7,
+        "8": 2,
+        "19": 5,
+        "2": 1,
+        "22": 1,
+        "21": 5
+      },
+      "season_breakdown": {
+        "겨울": 42,
+        "가을": 70,
+        "여름": 64,
+        "봄": 57
+      },
+      "rescued_total": 191,
+      "air_rescue_count": 21,
+      "air_rescue_ratio": 0.09
+    },
+    "caution_notes": "주요 사고 유형: 실족추락 (46%) | 사고 집중 시간: 13시대 (18%) | 사고 집중 계절: 가을 (30%) | 미끄럼 방지 등산화 착용, 우천·결빙 시 등산 자제",
+    "risk_updated_at": "2026-06-23T11:03:40.621924"
+  },
+  {
+    "id": 31,
+    "name": "용문산",
+    "region_city": "경기도",
+    "region_district": "양평군",
+    "latitude": 37.5433,
+    "longitude": 127.5833,
+    "elevation_m": 1157,
+    "difficulty": "MODERATE",
+    "aliases": [],
+    "match_dong": [
+      "용문면",
+      "양서면"
+    ],
+    "match_districts": [
+      "양평군",
+      "여주시"
+    ],
+    "risk_score": 30,
+    "risk_level": "LOW",
+    "stats": {
+      "accident_count": 275,
+      "type_breakdown": {
+        "SLIP_FALL": 53,
+        "OTHER": 92,
+        "ILLNESS": 22,
+        "LOST": 108
+      },
+      "hour_breakdown": {
+        "13": 24,
+        "18": 19,
+        "16": 19,
+        "12": 27,
+        "15": 33,
+        "14": 39,
+        "10": 5,
+        "17": 35,
+        "11": 15,
+        "5": 1,
+        "21": 8,
+        "7": 4,
+        "0": 1,
+        "8": 7,
+        "9": 10,
+        "19": 13,
+        "23": 5,
+        "22": 1,
+        "20": 6,
+        "3": 2,
+        "2": 1
+      },
+      "season_breakdown": {
+        "가을": 108,
+        "여름": 74,
+        "봄": 61,
+        "겨울": 32
+      },
+      "rescued_total": 145,
+      "air_rescue_count": 10,
+      "air_rescue_ratio": 0.036
+    },
+    "caution_notes": "주요 사고 유형: 일반조난 (39%) | 사고 집중 시간: 14시대 (14%) | 사고 집중 계절: 가을 (39%) | 등산로·일몰 시간 확인, GPS·지도 필수",
+    "risk_updated_at": "2026-06-23T11:03:40.622163"
+  },
+  {
+    "id": 12,
+    "name": "한라산",
+    "region_city": "제주특별자치도",
+    "region_district": "제주시",
+    "latitude": 33.3617,
+    "longitude": 126.5292,
+    "elevation_m": 1947,
+    "difficulty": "HARD",
+    "aliases": [
+      "한라산국립공원"
+    ],
+    "match_dong": [
+      "해안동",
+      "조천읍",
+      "애월읍",
+      "대정읍",
+      "남원읍",
+      "성산읍"
+    ],
+    "match_districts": [
+      "제주시",
+      "서귀포시"
+    ],
+    "risk_score": 29,
+    "risk_level": "LOW",
+    "stats": {
+      "accident_count": 282,
+      "type_breakdown": {
+        "SLIP_FALL": 40,
+        "OTHER": 57,
+        "ILLNESS": 49,
+        "LOST": 136
+      },
+      "hour_breakdown": {
+        "7": 10,
+        "14": 24,
+        "9": 19,
+        "13": 29,
+        "18": 29,
+        "10": 24,
+        "16": 23,
+        "12": 33,
+        "11": 19,
+        "20": 1,
+        "17": 16,
+        "1": 1,
+        "19": 15,
+        "15": 24,
+        "3": 3,
+        "4": 1,
+        "22": 1,
+        "8": 4,
+        "21": 2,
+        "23": 3,
+        "5": 1
+      },
+      "season_breakdown": {
+        "겨울": 53,
+        "가을": 69,
+        "여름": 59,
+        "봄": 101
+      },
+      "rescued_total": 221,
+      "air_rescue_count": 1,
+      "air_rescue_ratio": 0.004
+    },
+    "caution_notes": "주요 사고 유형: 일반조난 (48%) | 사고 집중 시간: 12시대 (12%) | 사고 집중 계절: 봄 (36%) | 등산로·일몰 시간 확인, GPS·지도 필수",
+    "risk_updated_at": "2026-06-23T11:03:40.621985"
+  },
+  {
+    "id": 50,
+    "name": "두륜산(경남)",
+    "region_city": "경상남도",
+    "region_district": "거창군",
+    "latitude": 35.6833,
+    "longitude": 127.9167,
+    "elevation_m": 720,
+    "difficulty": "MODERATE",
+    "aliases": [],
+    "match_dong": [
+      "위천면",
+      "마리면"
+    ],
+    "match_districts": [
+      "거창군",
+      "함양군"
+    ],
+    "risk_score": 29,
+    "risk_level": "LOW",
+    "stats": {
+      "accident_count": 183,
+      "type_breakdown": {
+        "SLIP_FALL": 44,
+        "OTHER": 73,
+        "ILLNESS": 17,
+        "LOST": 49
+      },
+      "hour_breakdown": {
+        "9": 7,
+        "14": 37,
+        "13": 14,
+        "8": 3,
+        "11": 17,
+        "16": 23,
+        "15": 28,
+        "12": 12,
+        "22": 1,
+        "5": 3,
+        "10": 12,
+        "17": 8,
+        "7": 4,
+        "19": 4,
+        "18": 7,
+        "3": 1,
+        "0": 1,
+        "6": 1
+      },
+      "season_breakdown": {
+        "가을": 37,
+        "여름": 59,
+        "봄": 47,
+        "겨울": 40
+      },
+      "rescued_total": 105,
+      "air_rescue_count": 4,
+      "air_rescue_ratio": 0.022
+    },
+    "caution_notes": "주요 사고 유형: 기타산악 (40%) | 사고 집중 시간: 14시대 (20%) | 사고 집중 계절: 여름 (32%) | 보호장비 착용, 낙석·벌 출몰 구간 주의",
+    "risk_updated_at": "2026-06-23T11:03:40.622341"
+  },
+  {
+    "id": 23,
+    "name": "주왕산",
+    "region_city": "경상북도",
+    "region_district": "청송군",
+    "latitude": 36.3889,
+    "longitude": 129.1667,
+    "elevation_m": 720,
+    "difficulty": "MODERATE",
+    "aliases": [
+      "주왕산국립공원"
+    ],
+    "match_dong": [
+      "부동면",
+      "주왕산면"
+    ],
+    "match_districts": [
+      "청송군",
+      "영양군"
+    ],
+    "risk_score": 28,
+    "risk_level": "LOW",
+    "stats": {
+      "accident_count": 127,
+      "type_breakdown": {
+        "SLIP_FALL": 27,
+        "OTHER": 51,
+        "ILLNESS": 11,
+        "LOST": 38
+      },
+      "hour_breakdown": {
+        "16": 13,
+        "15": 9,
+        "13": 17,
+        "9": 6,
+        "21": 5,
+        "12": 11,
+        "10": 8,
+        "8": 10,
+        "14": 16,
+        "17": 7,
+        "7": 4,
+        "19": 2,
+        "6": 1,
+        "11": 13,
+        "18": 3,
+        "23": 2
+      },
+      "season_breakdown": {
+        "가을": 83,
+        "여름": 24,
+        "봄": 10,
+        "겨울": 10
+      },
+      "rescued_total": 62,
+      "air_rescue_count": 3,
+      "air_rescue_ratio": 0.024
+    },
+    "caution_notes": "주요 사고 유형: 기타산악 (40%) | 사고 집중 시간: 13시대 (13%) | 사고 집중 계절: 가을 (65%) | 보호장비 착용, 낙석·벌 출몰 구간 주의",
+    "risk_updated_at": "2026-06-23T11:03:40.622088"
+  },
+  {
+    "id": 24,
+    "name": "팔공산",
+    "region_city": "대구광역시",
+    "region_district": "동구",
+    "latitude": 35.9917,
+    "longitude": 128.6933,
+    "elevation_m": 1193,
+    "difficulty": "MODERATE",
+    "aliases": [
+      "팔공산국립공원"
+    ],
+    "match_dong": [
+      "동촌동",
+      "신암동"
+    ],
+    "match_districts": [
+      "동구",
+      "칠곡군",
+      "경산시"
+    ],
+    "risk_score": 28,
+    "risk_level": "LOW",
+    "stats": {
+      "accident_count": 245,
+      "type_breakdown": {
+        "SLIP_FALL": 61,
+        "OTHER": 57,
+        "ILLNESS": 24,
+        "LOST": 103
+      },
+      "hour_breakdown": {
+        "10": 19,
+        "15": 34,
+        "12": 24,
+        "14": 20,
+        "16": 19,
+        "8": 1,
+        "13": 31,
+        "11": 11,
+        "17": 19,
+        "7": 4,
+        "23": 2,
+        "18": 28,
+        "5": 1,
+        "19": 16,
+        "20": 5,
+        "22": 3,
+        "9": 6,
+        "21": 1,
+        "4": 1
+      },
+      "season_breakdown": {
+        "겨울": 60,
+        "가을": 76,
+        "여름": 46,
+        "봄": 63
+      },
+      "rescued_total": 162,
+      "air_rescue_count": 9,
+      "air_rescue_ratio": 0.037
+    },
+    "caution_notes": "주요 사고 유형: 일반조난 (42%) | 사고 집중 시간: 15시대 (14%) | 사고 집중 계절: 가을 (31%) | 등산로·일몰 시간 확인, GPS·지도 필수",
+    "risk_updated_at": "2026-06-23T11:03:40.622098"
+  },
+  {
+    "id": 26,
+    "name": "금정산",
+    "region_city": "부산광역시",
+    "region_district": "금정구",
+    "latitude": 35.2794,
+    "longitude": 129.0533,
+    "elevation_m": 801,
+    "difficulty": "MODERATE",
+    "aliases": [
+      "금정산"
+    ],
+    "match_dong": [
+      "금성동",
+      "부곡동",
+      "선동"
+    ],
+    "match_districts": [
+      "금정구",
+      "기장군"
+    ],
+    "risk_score": 28,
+    "risk_level": "LOW",
+    "stats": {
+      "accident_count": 209,
+      "type_breakdown": {
+        "SLIP_FALL": 62,
+        "OTHER": 65,
+        "ILLNESS": 28,
+        "LOST": 54
+      },
+      "hour_breakdown": {
+        "9": 11,
+        "16": 28,
+        "15": 15,
+        "11": 27,
+        "12": 20,
+        "14": 24,
+        "19": 13,
+        "17": 21,
+        "13": 14,
+        "10": 15,
+        "18": 9,
+        "20": 5,
+        "23": 2,
+        "8": 2,
+        "7": 3
+      },
+      "season_breakdown": {
+        "겨울": 35,
+        "가을": 71,
+        "여름": 47,
+        "봄": 56
+      },
+      "rescued_total": 141,
+      "air_rescue_count": 7,
+      "air_rescue_ratio": 0.033
+    },
+    "caution_notes": "주요 사고 유형: 기타산악 (31%) | 사고 집중 시간: 16시대 (13%) | 사고 집중 계절: 가을 (34%) | 보호장비 착용, 낙석·벌 출몰 구간 주의",
+    "risk_updated_at": "2026-06-23T11:03:40.622118"
+  },
+  {
+    "id": 35,
+    "name": "화왕산",
+    "region_city": "경상남도",
+    "region_district": "창녕군",
+    "latitude": 35.55,
+    "longitude": 128.5167,
+    "elevation_m": 757,
+    "difficulty": "MODERATE",
+    "aliases": [
+      "화왕산국립공원"
+    ],
+    "match_dong": [
+      "창녕읍",
+      "대지면"
+    ],
+    "match_districts": [
+      "창녕군",
+      "밀양시"
+    ],
+    "risk_score": 28,
+    "risk_level": "LOW",
+    "stats": {
+      "accident_count": 191,
+      "type_breakdown": {
+        "SLIP_FALL": 27,
+        "OTHER": 74,
+        "ILLNESS": 15,
+        "LOST": 75
+      },
+      "hour_breakdown": {
+        "16": 22,
+        "13": 22,
+        "10": 10,
+        "9": 9,
+        "8": 9,
+        "12": 14,
+        "14": 26,
+        "4": 1,
+        "11": 21,
+        "7": 4,
+        "2": 1,
+        "17": 15,
+        "15": 21,
+        "18": 6,
+        "21": 3,
+        "20": 1,
+        "6": 2,
+        "19": 2,
+        "0": 2
+      },
+      "season_breakdown": {
+        "가을": 81,
+        "여름": 34,
+        "봄": 42,
+        "겨울": 34
+      },
+      "rescued_total": 98,
+      "air_rescue_count": 6,
+      "air_rescue_ratio": 0.031
+    },
+    "caution_notes": "주요 사고 유형: 일반조난 (39%) | 사고 집중 시간: 14시대 (14%) | 사고 집중 계절: 가을 (42%) | 등산로·일몰 시간 확인, GPS·지도 필수",
+    "risk_updated_at": "2026-06-23T11:03:40.622201"
+  },
+  {
+    "id": 41,
+    "name": "모악산",
+    "region_city": "전북특별자치도",
+    "region_district": "완주군",
+    "latitude": 35.8333,
+    "longitude": 127.1167,
+    "elevation_m": 794,
+    "difficulty": "MODERATE",
+    "aliases": [],
+    "match_dong": [
+      "구이면",
+      "운주면"
+    ],
+    "match_districts": [
+      "완주군",
+      "전주시"
+    ],
+    "risk_score": 28,
+    "risk_level": "LOW",
+    "stats": {
+      "accident_count": 134,
+      "type_breakdown": {
+        "SLIP_FALL": 37,
+        "OTHER": 50,
+        "ILLNESS": 24,
+        "LOST": 23
+      },
+      "hour_breakdown": {
+        "13": 11,
+        "11": 20,
+        "17": 10,
+        "10": 10,
+        "12": 16,
+        "14": 11,
+        "22": 1,
+        "16": 15,
+        "15": 22,
+        "4": 1,
+        "20": 4,
+        "8": 2,
+        "21": 2,
+        "19": 3,
+        "9": 1,
+        "18": 4,
+        "5": 1
+      },
+      "season_breakdown": {
+        "겨울": 18,
+        "가을": 51,
+        "여름": 42,
+        "봄": 23
+      },
+      "rescued_total": 70,
+      "air_rescue_count": 7,
+      "air_rescue_ratio": 0.052
+    },
+    "caution_notes": "주요 사고 유형: 기타산악 (37%) | 사고 집중 시간: 15시대 (16%) | 사고 집중 계절: 가을 (38%) | 보호장비 착용, 낙석·벌 출몰 구간 주의",
+    "risk_updated_at": "2026-06-23T11:03:40.622254"
+  },
+  {
+    "id": 43,
+    "name": "백두대간(대둔산)",
+    "region_city": "충청남도",
+    "region_district": "금산군",
+    "latitude": 36.0833,
+    "longitude": 127.35,
+    "elevation_m": 878,
+    "difficulty": "MODERATE",
+    "aliases": [
+      "대둔산"
+    ],
+    "match_dong": [
+      "추부면",
+      "진산면"
+    ],
+    "match_districts": [
+      "금산군",
+      "공주시"
+    ],
+    "risk_score": 28,
+    "risk_level": "LOW",
+    "stats": {
+      "accident_count": 182,
+      "type_breakdown": {
+        "SLIP_FALL": 46,
+        "OTHER": 70,
+        "ILLNESS": 17,
+        "LOST": 49
+      },
+      "hour_breakdown": {
+        "8": 6,
+        "11": 13,
+        "14": 20,
+        "10": 15,
+        "18": 8,
+        "5": 2,
+        "12": 20,
+        "15": 18,
+        "22": 2,
+        "7": 7,
+        "13": 28,
+        "9": 3,
+        "17": 9,
+        "16": 19,
+        "19": 4,
+        "6": 3,
+        "20": 4,
+        "4": 1
+      },
+      "season_breakdown": {
+        "가을": 85,
+        "여름": 46,
+        "봄": 33,
+        "겨울": 18
+      },
+      "rescued_total": 89,
+      "air_rescue_count": 8,
+      "air_rescue_ratio": 0.044
+    },
+    "caution_notes": "주요 사고 유형: 기타산악 (38%) | 사고 집중 시간: 13시대 (15%) | 사고 집중 계절: 가을 (47%) | 보호장비 착용, 낙석·벌 출몰 구간 주의",
+    "risk_updated_at": "2026-06-23T11:03:40.622273"
+  },
+  {
+    "id": 21,
+    "name": "가야산",
+    "region_city": "경상남도",
+    "region_district": "합천군",
+    "latitude": 35.8222,
+    "longitude": 128.1178,
+    "elevation_m": 1433,
+    "difficulty": "MODERATE",
+    "aliases": [
+      "가야산국립공원"
+    ],
+    "match_dong": [
+      "가야면",
+      "초계면"
+    ],
+    "match_districts": [
+      "합천군",
+      "성주군",
+      "칠곡군"
+    ],
+    "risk_score": 27,
+    "risk_level": "LOW",
+    "stats": {
+      "accident_count": 111,
+      "type_breakdown": {
+        "SLIP_FALL": 30,
+        "OTHER": 34,
+        "ILLNESS": 7,
+        "LOST": 40
+      },
+      "hour_breakdown": {
+        "15": 18,
+        "7": 3,
+        "6": 5,
+        "14": 12,
+        "13": 23,
+        "17": 6,
+        "11": 8,
+        "8": 2,
+        "12": 13,
+        "16": 4,
+        "10": 7,
+        "18": 4,
+        "21": 1,
+        "19": 1,
+        "20": 4
+      },
+      "season_breakdown": {
+        "가을": 58,
+        "봄": 32,
+        "여름": 14,
+        "겨울": 7
+      },
+      "rescued_total": 57,
+      "air_rescue_count": 3,
+      "air_rescue_ratio": 0.027
+    },
+    "caution_notes": "주요 사고 유형: 일반조난 (36%) | 사고 집중 시간: 13시대 (21%) | 사고 집중 계절: 가을 (52%) | 등산로·일몰 시간 확인, GPS·지도 필수",
+    "risk_updated_at": "2026-06-23T11:03:40.622072"
+  },
+  {
+    "id": 7,
+    "name": "아차산",
+    "region_city": "서울특별시",
+    "region_district": "광진구",
+    "latitude": 37.5531,
+    "longitude": 127.1036,
+    "elevation_m": 287,
+    "difficulty": "EASY",
+    "aliases": [],
+    "match_dong": [
+      "중곡동",
+      "구의동"
+    ],
+    "match_districts": [
+      "광진구",
+      "중랑구"
+    ],
+    "risk_score": 26,
+    "risk_level": "LOW",
+    "stats": {
+      "accident_count": 226,
+      "type_breakdown": {
+        "SLIP_FALL": 38,
+        "OTHER": 116,
+        "ILLNESS": 33,
+        "LOST": 39
+      },
+      "hour_breakdown": {
+        "15": 23,
+        "14": 20,
+        "16": 18,
+        "11": 15,
+        "13": 28,
+        "10": 10,
+        "9": 15,
+        "5": 1,
+        "7": 6,
+        "12": 15,
+        "6": 3,
+        "8": 7,
+        "4": 1,
+        "19": 10,
+        "21": 6,
+        "0": 3,
+        "22": 3,
+        "20": 9,
+        "18": 15,
+        "17": 18
+      },
+      "season_breakdown": {
+        "가을": 67,
+        "여름": 60,
+        "봄": 57,
+        "겨울": 42
+      },
+      "rescued_total": 114,
+      "air_rescue_count": 1,
+      "air_rescue_ratio": 0.004
+    },
+    "caution_notes": "주요 사고 유형: 기타산악 (51%) | 사고 집중 시간: 13시대 (12%) | 사고 집중 계절: 가을 (30%) | 보호장비 착용, 낙석·벌 출몰 구간 주의",
+    "risk_updated_at": "2026-06-23T11:03:40.621934"
+  },
+  {
+    "id": 11,
+    "name": "지리산",
+    "region_city": "전라남도",
+    "region_district": "구례군",
+    "latitude": 35.3367,
+    "longitude": 127.7303,
+    "elevation_m": 1915,
+    "difficulty": "EXPERT",
+    "aliases": [
+      "지리산국립공원"
+    ],
+    "match_dong": [
+      "마천면",
+      "토지면",
+      "산동면"
+    ],
+    "match_districts": [
+      "구례군",
+      "하동군",
+      "함양군",
+      "남원시",
+      "장수군"
+    ],
+    "risk_score": 26,
+    "risk_level": "LOW",
+    "stats": {
+      "accident_count": 190,
+      "type_breakdown": {
+        "SLIP_FALL": 47,
+        "OTHER": 82,
+        "ILLNESS": 37,
+        "LOST": 24
+      },
+      "hour_breakdown": {
+        "14": 14,
+        "2": 1,
+        "8": 4,
+        "17": 14,
+        "4": 5,
+        "13": 17,
+        "7": 7,
+        "9": 11,
+        "15": 17,
+        "3": 7,
+        "12": 19,
+        "11": 15,
+        "10": 8,
+        "16": 15,
+        "5": 2,
+        "18": 8,
+        "19": 12,
+        "6": 3,
+        "22": 1,
+        "20": 9,
+        "21": 1
+      },
+      "season_breakdown": {
+        "가을": 74,
+        "겨울": 31,
+        "여름": 57,
+        "봄": 28
+      },
+      "rescued_total": 128,
+      "air_rescue_count": 8,
+      "air_rescue_ratio": 0.042
+    },
+    "caution_notes": "주요 사고 유형: 기타산악 (43%) | 사고 집중 시간: 12시대 (10%) | 사고 집중 계절: 가을 (39%) | 보호장비 착용, 낙석·벌 출몰 구간 주의",
+    "risk_updated_at": "2026-06-23T11:03:40.621973"
+  },
+  {
+    "id": 22,
+    "name": "내장산",
+    "region_city": "전북특별자치도",
+    "region_district": "정읍시",
+    "latitude": 35.4789,
+    "longitude": 126.8811,
+    "elevation_m": 763,
+    "difficulty": "MODERATE",
+    "aliases": [
+      "내장산국립공원"
+    ],
+    "match_dong": [
+      "내장동",
+      "북면"
+    ],
+    "match_districts": [
+      "정읍시",
+      "김제시"
+    ],
+    "risk_score": 26,
+    "risk_level": "LOW",
+    "stats": {
+      "accident_count": 32,
+      "type_breakdown": {
+        "SLIP_FALL": 7,
+        "OTHER": 7,
+        "ILLNESS": 7,
+        "LOST": 11
+      },
+      "hour_breakdown": {
+        "17": 3,
+        "12": 4,
+        "11": 1,
+        "13": 4,
+        "14": 5,
+        "15": 8,
+        "16": 2,
+        "6": 1,
+        "20": 1,
+        "8": 1,
+        "19": 1,
+        "18": 1
+      },
+      "season_breakdown": {
+        "가을": 15,
+        "여름": 5,
+        "겨울": 6,
+        "봄": 6
+      },
+      "rescued_total": 29,
+      "air_rescue_count": 1,
+      "air_rescue_ratio": 0.031
+    },
+    "caution_notes": "주요 사고 유형: 일반조난 (34%) | 사고 집중 시간: 15시대 (25%) | 사고 집중 계절: 가을 (47%) | 등산로·일몰 시간 확인, GPS·지도 필수",
+    "risk_updated_at": "2026-06-23T11:03:40.622080"
+  },
+  {
+    "id": 27,
+    "name": "변산",
+    "region_city": "전북특별자치도",
+    "region_district": "부안군",
+    "latitude": 35.7289,
+    "longitude": 126.5333,
+    "elevation_m": 508,
+    "difficulty": "EASY",
+    "aliases": [
+      "변산반도"
+    ],
+    "match_dong": [
+      "변산면",
+      "진서면"
+    ],
+    "match_districts": [
+      "부안군",
+      "고창군"
+    ],
+    "risk_score": 26,
+    "risk_level": "LOW",
+    "stats": {
+      "accident_count": 39,
+      "type_breakdown": {
+        "SLIP_FALL": 11,
+        "OTHER": 15,
+        "ILLNESS": 7,
+        "LOST": 6
+      },
+      "hour_breakdown": {
+        "12": 3,
+        "15": 6,
+        "13": 6,
+        "9": 3,
+        "11": 6,
+        "14": 3,
+        "16": 7,
+        "23": 1,
+        "19": 1,
+        "18": 3
+      },
+      "season_breakdown": {
+        "가을": 14,
+        "여름": 12,
+        "봄": 9,
+        "겨울": 4
+      },
+      "rescued_total": 27,
+      "air_rescue_count": 2,
+      "air_rescue_ratio": 0.051
+    },
+    "caution_notes": "주요 사고 유형: 기타산악 (38%) | 사고 집중 시간: 16시대 (18%) | 사고 집중 계절: 가을 (36%) | 보호장비 착용, 낙석·벌 출몰 구간 주의",
+    "risk_updated_at": "2026-06-23T11:03:40.622128"
+  },
+  {
+    "id": 29,
+    "name": "마이산",
+    "region_city": "전북특별자치도",
+    "region_district": "진안군",
+    "latitude": 35.9756,
+    "longitude": 127.4306,
+    "elevation_m": 686,
+    "difficulty": "MODERATE",
+    "aliases": [
+      "마이산도립공원"
+    ],
+    "match_dong": [
+      "마령면",
+      "부귀면"
+    ],
+    "match_districts": [
+      "진안군",
+      "남원시"
+    ],
+    "risk_score": 26,
+    "risk_level": "LOW",
+    "stats": {
+      "accident_count": 79,
+      "type_breakdown": {
+        "SLIP_FALL": 34,
+        "OTHER": 11,
+        "ILLNESS": 19,
+        "LOST": 15
+      },
+      "hour_breakdown": {
+        "15": 11,
+        "10": 8,
+        "14": 9,
+        "11": 9,
+        "13": 5,
+        "12": 5,
+        "9": 1,
+        "8": 7,
+        "16": 10,
+        "17": 5,
+        "5": 2,
+        "18": 2,
+        "7": 1,
+        "6": 1,
+        "19": 2,
+        "20": 1
+      },
+      "season_breakdown": {
+        "겨울": 14,
+        "가을": 26,
+        "여름": 13,
+        "봄": 26
+      },
+      "rescued_total": 70,
+      "air_rescue_count": 7,
+      "air_rescue_ratio": 0.089
+    },
+    "caution_notes": "주요 사고 유형: 실족추락 (43%) | 사고 집중 시간: 15시대 (14%) | 사고 집중 계절: 가을 (33%) | 미끄럼 방지 등산화 착용, 우천·결빙 시 등산 자제",
+    "risk_updated_at": "2026-06-23T11:03:40.622145"
+  },
+  {
+    "id": 42,
+    "name": "장산",
+    "region_city": "부산광역시",
+    "region_district": "해운대구",
+    "latitude": 35.2333,
+    "longitude": 129.2167,
+    "elevation_m": 801,
+    "difficulty": "MODERATE",
+    "aliases": [],
+    "match_dong": [
+      "재송동",
+      "반여동"
+    ],
+    "match_districts": [
+      "해운대구",
+      "기장군"
+    ],
+    "risk_score": 26,
+    "risk_level": "LOW",
+    "stats": {
+      "accident_count": 215,
+      "type_breakdown": {
+        "SLIP_FALL": 38,
+        "OTHER": 62,
+        "ILLNESS": 27,
+        "LOST": 88
+      },
+      "hour_breakdown": {
+        "12": 20,
+        "11": 9,
+        "8": 10,
+        "14": 20,
+        "15": 19,
+        "13": 15,
+        "9": 9,
+        "16": 23,
+        "18": 15,
+        "23": 4,
+        "10": 16,
+        "17": 26,
+        "22": 1,
+        "19": 9,
+        "20": 5,
+        "6": 2,
+        "7": 2,
+        "0": 6,
+        "21": 3,
+        "1": 1
+      },
+      "season_breakdown": {
+        "가을": 61,
+        "여름": 52,
+        "봄": 63,
+        "겨울": 39
+      },
+      "rescued_total": 155,
+      "air_rescue_count": 7,
+      "air_rescue_ratio": 0.033
+    },
+    "caution_notes": "주요 사고 유형: 일반조난 (41%) | 사고 집중 시간: 17시대 (12%) | 사고 집중 계절: 봄 (29%) | 등산로·일몰 시간 확인, GPS·지도 필수",
+    "risk_updated_at": "2026-06-23T11:03:40.622265"
+  },
+  {
+    "id": 5,
+    "name": "청계산",
+    "region_city": "서울특별시",
+    "region_district": "서초구",
+    "latitude": 37.4289,
+    "longitude": 127.0431,
+    "elevation_m": 620,
+    "difficulty": "MODERATE",
+    "aliases": [],
+    "match_dong": [
+      "내곡동",
+      "세곡동"
+    ],
+    "match_districts": [
+      "서초구",
+      "성남시"
+    ],
+    "risk_score": 25,
+    "risk_level": "LOW",
+    "stats": {
+      "accident_count": 146,
+      "type_breakdown": {
+        "SLIP_FALL": 32,
+        "OTHER": 65,
+        "ILLNESS": 30,
+        "LOST": 19
+      },
+      "hour_breakdown": {
+        "15": 17,
+        "0": 1,
+        "10": 23,
+        "9": 4,
+        "17": 9,
+        "12": 26,
+        "14": 22,
+        "11": 17,
+        "8": 5,
+        "13": 9,
+        "16": 2,
+        "18": 6,
+        "2": 1,
+        "19": 1,
+        "22": 1,
+        "20": 1,
+        "21": 1
+      },
+      "season_breakdown": {
+        "겨울": 38,
+        "가을": 44,
+        "여름": 33,
+        "봄": 31
+      },
+      "rescued_total": 64,
+      "air_rescue_count": 9,
+      "air_rescue_ratio": 0.062
+    },
+    "caution_notes": "주요 사고 유형: 기타산악 (45%) | 사고 집중 시간: 12시대 (18%) | 사고 집중 계절: 가을 (30%) | 보호장비 착용, 낙석·벌 출몰 구간 주의",
+    "risk_updated_at": "2026-06-23T11:03:40.621913"
+  },
+  {
+    "id": 10,
+    "name": "남산",
+    "region_city": "서울특별시",
+    "region_district": "중구",
+    "latitude": 37.5512,
+    "longitude": 126.9882,
+    "elevation_m": 262,
+    "difficulty": "EASY",
+    "aliases": [
+      "남산공원"
+    ],
+    "match_dong": [
+      "예장동",
+      "장충동"
+    ],
+    "match_districts": [
+      "중구",
+      "용산구"
+    ],
+    "risk_score": 25,
+    "risk_level": "LOW",
+    "stats": {
+      "accident_count": 69,
+      "type_breakdown": {
+        "SLIP_FALL": 20,
+        "OTHER": 20,
+        "ILLNESS": 9,
+        "LOST": 20
+      },
+      "hour_breakdown": {
+        "16": 6,
+        "11": 7,
+        "12": 6,
+        "14": 12,
+        "13": 4,
+        "9": 4,
+        "17": 2,
+        "15": 2,
+        "10": 5,
+        "19": 8,
+        "21": 4,
+        "7": 1,
+        "20": 6,
+        "6": 1,
+        "18": 1
+      },
+      "season_breakdown": {
+        "겨울": 13,
+        "가을": 32,
+        "여름": 11,
+        "봄": 13
+      },
+      "rescued_total": 38,
+      "air_rescue_count": 0,
+      "air_rescue_ratio": 0.0
+    },
+    "caution_notes": "주요 사고 유형: 실족추락 (29%) | 사고 집중 시간: 14시대 (17%) | 사고 집중 계절: 가을 (46%) | 미끄럼 방지 등산화 착용, 우천·결빙 시 등산 자제",
+    "risk_updated_at": "2026-06-23T11:03:40.621962"
+  },
+  {
+    "id": 14,
+    "name": "덕유산",
+    "region_city": "전북특별자치도",
+    "region_district": "무주군",
+    "latitude": 35.8578,
+    "longitude": 127.7467,
+    "elevation_m": 1614,
+    "difficulty": "HARD",
+    "aliases": [
+      "덕유산국립공원"
+    ],
+    "match_dong": [
+      "적상면",
+      "무풍면",
+      "안성면"
+    ],
+    "match_districts": [
+      "무주군",
+      "김천시",
+      "구례군"
+    ],
+    "risk_score": 25,
+    "risk_level": "LOW",
+    "stats": {
+      "accident_count": 56,
+      "type_breakdown": {
+        "SLIP_FALL": 20,
+        "OTHER": 18,
+        "ILLNESS": 9,
+        "LOST": 9
+      },
+      "hour_breakdown": {
+        "16": 2,
+        "14": 10,
+        "11": 6,
+        "13": 11,
+        "20": 3,
+        "15": 5,
+        "12": 4,
+        "21": 1,
+        "18": 4,
+        "19": 3,
+        "9": 1,
+        "17": 3,
+        "6": 2,
+        "5": 1
+      },
+      "season_breakdown": {
+        "겨울": 20,
+        "가을": 18,
+        "여름": 14,
+        "봄": 4
+      },
+      "rescued_total": 32,
+      "air_rescue_count": 2,
+      "air_rescue_ratio": 0.036
+    },
+    "caution_notes": "주요 사고 유형: 실족추락 (36%) | 사고 집중 시간: 13시대 (20%) | 사고 집중 계절: 겨울 (36%) | 미끄럼 방지 등산화 착용, 우천·결빙 시 등산 자제",
+    "risk_updated_at": "2026-06-23T11:03:40.622004"
+  },
+  {
+    "id": 15,
+    "name": "월악산",
+    "region_city": "충청북도",
+    "region_district": "단양군",
+    "latitude": 36.9267,
+    "longitude": 128.0833,
+    "elevation_m": 1094,
+    "difficulty": "MODERATE",
+    "aliases": [
+      "월악산국립공원"
+    ],
+    "match_dong": [
+      "단성면",
+      "매포읍"
+    ],
+    "match_districts": [
+      "단양군",
+      "제천시",
+      "보은군"
+    ],
+    "risk_score": 25,
+    "risk_level": "LOW",
+    "stats": {
+      "accident_count": 151,
+      "type_breakdown": {
+        "SLIP_FALL": 33,
+        "OTHER": 52,
+        "ILLNESS": 15,
+        "LOST": 51
+      },
+      "hour_breakdown": {
+        "7": 6,
+        "14": 21,
+        "13": 16,
+        "8": 2,
+        "11": 11,
+        "12": 21,
+        "10": 8,
+        "16": 15,
+        "18": 16,
+        "9": 3,
+        "19": 5,
+        "15": 11,
+        "21": 3,
+        "17": 12,
+        "20": 1
+      },
+      "season_breakdown": {
+        "가을": 37,
+        "여름": 42,
+        "봄": 44,
+        "겨울": 28
+      },
+      "rescued_total": 110,
+      "air_rescue_count": 10,
+      "air_rescue_ratio": 0.066
+    },
+    "caution_notes": "주요 사고 유형: 기타산악 (34%) | 사고 집중 시간: 14시대 (14%) | 사고 집중 계절: 봄 (29%) | 보호장비 착용, 낙석·벌 출몰 구간 주의",
+    "risk_updated_at": "2026-06-23T11:03:40.622014"
+  },
+  {
+    "id": 17,
+    "name": "치악산",
+    "region_city": "강원특별자치도",
+    "region_district": "원주시",
+    "latitude": 37.3803,
+    "longitude": 128.0833,
+    "elevation_m": 1288,
+    "difficulty": "MODERATE",
+    "aliases": [
+      "치악산국립공원"
+    ],
+    "match_dong": [
+      "소초면",
+      "지정면"
+    ],
+    "match_districts": [
+      "원주시",
+      "횡성군"
+    ],
+    "risk_score": 25,
+    "risk_level": "LOW",
+    "stats": {
+      "accident_count": 129,
+      "type_breakdown": {
+        "SLIP_FALL": 40,
+        "OTHER": 33,
+        "ILLNESS": 21,
+        "LOST": 35
+      },
+      "hour_breakdown": {
+        "12": 10,
+        "11": 8,
+        "0": 1,
+        "15": 11,
+        "9": 7,
+        "16": 12,
+        "10": 11,
+        "17": 5,
+        "14": 24,
+        "13": 15,
+        "19": 10,
+        "7": 2,
+        "18": 6,
+        "8": 5,
+        "6": 1,
+        "23": 1
+      },
+      "season_breakdown": {
+        "겨울": 14,
+        "가을": 39,
+        "여름": 40,
+        "봄": 36
+      },
+      "rescued_total": 77,
+      "air_rescue_count": 7,
+      "air_rescue_ratio": 0.054
+    },
+    "caution_notes": "주요 사고 유형: 실족추락 (31%) | 사고 집중 시간: 14시대 (19%) | 사고 집중 계절: 여름 (31%) | 미끄럼 방지 등산화 착용, 우천·결빙 시 등산 자제",
+    "risk_updated_at": "2026-06-23T11:03:40.622033"
+  },
+  {
+    "id": 19,
+    "name": "오대산",
+    "region_city": "강원특별자치도",
+    "region_district": "평창군",
+    "latitude": 37.7956,
+    "longitude": 128.5433,
+    "elevation_m": 1563,
+    "difficulty": "HARD",
+    "aliases": [
+      "오대산국립공원"
+    ],
+    "match_dong": [
+      "진부면",
+      "대관령면"
+    ],
+    "match_districts": [
+      "평창군",
+      "홍천군"
+    ],
+    "risk_score": 25,
+    "risk_level": "LOW",
+    "stats": {
+      "accident_count": 123,
+      "type_breakdown": {
+        "SLIP_FALL": 26,
+        "OTHER": 17,
+        "ILLNESS": 15,
+        "LOST": 65
+      },
+      "hour_breakdown": {
+        "12": 7,
+        "16": 10,
+        "15": 12,
+        "11": 8,
+        "14": 8,
+        "13": 11,
+        "17": 9,
+        "8": 1,
+        "20": 5,
+        "9": 4,
+        "7": 23,
+        "21": 3,
+        "18": 11,
+        "10": 5,
+        "5": 1,
+        "19": 3,
+        "23": 1,
+        "22": 1
+      },
+      "season_breakdown": {
+        "겨울": 57,
+        "봄": 26,
+        "여름": 19,
+        "가을": 21
+      },
+      "rescued_total": 84,
+      "air_rescue_count": 8,
+      "air_rescue_ratio": 0.065
+    },
+    "caution_notes": "주요 사고 유형: 일반조난 (53%) | 사고 집중 시간: 7시대 (19%) | 사고 집중 계절: 겨울 (46%) | 등산로·일몰 시간 확인, GPS·지도 필수",
+    "risk_updated_at": "2026-06-23T11:03:40.622053"
+  },
+  {
+    "id": 28,
+    "name": "계룡산",
+    "region_city": "충청남도",
+    "region_district": "공주시",
+    "latitude": 36.3611,
+    "longitude": 127.2244,
+    "elevation_m": 845,
+    "difficulty": "MODERATE",
+    "aliases": [
+      "계룡산국립공원"
+    ],
+    "match_dong": [
+      "반포면",
+      "이인면"
+    ],
+    "match_districts": [
+      "공주시",
+      "논산시",
+      "금산군"
+    ],
+    "risk_score": 25,
+    "risk_level": "LOW",
+    "stats": {
+      "accident_count": 126,
+      "type_breakdown": {
+        "SLIP_FALL": 46,
+        "OTHER": 27,
+        "ILLNESS": 28,
+        "LOST": 25
+      },
+      "hour_breakdown": {
+        "9": 5,
+        "17": 10,
+        "10": 6,
+        "11": 14,
+        "8": 6,
+        "15": 12,
+        "18": 5,
+        "13": 19,
+        "12": 19,
+        "7": 3,
+        "14": 7,
+        "19": 5,
+        "16": 12,
+        "20": 3
+      },
+      "season_breakdown": {
+        "겨울": 27,
+        "가을": 42,
+        "여름": 31,
+        "봄": 26
+      },
+      "rescued_total": 67,
+      "air_rescue_count": 10,
+      "air_rescue_ratio": 0.079
+    },
+    "caution_notes": "주요 사고 유형: 실족추락 (37%) | 사고 집중 시간: 13시대 (15%) | 사고 집중 계절: 가을 (33%) | 미끄럼 방지 등산화 착용, 우천·결빙 시 등산 자제",
+    "risk_updated_at": "2026-06-23T11:03:40.622137"
+  },
+  {
+    "id": 37,
+    "name": "두타산",
+    "region_city": "경상북도",
+    "region_district": "울진군",
+    "latitude": 36.9333,
+    "longitude": 129.4,
+    "elevation_m": 1353,
+    "difficulty": "HARD",
+    "aliases": [],
+    "match_dong": [
+      "금강송면",
+      "기성면"
+    ],
+    "match_districts": [
+      "울진군",
+      "영덕군"
+    ],
+    "risk_score": 25,
+    "risk_level": "LOW",
+    "stats": {
+      "accident_count": 128,
+      "type_breakdown": {
+        "SLIP_FALL": 17,
+        "OTHER": 42,
+        "ILLNESS": 21,
+        "LOST": 48
+      },
+      "hour_breakdown": {
+        "12": 9,
+        "10": 9,
+        "11": 12,
+        "13": 13,
+        "9": 10,
+        "15": 14,
+        "14": 12,
+        "7": 2,
+        "17": 9,
+        "16": 15,
+        "19": 9,
+        "6": 1,
+        "20": 3,
+        "23": 2,
+        "1": 1,
+        "18": 6,
+        "21": 1
+      },
+      "season_breakdown": {
+        "겨울": 17,
+        "가을": 48,
+        "봄": 30,
+        "여름": 33
+      },
+      "rescued_total": 73,
+      "air_rescue_count": 10,
+      "air_rescue_ratio": 0.078
+    },
+    "caution_notes": "주요 사고 유형: 일반조난 (38%) | 사고 집중 시간: 16시대 (12%) | 사고 집중 계절: 가을 (38%) | 등산로·일몰 시간 확인, GPS·지도 필수",
+    "risk_updated_at": "2026-06-23T11:03:40.622219"
+  },
+  {
+    "id": 44,
+    "name": "두타산(경북)",
+    "region_city": "경상북도",
+    "region_district": "봉화군",
+    "latitude": 36.85,
+    "longitude": 128.7333,
+    "elevation_m": 1300,
+    "difficulty": "HARD",
+    "aliases": [],
+    "match_dong": [
+      "춘양면",
+      "명호면"
+    ],
+    "match_districts": [
+      "봉화군",
+      "영주시"
+    ],
+    "risk_score": 25,
+    "risk_level": "LOW",
+    "stats": {
+      "accident_count": 140,
+      "type_breakdown": {
+        "SLIP_FALL": 25,
+        "OTHER": 51,
+        "ILLNESS": 18,
+        "LOST": 46
+      },
+      "hour_breakdown": {
+        "16": 11,
+        "12": 12,
+        "6": 3,
+        "10": 5,
+        "15": 17,
+        "17": 16,
+        "18": 10,
+        "13": 16,
+        "20": 5,
+        "9": 7,
+        "11": 6,
+        "14": 11,
+        "19": 6,
+        "23": 1,
+        "8": 7,
+        "21": 5,
+        "7": 2
+      },
+      "season_breakdown": {
+        "겨울": 22,
+        "가을": 51,
+        "여름": 43,
+        "봄": 24
+      },
+      "rescued_total": 73,
+      "air_rescue_count": 1,
+      "air_rescue_ratio": 0.007
+    },
+    "caution_notes": "주요 사고 유형: 기타산악 (36%) | 사고 집중 시간: 15시대 (12%) | 사고 집중 계절: 가을 (36%) | 보호장비 착용, 낙석·벌 출몰 구간 주의",
+    "risk_updated_at": "2026-06-23T11:03:40.622283"
+  },
+  {
+    "id": 49,
+    "name": "두타산(충북)",
+    "region_city": "충청북도",
+    "region_district": "단양군",
+    "latitude": 36.9833,
+    "longitude": 128.35,
+    "elevation_m": 1100,
+    "difficulty": "MODERATE",
+    "aliases": [],
+    "match_dong": [
+      "가곡면",
+      "어상천면"
+    ],
+    "match_districts": [
+      "단양군",
+      "영월군"
+    ],
+    "risk_score": 25,
+    "risk_level": "LOW",
+    "stats": {
+      "accident_count": 145,
+      "type_breakdown": {
+        "SLIP_FALL": 31,
+        "OTHER": 41,
+        "ILLNESS": 20,
+        "LOST": 53
+      },
+      "hour_breakdown": {
+        "13": 13,
+        "12": 4,
+        "15": 18,
+        "1": 2,
+        "19": 8,
+        "17": 12,
+        "8": 7,
+        "16": 18,
+        "14": 13,
+        "7": 3,
+        "9": 6,
+        "10": 8,
+        "18": 12,
+        "11": 7,
+        "20": 9,
+        "23": 1,
+        "3": 1,
+        "5": 1,
+        "6": 2
+      },
+      "season_breakdown": {
+        "겨울": 29,
+        "가을": 35,
+        "여름": 39,
+        "봄": 42
+      },
+      "rescued_total": 104,
+      "air_rescue_count": 6,
+      "air_rescue_ratio": 0.041
+    },
+    "caution_notes": "주요 사고 유형: 일반조난 (37%) | 사고 집중 시간: 15시대 (12%) | 사고 집중 계절: 봄 (29%) | 등산로·일몰 시간 확인, GPS·지도 필수",
+    "risk_updated_at": "2026-06-23T11:03:40.622331"
+  },
+  {
+    "id": 16,
+    "name": "속리산",
+    "region_city": "충청북도",
+    "region_district": "보은군",
+    "latitude": 36.5433,
+    "longitude": 127.8722,
+    "elevation_m": 1058,
+    "difficulty": "MODERATE",
+    "aliases": [
+      "속리산국립공원"
+    ],
+    "match_dong": [
+      "속리산면",
+      "남이면"
+    ],
+    "match_districts": [
+      "보은군",
+      "청주시"
+    ],
+    "risk_score": 24,
+    "risk_level": "LOW",
+    "stats": {
+      "accident_count": 73,
+      "type_breakdown": {
+        "SLIP_FALL": 18,
+        "OTHER": 26,
+        "ILLNESS": 11,
+        "LOST": 18
+      },
+      "hour_breakdown": {
+        "13": 17,
+        "14": 8,
+        "10": 4,
+        "7": 1,
+        "15": 10,
+        "17": 2,
+        "11": 11,
+        "16": 5,
+        "12": 8,
+        "4": 1,
+        "18": 3,
+        "5": 1,
+        "23": 1,
+        "19": 1
+      },
+      "season_breakdown": {
+        "가을": 29,
+        "여름": 23,
+        "봄": 12,
+        "겨울": 9
+      },
+      "rescued_total": 50,
+      "air_rescue_count": 7,
+      "air_rescue_ratio": 0.096
+    },
+    "caution_notes": "주요 사고 유형: 기타산악 (36%) | 사고 집중 시간: 13시대 (23%) | 사고 집중 계절: 가을 (40%) | 보호장비 착용, 낙석·벌 출몰 구간 주의",
+    "risk_updated_at": "2026-06-23T11:03:40.622024"
+  },
+  {
+    "id": 36,
+    "name": "두륜산",
+    "region_city": "전라남도",
+    "region_district": "해남군",
+    "latitude": 34.4833,
+    "longitude": 126.6167,
+    "elevation_m": 703,
+    "difficulty": "MODERATE",
+    "aliases": [
+      "두륜산도립공원"
+    ],
+    "match_dong": [
+      "삼산면",
+      "화산면"
+    ],
+    "match_districts": [
+      "해남군",
+      "완도군"
+    ],
+    "risk_score": 24,
+    "risk_level": "LOW",
+    "stats": {
+      "accident_count": 102,
+      "type_breakdown": {
+        "SLIP_FALL": 16,
+        "OTHER": 29,
+        "ILLNESS": 17,
+        "LOST": 40
+      },
+      "hour_breakdown": {
+        "13": 15,
+        "10": 6,
+        "12": 9,
+        "17": 11,
+        "6": 2,
+        "15": 15,
+        "16": 19,
+        "18": 4,
+        "14": 8,
+        "11": 5,
+        "9": 1,
+        "21": 1,
+        "20": 2,
+        "8": 1,
+        "0": 1,
+        "19": 2
+      },
+      "season_breakdown": {
+        "가을": 30,
+        "여름": 23,
+        "봄": 28,
+        "겨울": 21
+      },
+      "rescued_total": 59,
+      "air_rescue_count": 5,
+      "air_rescue_ratio": 0.049
+    },
+    "caution_notes": "주요 사고 유형: 일반조난 (39%) | 사고 집중 시간: 16시대 (19%) | 사고 집중 계절: 가을 (29%) | 등산로·일몰 시간 확인, GPS·지도 필수",
+    "risk_updated_at": "2026-06-23T11:03:40.622209"
+  },
+  {
+    "id": 38,
+    "name": "두타산(강원)",
+    "region_city": "강원특별자치도",
+    "region_district": "삼척시",
+    "latitude": 37.35,
+    "longitude": 129.1667,
+    "elevation_m": 1300,
+    "difficulty": "HARD",
+    "aliases": [],
+    "match_dong": [
+      "신기면",
+      "하장면"
+    ],
+    "match_districts": [
+      "삼척시",
+      "정선군"
+    ],
+    "risk_score": 24,
+    "risk_level": "LOW",
+    "stats": {
+      "accident_count": 68,
+      "type_breakdown": {
+        "SLIP_FALL": 15,
+        "OTHER": 18,
+        "ILLNESS": 13,
+        "LOST": 22
+      },
+      "hour_breakdown": {
+        "15": 9,
+        "9": 3,
+        "12": 7,
+        "18": 4,
+        "14": 9,
+        "13": 8,
+        "11": 2,
+        "23": 2,
+        "17": 7,
+        "7": 3,
+        "10": 2,
+        "8": 2,
+        "16": 6,
+        "3": 1,
+        "22": 1,
+        "21": 2
+      },
+      "season_breakdown": {
+        "가을": 20,
+        "여름": 29,
+        "봄": 10,
+        "겨울": 9
+      },
+      "rescued_total": 54,
+      "air_rescue_count": 1,
+      "air_rescue_ratio": 0.015
+    },
+    "caution_notes": "주요 사고 유형: 일반조난 (32%) | 사고 집중 시간: 15시대 (13%) | 사고 집중 계절: 여름 (43%) | 등산로·일몰 시간 확인, GPS·지도 필수",
+    "risk_updated_at": "2026-06-23T11:03:40.622227"
+  },
+  {
+    "id": 45,
+    "name": "두륜산(제주)",
+    "region_city": "제주특별자치도",
+    "region_district": "서귀포시",
+    "latitude": 33.2833,
+    "longitude": 126.3167,
+    "elevation_m": 598,
+    "difficulty": "MODERATE",
+    "aliases": [
+      "한라산(남쪽)"
+    ],
+    "match_dong": [
+      "대정읍",
+      "안덕면"
+    ],
+    "match_districts": [
+      "서귀포시"
+    ],
+    "risk_score": 24,
+    "risk_level": "LOW",
+    "stats": {
+      "accident_count": 109,
+      "type_breakdown": {
+        "SLIP_FALL": 18,
+        "OTHER": 27,
+        "ILLNESS": 4,
+        "LOST": 60
+      },
+      "hour_breakdown": {
+        "17": 6,
+        "13": 13,
+        "12": 10,
+        "11": 6,
+        "8": 5,
+        "6": 1,
+        "21": 2,
+        "10": 9,
+        "14": 12,
+        "9": 4,
+        "18": 10,
+        "0": 1,
+        "15": 13,
+        "16": 7,
+        "19": 3,
+        "7": 2,
+        "22": 2,
+        "20": 3
+      },
+      "season_breakdown": {
+        "겨울": 15,
+        "가을": 28,
+        "여름": 22,
+        "봄": 44
+      },
+      "rescued_total": 88,
+      "air_rescue_count": 0,
+      "air_rescue_ratio": 0.0
+    },
+    "caution_notes": "주요 사고 유형: 일반조난 (55%) | 사고 집중 시간: 13시대 (12%) | 사고 집중 계절: 봄 (40%) | 등산로·일몰 시간 확인, GPS·지도 필수",
+    "risk_updated_at": "2026-06-23T11:03:40.622292"
+  },
+  {
+    "id": 20,
+    "name": "소백산",
+    "region_city": "충청북도",
+    "region_district": "영동군",
+    "latitude": 36.9567,
+    "longitude": 128.4667,
+    "elevation_m": 1439,
+    "difficulty": "HARD",
+    "aliases": [
+      "소백산국립공원"
+    ],
+    "match_dong": [
+      "민주지산면",
+      "상촌면"
+    ],
+    "match_districts": [
+      "영동군",
+      "충주시"
+    ],
+    "risk_score": 23,
+    "risk_level": "LOW",
+    "stats": {
+      "accident_count": 107,
+      "type_breakdown": {
+        "SLIP_FALL": 18,
+        "OTHER": 38,
+        "ILLNESS": 9,
+        "LOST": 42
+      },
+      "hour_breakdown": {
+        "12": 9,
+        "16": 8,
+        "15": 10,
+        "11": 16,
+        "7": 2,
+        "13": 13,
+        "14": 11,
+        "10": 6,
+        "9": 5,
+        "20": 8,
+        "18": 7,
+        "17": 7,
+        "19": 3,
+        "6": 2
+      },
+      "season_breakdown": {
+        "가을": 42,
+        "여름": 26,
+        "봄": 21,
+        "겨울": 18
+      },
+      "rescued_total": 96,
+      "air_rescue_count": 1,
+      "air_rescue_ratio": 0.009
+    },
+    "caution_notes": "주요 사고 유형: 일반조난 (39%) | 사고 집중 시간: 11시대 (15%) | 사고 집중 계절: 가을 (39%) | 등산로·일몰 시간 확인, GPS·지도 필수",
+    "risk_updated_at": "2026-06-23T11:03:40.622062"
+  },
+  {
+    "id": 40,
+    "name": "두륜산(전남)",
+    "region_city": "전라남도",
+    "region_district": "장성군",
+    "latitude": 35.3167,
+    "longitude": 126.7833,
+    "elevation_m": 565,
+    "difficulty": "EASY",
+    "aliases": [],
+    "match_dong": [
+      "삼계면",
+      "북이면"
+    ],
+    "match_districts": [
+      "장성군",
+      "담양군"
+    ],
+    "risk_score": 23,
+    "risk_level": "LOW",
+    "stats": {
+      "accident_count": 90,
+      "type_breakdown": {
+        "SLIP_FALL": 20,
+        "OTHER": 30,
+        "ILLNESS": 7,
+        "LOST": 33
+      },
+      "hour_breakdown": {
+        "8": 6,
+        "14": 12,
+        "10": 3,
+        "13": 12,
+        "12": 15,
+        "18": 7,
+        "7": 1,
+        "16": 6,
+        "15": 4,
+        "20": 3,
+        "19": 4,
+        "17": 5,
+        "21": 3,
+        "11": 9
+      },
+      "season_breakdown": {
+        "겨울": 18,
+        "가을": 37,
+        "봄": 18,
+        "여름": 17
+      },
+      "rescued_total": 53,
+      "air_rescue_count": 4,
+      "air_rescue_ratio": 0.044
+    },
+    "caution_notes": "주요 사고 유형: 일반조난 (37%) | 사고 집중 시간: 12시대 (17%) | 사고 집중 계절: 가을 (41%) | 등산로·일몰 시간 확인, GPS·지도 필수",
+    "risk_updated_at": "2026-06-23T11:03:40.622246"
+  },
+  {
+    "id": 39,
+    "name": "민주지산",
+    "region_city": "충청북도",
+    "region_district": "영동군",
+    "latitude": 36.0167,
+    "longitude": 127.7833,
+    "elevation_m": 1242,
+    "difficulty": "MODERATE",
+    "aliases": [],
+    "match_dong": [
+      "양산면",
+      "용산면"
+    ],
+    "match_districts": [
+      "영동군",
+      "옥천군"
+    ],
+    "risk_score": 22,
+    "risk_level": "LOW",
+    "stats": {
+      "accident_count": 92,
+      "type_breakdown": {
+        "SLIP_FALL": 31,
+        "OTHER": 39,
+        "ILLNESS": 7,
+        "LOST": 15
+      },
+      "hour_breakdown": {
+        "10": 14,
+        "11": 12,
+        "13": 6,
+        "9": 5,
+        "5": 1,
+        "12": 16,
+        "17": 4,
+        "21": 1,
+        "15": 12,
+        "16": 10,
+        "18": 4,
+        "19": 2,
+        "14": 2,
+        "8": 2,
+        "6": 1
+      },
+      "season_breakdown": {
+        "가을": 30,
+        "여름": 24,
+        "겨울": 18,
+        "봄": 20
+      },
+      "rescued_total": 55,
+      "air_rescue_count": 8,
+      "air_rescue_ratio": 0.087
+    },
+    "caution_notes": "주요 사고 유형: 기타산악 (42%) | 사고 집중 시간: 12시대 (17%) | 사고 집중 계절: 가을 (33%) | 보호장비 착용, 낙석·벌 출몰 구간 주의",
+    "risk_updated_at": "2026-06-23T11:03:40.622236"
+  },
+  {
+    "id": 18,
+    "name": "태백산",
+    "region_city": "강원특별자치도",
+    "region_district": "태백시",
+    "latitude": 37.0956,
+    "longitude": 129.0556,
+    "elevation_m": 1567,
+    "difficulty": "HARD",
+    "aliases": [
+      "태백산국립공원"
+    ],
+    "match_dong": [
+      "황지동",
+      "문곡동"
+    ],
+    "match_districts": [
+      "태백시",
+      "삼척시",
+      "정선군"
+    ],
+    "risk_score": 21,
+    "risk_level": "LOW",
+    "stats": {
+      "accident_count": 53,
+      "type_breakdown": {
+        "SLIP_FALL": 13,
+        "OTHER": 12,
+        "ILLNESS": 16,
+        "LOST": 12
+      },
+      "hour_breakdown": {
+        "15": 4,
+        "12": 10,
+        "5": 2,
+        "14": 8,
+        "13": 5,
+        "17": 1,
+        "11": 7,
+        "10": 1,
+        "9": 5,
+        "8": 1,
+        "18": 4,
+        "16": 2,
+        "20": 2,
+        "19": 1
+      },
+      "season_breakdown": {
+        "가을": 5,
+        "여름": 17,
+        "봄": 12,
+        "겨울": 19
+      },
+      "rescued_total": 54,
+      "air_rescue_count": 2,
+      "air_rescue_ratio": 0.038
+    },
+    "caution_notes": "주요 사고 유형: 개인질환 (30%) | 사고 집중 시간: 12시대 (19%) | 사고 집중 계절: 겨울 (36%) | 충분한 수분·휴식, 본인 체력에 맞는 코스 선택",
+    "risk_updated_at": "2026-06-23T11:03:40.622042"
+  },
+  {
+    "id": 33,
+    "name": "천마산",
+    "region_city": "경기도",
+    "region_district": "포천시",
+    "latitude": 37.9167,
+    "longitude": 127.2,
+    "elevation_m": 810,
+    "difficulty": "MODERATE",
+    "aliases": [],
+    "match_dong": [
+      "관인면",
+      "일동면"
+    ],
+    "match_districts": [
+      "포천시",
+      "연천군"
+    ],
+    "risk_score": 21,
+    "risk_level": "LOW",
+    "stats": {
+      "accident_count": 65,
+      "type_breakdown": {
+        "SLIP_FALL": 11,
+        "OTHER": 18,
+        "ILLNESS": 5,
+        "LOST": 31
+      },
+      "hour_breakdown": {
+        "14": 5,
+        "21": 3,
+        "12": 3,
+        "10": 3,
+        "16": 10,
+        "11": 10,
+        "0": 1,
+        "13": 4,
+        "20": 2,
+        "17": 6,
+        "8": 2,
+        "23": 1,
+        "9": 2,
+        "19": 2,
+        "18": 7,
+        "15": 4
+      },
+      "season_breakdown": {
+        "가을": 24,
+        "여름": 18,
+        "봄": 17,
+        "겨울": 6
+      },
+      "rescued_total": 29,
+      "air_rescue_count": 0,
+      "air_rescue_ratio": 0.0
+    },
+    "caution_notes": "주요 사고 유형: 일반조난 (48%) | 사고 집중 시간: 16시대 (15%) | 사고 집중 계절: 가을 (37%) | 등산로·일몰 시간 확인, GPS·지도 필수",
+    "risk_updated_at": "2026-06-23T11:03:40.622182"
+  },
+  {
+    "id": 9,
+    "name": "북악산",
+    "region_city": "서울특별시",
+    "region_district": "종로구",
+    "latitude": 37.5928,
+    "longitude": 126.9811,
+    "elevation_m": 342,
+    "difficulty": "EASY",
+    "aliases": [],
+    "match_dong": [
+      "삼청동",
+      "가회동"
+    ],
+    "match_districts": [
+      "종로구"
+    ],
+    "risk_score": 20,
+    "risk_level": "LOW",
+    "stats": {
+      "accident_count": 91,
+      "type_breakdown": {
+        "SLIP_FALL": 33,
+        "OTHER": 22,
+        "ILLNESS": 16,
+        "LOST": 20
+      },
+      "hour_breakdown": {
+        "9": 2,
+        "14": 8,
+        "16": 3,
+        "19": 7,
+        "17": 14,
+        "11": 7,
+        "15": 9,
+        "18": 4,
+        "10": 11,
+        "12": 5,
+        "20": 5,
+        "6": 1,
+        "13": 6,
+        "21": 1,
+        "4": 3,
+        "7": 1,
+        "8": 1,
+        "2": 2,
+        "1": 1
+      },
+      "season_breakdown": {
+        "가을": 29,
+        "여름": 22,
+        "봄": 25,
+        "겨울": 15
+      },
+      "rescued_total": 52,
+      "air_rescue_count": 0,
+      "air_rescue_ratio": 0.0
+    },
+    "caution_notes": "주요 사고 유형: 실족추락 (36%) | 사고 집중 시간: 17시대 (15%) | 사고 집중 계절: 가을 (32%) | 미끄럼 방지 등산화 착용, 우천·결빙 시 등산 자제",
+    "risk_updated_at": "2026-06-23T11:03:40.621953"
+  }
+]

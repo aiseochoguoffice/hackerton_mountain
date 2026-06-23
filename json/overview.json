@@ -1,0 +1,14 @@
+{
+  "total_accidents": 23323,
+  "status_count": 10134,
+  "rescue_count": 13189,
+  "type_breakdown": {
+    "SLIP_FALL": 6092,
+    "OTHER": 7481,
+    "ILLNESS": 3220,
+    "LOST": 6530
+  },
+  "mapped_mountains": 50,
+  "unmapped_regions": 187,
+  "generated_at": "2026-06-23T11:03:40.629567"
+}

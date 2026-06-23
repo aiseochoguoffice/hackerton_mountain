@@ -1,0 +1,27 @@
+{
+  "risk_weights": {
+    "frequency": 0.4,
+    "severity": 0.3,
+    "season": 0.15,
+    "hour": 0.15
+  },
+  "risk_levels": {
+    "LOW": { "min": 0, "max": 30 },
+    "MEDIUM": { "min": 31, "max": 60 },
+    "HIGH": { "min": 61, "max": 80 },
+    "VERY_HIGH": { "min": 81, "max": 100 }
+  },
+  "peak_hours": [14, 15, 16],
+  "peak_seasons": {
+    "spring": [3, 4, 5],
+    "autumn": [9, 10, 11],
+    "winter": [12, 1, 2]
+  },
+  "severity_scores": {
+    "항공대 인계": 1.0,
+    "구급대 인계": 0.6,
+    "인명구조": 0.3,
+    "현장처치": 0.2,
+    "기타": 0.1
+  }
+}
