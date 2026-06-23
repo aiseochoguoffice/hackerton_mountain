@@ -1,24 +1,15 @@
 {
   "total_accidents": 13189,
+  "status_count": 0,
+  "rescue_count": 13189,
   "data_source": "소방청_전국 산악사고 구조활동현황_20201231.csv",
-  "source_breakdown": {
-    "소방청_전국 산악사고 구조활동현황_20201231.csv": 13189
-  },
   "type_breakdown": {
     "SLIP_FALL": 2857,
     "ILLNESS": 1619,
     "OTHER": 5358,
     "LOST": 3355
   },
-  "mapped_mountains": 1498,
-  "total_mountains": 1498,
-  "unmapped_accident_count": 2246,
-  "match_rate_pct": 83.0,
-  "match_methods": {
-    "heuristic": 10799,
-    "none": 2246,
-    "kakao_name": 44,
-    "cache": 100
-  },
-  "generated_at": "2026-06-23T12:47:46.085663"
+  "mapped_mountains": 50,
+  "unmapped_regions": 187,
+  "generated_at": "2026-06-23T12:51:36.821245"
 }

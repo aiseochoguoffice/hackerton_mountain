@@ -1,6 +1,8 @@
 import { useEffect, useState } from 'react';
 import { BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer, Cell } from 'recharts';
 import { getMountains, getOverview } from '../api/client';
+import { fmtNum } from '../utils/format';
+import { getMappedCount, getRescueCount, getUnmappedLabel } from '../utils/overview';
 import { TYPE_COLORS, TYPE_LABELS, type Mountain, type Overview } from '../types';
 
 export function StatsPage() {
@@ -21,7 +23,7 @@ export function StatsPage() {
 
   if (!overview) return <p className="py-10 text-center text-slate-500">로딩 중...</p>;
 
-  const typeData = Object.entries(overview.type_breakdown).map(([code, value]) => ({
+  const typeData = Object.entries(overview.type_breakdown ?? {}).map(([code, value]) => ({
     name: TYPE_LABELS[code] || code,
     value,
     code,
@@ -38,19 +40,19 @@ export function StatsPage() {
       <div>
         <h1 className="text-2xl font-bold">구조활동 사고 통계</h1>
         <p className="text-slate-600">
-          소방청 구조활동현황 (2020.12) · {overview.generated_at.slice(0, 10)} 집계
+          소방청 구조활동현황 (2020.12) · {overview.generated_at?.slice(0, 10) ?? '—'} 집계
         </p>
       </div>
 
       <div className="grid grid-cols-2 gap-3 md:grid-cols-4">
         {[
-          { label: '구조활동 사고', value: overview.rescue_count },
-          { label: '분석 산', value: overview.mapped_mountains },
-          { label: '미매핑 지역', value: overview.unmapped_regions },
-          { label: '실족추락', value: overview.type_breakdown.SLIP_FALL ?? 0 },
+          { label: '구조활동 사고', value: fmtNum(getRescueCount(overview)) },
+          { label: '분석 산', value: `${getMappedCount(overview)}개` },
+          { label: '미매핑', value: getUnmappedLabel(overview) },
+          { label: '실족추락', value: fmtNum(overview.type_breakdown?.SLIP_FALL) },
         ].map((item) => (
           <div key={item.label} className="rounded-xl border bg-white p-4 text-center shadow-sm">
-            <div className="text-2xl font-bold text-emerald-700">{item.value.toLocaleString()}</div>
+            <div className="text-2xl font-bold text-emerald-700">{item.value}</div>
             <div className="text-sm text-slate-500">{item.label}</div>
           </div>
         ))}
@@ -62,7 +64,7 @@ export function StatsPage() {
           <BarChart data={typeData}>
             <XAxis dataKey="name" tick={{ fontSize: 12 }} />
             <YAxis />
-            <Tooltip formatter={(v: number) => [`${v.toLocaleString()}건`, '사고']} />
+            <Tooltip formatter={(v: number | undefined) => [`${fmtNum(v, '0')}건`, '사고']} />
             <Bar dataKey="value" radius={[6, 6, 0, 0]}>
               {typeData.map((entry) => (
                 <Cell key={entry.code} fill={TYPE_COLORS[entry.code] || '#94a3b8'} />

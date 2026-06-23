@@ -2,6 +2,8 @@ import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { getAccidentTypes, getMountains, getOverview } from '../api/client';
 import { MountainCard } from '../components/MountainCard';
+import { fmtNum } from '../utils/format';
+import { getMappedCount, getRescueCount, getUnmappedLabel } from '../utils/overview';
 import type { AccidentType, Mountain, Overview } from '../types';
 import { TYPE_LABELS } from '../types';
 
@@ -30,7 +32,7 @@ export function HomePage() {
       <section className="rounded-2xl bg-gradient-to-br from-emerald-600 to-teal-700 p-6 text-white md:p-10">
         <h1 className="text-2xl font-bold md:text-4xl">산행 전, 데이터로 위험을 확인하세요</h1>
         <p className="mt-3 max-w-2xl text-emerald-50 md:text-lg">
-          소방청 구조활동 {overview?.total_accidents?.toLocaleString() ?? '—'}건 분석 기반
+          소방청 구조활동 {fmtNum(getRescueCount(overview ?? {}))}건 분석 기반
           산별 위험지수·사고 유형·맞춤 체크리스트를 제공합니다.
         </p>
         <div className="mt-6 flex flex-wrap gap-3">
@@ -52,9 +54,9 @@ export function HomePage() {
       {overview && (
         <section className="grid grid-cols-2 gap-3 md:grid-cols-4">
           {[
-            { label: '구조활동 사고', value: overview.rescue_count.toLocaleString() },
-            { label: '분석 산', value: `${overview.mapped_mountains}개` },
-            { label: '미매핑 지역', value: `${overview.unmapped_regions}개` },
+            { label: '구조활동 사고', value: fmtNum(getRescueCount(overview)) },
+            { label: '분석 산', value: `${getMappedCount(overview)}개` },
+            { label: '미매핑', value: getUnmappedLabel(overview) },
             { label: '데이터 기준', value: '2020.12' },
           ].map((item) => (
             <div key={item.label} className="rounded-xl border bg-white p-4 text-center shadow-sm">
@@ -96,13 +98,13 @@ export function HomePage() {
         </div>
       </section>
 
-      {overview && (
+      {overview?.type_breakdown && (
         <section className="rounded-xl border bg-white p-5 shadow-sm">
           <h2 className="mb-3 text-lg font-bold">전국 사고 유형 (실측)</h2>
           <div className="flex flex-wrap gap-2">
             {Object.entries(overview.type_breakdown).map(([code, count]) => (
               <span key={code} className="rounded-full bg-slate-100 px-3 py-1 text-sm">
-                {TYPE_LABELS[code] || code}: {count.toLocaleString()}건
+                {TYPE_LABELS[code] || code}: {fmtNum(count)}건
               </span>
             ))}
           </div>

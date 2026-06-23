@@ -50,12 +50,16 @@ export interface ChecklistItem {
 
 export interface Overview {
   total_accidents: number;
-  status_count: number;
-  rescue_count: number;
   type_breakdown: Record<string, number>;
   mapped_mountains: number;
-  unmapped_regions: number;
   generated_at: string;
+  status_count?: number;
+  rescue_count?: number;
+  unmapped_regions?: number;
+  data_source?: string;
+  total_mountains?: number;
+  unmapped_accident_count?: number;
+  match_rate_pct?: number;
 }
 
 export interface ChecklistResult {
