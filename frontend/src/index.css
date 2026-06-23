@@ -17,3 +17,39 @@ body {
   height: 100%;
   z-index: 0;
 }
+
+.mountain-marker-icon {
+  background: transparent;
+  border: none;
+}
+
+.mountain-popup .leaflet-popup-content-wrapper {
+  padding: 0;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px -5px rgb(0 0 0 / 0.15), 0 4px 10px -4px rgb(0 0 0 / 0.1);
+}
+
+.mountain-popup .leaflet-popup-content {
+  margin: 0;
+  width: auto !important;
+  line-height: 1.4;
+}
+
+.mountain-popup .leaflet-popup-tip {
+  background: white;
+}
+
+.mountain-popup .leaflet-popup-close-button {
+  top: 6px;
+  right: 6px;
+  width: 24px;
+  height: 24px;
+  font-size: 18px;
+  color: white;
+  z-index: 1;
+}
+
+.mountain-popup .leaflet-popup-close-button:hover {
+  color: #ecfdf5;
+}

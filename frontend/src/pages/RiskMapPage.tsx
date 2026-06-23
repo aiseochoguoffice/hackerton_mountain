@@ -1,19 +1,44 @@
-import { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
-import { MapContainer, TileLayer, CircleMarker, Popup } from 'react-leaflet';
+import { useEffect, useMemo, useState } from 'react';
+import { MapContainer, Marker, Popup, TileLayer } from 'react-leaflet';
 import { getRiskMap } from '../api/client';
 import { riskColor } from '../components/RiskBadge';
+import { MapControls, type MapLayerType } from '../components/map/MapControls';
+import { MountainMapPopup } from '../components/map/MountainMapPopup';
+import { createMountainIcon } from '../utils/mountainMarkerIcon';
 import type { RiskMapPoint } from '../types';
 import { RISK_LABELS } from '../types';
 
+const TILE_LAYERS: Record<MapLayerType, { url: string; attribution: string }> = {
+  street: {
+    url: 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+  },
+  satellite: {
+    url: 'https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}',
+    attribution:
+      'Tiles &copy; Esri &mdash; Source: Esri, Maxar, Earthstar Geographics, and the GIS User Community',
+  },
+};
+
 export function RiskMapPage() {
   const [points, setPoints] = useState<RiskMapPoint[]>([]);
+  const [layer, setLayer] = useState<MapLayerType>('street');
 
   useEffect(() => {
     getRiskMap().then(setPoints);
   }, []);
 
   const center: [number, number] = [36.5, 127.5];
+  const tile = TILE_LAYERS[layer];
+
+  const markers = useMemo(
+    () =>
+      points.map((p) => ({
+        point: p,
+        icon: createMountainIcon(p.risk_level, p.risk_score),
+      })),
+    [points],
+  );
 
   return (
     <div className="space-y-4">
@@ -22,43 +47,31 @@ export function RiskMapPage() {
         <p className="text-slate-600">산별 사고 데이터 기반 위험 등급 시각화</p>
       </div>
 
-      <div className="flex flex-wrap gap-3 text-sm">
+      <div className="flex flex-wrap gap-4 text-sm">
         {(Object.keys(RISK_LABELS) as Array<keyof typeof RISK_LABELS>).map((level) => (
           <span key={level} className="flex items-center gap-1.5">
-            <span className="h-3 w-3 rounded-full" style={{ background: riskColor(level) }} />
+            <span
+              className="inline-flex h-4 w-4 items-end justify-center"
+              dangerouslySetInnerHTML={{
+                __html: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 36" width="14" height="16"><path d="M16 3 L29 28 L3 28 Z" fill="${riskColor(level)}" stroke="#fff" stroke-width="1.5"/></svg>`,
+              }}
+            />
             {RISK_LABELS[level]}
           </span>
         ))}
       </div>
 
-      <div className="h-[60vh] min-h-[400px] overflow-hidden rounded-xl border shadow-sm">
+      <div className="relative h-[60vh] min-h-[400px] overflow-hidden rounded-xl border shadow-sm">
         <MapContainer center={center} zoom={7} className="h-full w-full">
-          <TileLayer
-            attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-            url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-          />
-          {points.map((p) => (
-            <CircleMarker
-              key={p.id}
-              center={[p.latitude, p.longitude]}
-              radius={8 + p.risk_score / 15}
-              pathOptions={{
-                color: riskColor(p.risk_level),
-                fillColor: riskColor(p.risk_level),
-                fillOpacity: 0.7,
-              }}
-            >
-              <Popup>
-                <strong>{p.name}</strong>
-                <br />
-                위험지수: {p.risk_score} ({RISK_LABELS[p.risk_level]})
-                <br />
-                사고: {p.accident_count}건
-                <br />
-                <Link to={`/mountains/${p.id}`} className="text-emerald-600">상세 보기</Link>
+          <TileLayer attribution={tile.attribution} url={tile.url} />
+          {markers.map(({ point, icon }) => (
+            <Marker key={point.id} position={[point.latitude, point.longitude]} icon={icon}>
+              <Popup className="mountain-popup" closeButton>
+                <MountainMapPopup point={point} />
               </Popup>
-            </CircleMarker>
+            </Marker>
           ))}
+          <MapControls layer={layer} onLayerChange={setLayer} />
         </MapContainer>
       </div>
     </div>
